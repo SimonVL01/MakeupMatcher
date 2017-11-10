@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{158C6750-768B-4627-895D-CAF11381C63A}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MakeupMatcher.Core/Models/ProductModel.cs">
+    <Files>
+      <File FileName="MakeupMatcher.Core/MyClass.cs" Line="1" Column="1" />
+      <File FileName="../XamChat/XamChat.Droid/:Users:simon:Projects:MakeupMatcher:MakeupMatcher.Core:Models:Customer.cs" Line="7" Column="10" />
+      <File FileName="MakeupMatcher.Core/Models/UserModel.cs" Line="9" Column="2" />
+      <File FileName="MakeupMatcher.Core/ViewModels/UserViewModel.cs" Line="12" Column="29" />
+      <File FileName="MakeupMatcher.Core/App.cs" Line="12" Column="78" />
+      <File FileName="MakeupMatcher.Core/ViewModels/SplashScreenViewModel.cs" Line="17" Column="6" />
+      <File FileName="MakeupMatcher.UI.Droid/Properties/AndroidManifest.xml" Line="6" Column="12" />
+      <File FileName="MakeupMatcher.UI.Droid/Views/SplashScreenView.cs" Line="24" Column="6" />
+      <File FileName="MakeupMatcher.UI.Droid/Views/UserView.cs" Line="23" Column="10" />
+      <File FileName="MakeupMatcher.UI.Droid/Resources/Resource.designer.cs" Line="1" Column="1" />
+      <File FileName="MakeupMatcher.UI.Droid/Resources/AboutResources.txt" Line="1" Column="1" />
+      <File FileName="MakeupMatcher.UI.Droid/Setup.cs" Line="20" Column="2" />
+      <File FileName="MakeupMatcher.Core/ViewModels/MakeupViewModel.cs" Line="33" Column="10" />
+      <File FileName="MakeupMatcher.Core/ViewModels/ProductViewModel.cs" Line="36" Column="58" />
+      <File FileName="MakeupMatcher.Core/Models/MakeupModel.cs" Line="8" Column="1" />
+      <File FileName="MakeupMatcher.Core/Models/ProductModel.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.MakeupMatcher.UI.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

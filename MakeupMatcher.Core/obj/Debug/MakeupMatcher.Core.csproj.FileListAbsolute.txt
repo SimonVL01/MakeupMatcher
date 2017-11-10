@@ -1,0 +1,14 @@
+/Users/simon/Projects/MakeupMatcher/MakeupMatcher.Core/obj/Debug/MakeupMatcher.Core.csprojResolveAssemblyReference.cache
+/Users/simon/Projects/MakeupMatcher/MakeupMatcher.Core/obj/Debug/MakeupMatcher.Core.csproj.CoreCompileInputs.cache
+/Users/simon/Projects/MakeupMatcher/MakeupMatcher.Core/bin/Debug/MakeupMatcher.Core.dll
+/Users/simon/Projects/MakeupMatcher/MakeupMatcher.Core/bin/Debug/MakeupMatcher.Core.pdb
+/Users/simon/Projects/MakeupMatcher/MakeupMatcher.Core/bin/Debug/MvvmCross.Binding.dll
+/Users/simon/Projects/MakeupMatcher/MakeupMatcher.Core/bin/Debug/MvvmCross.Core.dll
+/Users/simon/Projects/MakeupMatcher/MakeupMatcher.Core/bin/Debug/MvvmCross.Localization.dll
+/Users/simon/Projects/MakeupMatcher/MakeupMatcher.Core/bin/Debug/MvvmCross.Platform.dll
+/Users/simon/Projects/MakeupMatcher/MakeupMatcher.Core/bin/Debug/MvvmCross.Platform.pdb
+/Users/simon/Projects/MakeupMatcher/MakeupMatcher.Core/bin/Debug/MvvmCross.Core.pdb
+/Users/simon/Projects/MakeupMatcher/MakeupMatcher.Core/bin/Debug/MvvmCross.Binding.pdb
+/Users/simon/Projects/MakeupMatcher/MakeupMatcher.Core/bin/Debug/MvvmCross.Localization.pdb
+/Users/simon/Projects/MakeupMatcher/MakeupMatcher.Core/obj/Debug/MakeupMatcher.Core.dll
+/Users/simon/Projects/MakeupMatcher/MakeupMatcher.Core/obj/Debug/MakeupMatcher.Core.pdb
