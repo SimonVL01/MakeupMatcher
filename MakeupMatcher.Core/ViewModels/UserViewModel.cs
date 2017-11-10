@@ -1,16 +1,20 @@
 ﻿using System;
 using MvvmCross.Core.ViewModels;
 using MakeupMatcher.Core.Models;
+using MvvmCross.Platform.IoC;
+using MvvmCross.Platform;
 
 namespace MakeupMatcher.Core.ViewModels
 {
     public class UserViewModel : MvxViewModel
     {
+        readonly UserModel _user;
 
         //Constructor
 
         public UserViewModel()
         {
+            _user = Mvx.IocConstruct<UserModel>();
         }
 
         //State
@@ -19,17 +23,18 @@ namespace MakeupMatcher.Core.ViewModels
 
         public int UserId
         {
-            get { return _userId; }
+            get { return _user.UserId; }
         }
 
         string _username;
 
         public string Username
         {
-            get { return _username; }
+            get { return _user.UserName; }
             set
             {
                 _username = value;
+                _user.UserName = value;
                 RaisePropertyChanged(() => Username);
             }
         }
@@ -38,23 +43,25 @@ namespace MakeupMatcher.Core.ViewModels
 
         public string UserImage
         {
-            get { return _userImage; }
+            get { return _user.UserImage; }
             set
             {
                 _userImage = value;
+                _user.UserImage = value;
                 RaisePropertyChanged(() => UserImage);
             }
         }
 
-        int[] _userColorPreference;
+        MakeupModel _makeupModel;
 
-        public int[] UserColorPreference
+        public MakeupModel MakeupModel
         {
-            get { return _userColorPreference; }
+            get { return _user.MakeupModel; }
             set
             {
-                _userColorPreference = value;
-                RaisePropertyChanged(() => UserColorPreference);
+                _makeupModel = value;
+                _user.MakeupModel = value;
+                RaisePropertyChanged(() => MakeupModel);
             }
         }
 

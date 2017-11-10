@@ -17,6 +17,7 @@ namespace MakeupMatcher.UI.Droid.Views
     [Activity(Label = "UserView")]
     public class UserView : MvxActivity
     {
+
         protected override void OnViewModelSet()
         {
             SetContentView(Resource.Layout.User);
@@ -24,6 +25,7 @@ namespace MakeupMatcher.UI.Droid.Views
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
+
             base.OnCreate(savedInstanceState);
 
         }

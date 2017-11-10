@@ -1,6 +1,4 @@
 ﻿using System;
-using MvvmCross.Core.ViewModels;
-using MakeupMatcher.Core.Models;
 
 namespace MakeupMatcher.Core.Models
 {
