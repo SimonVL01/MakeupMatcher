@@ -1,14 +1,19 @@
 ﻿using System;
 using MvvmCross.Core.ViewModels;
+using MakeupMatcher.Core.Models;
+using MvvmCross.Platform;
 
 namespace MakeupMatcher.Core.ViewModels
 {
     public class ProductViewModel : MvxViewModel
     {
+        readonly ProductModel _product;
+
         //Constructor
 
         public ProductViewModel()
         {
+            _product = Mvx.IocConstruct<ProductModel>();
         }
 
         //State
@@ -17,22 +22,18 @@ namespace MakeupMatcher.Core.ViewModels
 
         public int ProductId
         {
-            get { return _productId; }
-            set
-            {
-                _productId = value;
-                RaisePropertyChanged(() => _productId);
-            }
+            get { return _product.ProductId; }
         }
 
         string _productName;
 
         public string ProductName
         {
-            get { return _productName; }
+            get { return _product.ProductName; }
             set
             {
                 _productName = value;
+                _product.ProductName = value;
                 RaisePropertyChanged(() => _productName);
             }
         }

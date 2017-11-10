@@ -52,16 +52,16 @@ namespace MakeupMatcher.Core.ViewModels
             }
         }
 
-        MakeupModel _makeupModel;
+        MakeupModel _makeupProfile;
 
-        public MakeupModel MakeupModel
+        public MakeupModel MakeupProfile
         {
-            get { return _user.MakeupModel; }
+            get { return _user.MakeupProfile; }
             set
             {
-                _makeupModel = value;
-                _user.MakeupModel = value;
-                RaisePropertyChanged(() => MakeupModel);
+                _makeupProfile = value;
+                _user.MakeupProfile = value;
+                RaisePropertyChanged(() => MakeupProfile);
             }
         }
 

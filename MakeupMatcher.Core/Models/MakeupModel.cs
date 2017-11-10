@@ -4,8 +4,8 @@ namespace MakeupMatcher.Core.Models
 {
     public class MakeupModel
     {
-        public int _colorId { get; set; }
-        public string _colorName { get; set; }
-        public ProductModel[] _productModel { get; set; }
+        public int ColorId { get; set; }
+        public string ColorName { get; set; }
+        public ProductModel[] Products { get; set; }
     }
 }
