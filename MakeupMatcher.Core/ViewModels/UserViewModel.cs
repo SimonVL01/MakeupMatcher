@@ -52,7 +52,7 @@ namespace MakeupMatcher.Core.ViewModels
             }
         }
 
-        MakeupModel _makeupProfile;
+        /*MakeupModel _makeupProfile;
 
         public MakeupModel MakeupProfile
         {
@@ -63,7 +63,7 @@ namespace MakeupMatcher.Core.ViewModels
                 _user.MakeupProfile = value;
                 RaisePropertyChanged(() => MakeupProfile);
             }
-        }
+        }*/
 
         //Methods & Services
        

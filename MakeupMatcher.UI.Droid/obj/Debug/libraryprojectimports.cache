@@ -4,16 +4,31 @@
   <ResolvedResourceDirectories>
     <ResolvedResourceDirectory>/Users/simon/Projects/MakeupMatcher/MakeupMatcher.UI.Droid/obj/Debug/__library_projects__/Lottie/library_project_imports/res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>/Users/simon/Projects/MakeupMatcher/MakeupMatcher.UI.Droid/obj/Debug/__library_projects__/MvvmCross.Binding.Droid/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/simon/Projects/MakeupMatcher/MakeupMatcher.UI.Droid/obj/Debug/__library_projects__/SQLitePCLRaw.batteries_green/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/simon/Projects/MakeupMatcher/MakeupMatcher.UI.Droid/obj/Debug/__library_projects__/SQLitePCLRaw.batteries_v2/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/simon/Projects/MakeupMatcher/MakeupMatcher.UI.Droid/obj/Debug/__library_projects__/SQLitePCLRaw.core/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/simon/Projects/MakeupMatcher/MakeupMatcher.UI.Droid/obj/Debug/__library_projects__/SQLitePCLRaw.lib.e_sqlite3/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/simon/Projects/MakeupMatcher/MakeupMatcher.UI.Droid/obj/Debug/__library_projects__/SQLitePCLRaw.provider.e_sqlite3/library_project_imports/res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>/Users/simon/Projects/MakeupMatcher/MakeupMatcher.UI.Droid/obj/Debug/__library_projects__/Xamarin.Android.Support.v7.AppCompat/library_project_imports/res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
     <ResolvedAssetDirectory>obj/Debug/__library_projects__/Lottie/library_project_imports/assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj/Debug/__library_projects__/MvvmCross.Binding.Droid/library_project_imports/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj/Debug/__library_projects__/SQLitePCLRaw.batteries_green/library_project_imports/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj/Debug/__library_projects__/SQLitePCLRaw.batteries_v2/library_project_imports/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj/Debug/__library_projects__/SQLitePCLRaw.core/library_project_imports/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj/Debug/__library_projects__/SQLitePCLRaw.lib.e_sqlite3/library_project_imports/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj/Debug/__library_projects__/SQLitePCLRaw.provider.e_sqlite3/library_project_imports/assets</ResolvedAssetDirectory>
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
     <ResolvedResourceDirectoryStamp>/Users/simon/Projects/MakeupMatcher/MakeupMatcher.UI.Droid/obj/Debug/__library_projects__/Lottie.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>/Users/simon/Projects/MakeupMatcher/MakeupMatcher.UI.Droid/obj/Debug/__library_projects__/MvvmCross.Binding.Droid.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/simon/Projects/MakeupMatcher/MakeupMatcher.UI.Droid/obj/Debug/__library_projects__/SQLitePCLRaw.batteries_green.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/simon/Projects/MakeupMatcher/MakeupMatcher.UI.Droid/obj/Debug/__library_projects__/SQLitePCLRaw.batteries_v2.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/simon/Projects/MakeupMatcher/MakeupMatcher.UI.Droid/obj/Debug/__library_projects__/SQLitePCLRaw.core.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/simon/Projects/MakeupMatcher/MakeupMatcher.UI.Droid/obj/Debug/__library_projects__/SQLitePCLRaw.lib.e_sqlite3.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/simon/Projects/MakeupMatcher/MakeupMatcher.UI.Droid/obj/Debug/__library_projects__/SQLitePCLRaw.provider.e_sqlite3.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>/Users/simon/Projects/MakeupMatcher/MakeupMatcher.UI.Droid/obj/Debug/__library_projects__/Xamarin.Android.Support.v7.AppCompat.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>
