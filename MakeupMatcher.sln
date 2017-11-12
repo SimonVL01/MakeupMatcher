@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakeupMatcher.Core", "Makeu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakeupMatcher.UI.Droid", "MakeupMatcher.UI.Droid\MakeupMatcher.UI.Droid.csproj", "{158C6750-768B-4627-895D-CAF11381C63A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakeupMatcher.UI.iOS", "MakeupMatcher.UI.iOS\MakeupMatcher.UI.iOS.csproj", "{A07C03B0-0D23-4207-B609-A6044311FF53}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,5 +41,17 @@ Global
 		{158C6750-768B-4627-895D-CAF11381C63A}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{158C6750-768B-4627-895D-CAF11381C63A}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{158C6750-768B-4627-895D-CAF11381C63A}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{A07C03B0-0D23-4207-B609-A6044311FF53}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
+		{A07C03B0-0D23-4207-B609-A6044311FF53}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
+		{A07C03B0-0D23-4207-B609-A6044311FF53}.Release|Any CPU.ActiveCfg = Release|iPhone
+		{A07C03B0-0D23-4207-B609-A6044311FF53}.Release|Any CPU.Build.0 = Release|iPhone
+		{A07C03B0-0D23-4207-B609-A6044311FF53}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{A07C03B0-0D23-4207-B609-A6044311FF53}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{A07C03B0-0D23-4207-B609-A6044311FF53}.Release|iPhone.ActiveCfg = Release|iPhone
+		{A07C03B0-0D23-4207-B609-A6044311FF53}.Release|iPhone.Build.0 = Release|iPhone
+		{A07C03B0-0D23-4207-B609-A6044311FF53}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{A07C03B0-0D23-4207-B609-A6044311FF53}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{A07C03B0-0D23-4207-B609-A6044311FF53}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{A07C03B0-0D23-4207-B609-A6044311FF53}.Debug|iPhone.Build.0 = Debug|iPhone
 	EndGlobalSection
 EndGlobal

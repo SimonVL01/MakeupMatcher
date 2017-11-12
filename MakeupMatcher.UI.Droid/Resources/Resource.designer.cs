@@ -1813,6 +1813,9 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f0b0020
 			public const int always = 2131427360;
 			
+			// aapt resource value: 0x7f0b0077
+			public const int animation_view = 2131427447;
+			
 			// aapt resource value: 0x7f0b001d
 			public const int beginning = 2131427357;
 			
@@ -1831,8 +1834,8 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f0b0067
 			public const int chronometer = 2131427431;
 			
-			// aapt resource value: 0x7f0b0072
-			public const int clicker = 2131427442;
+			// aapt resource value: 0x7f0b0074
+			public const int clicker = 2131427444;
 			
 			// aapt resource value: 0x7f0b0021
 			public const int collapseActionView = 2131427361;
@@ -1870,8 +1873,8 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f0b0042
 			public const int expanded_menu = 2131427394;
 			
-			// aapt resource value: 0x7f0b0073
-			public const int get = 2131427443;
+			// aapt resource value: 0x7f0b0075
+			public const int get = 2131427445;
 			
 			// aapt resource value: 0x7f0b0004
 			public const int home = 2131427332;
@@ -2077,8 +2080,14 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f0b0015
 			public const int useLogo = 2131427349;
 			
-			// aapt resource value: 0x7f0b0074
-			public const int userData = 2131427444;
+			// aapt resource value: 0x7f0b0076
+			public const int userData = 2131427446;
+			
+			// aapt resource value: 0x7f0b0073
+			public const int userimage = 2131427443;
+			
+			// aapt resource value: 0x7f0b0072
+			public const int username = 2131427442;
 			
 			// aapt resource value: 0x7f0b0028
 			public const int weak = 2131427368;

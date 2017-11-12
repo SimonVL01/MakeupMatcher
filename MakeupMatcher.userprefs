@@ -1,30 +1,41 @@
-﻿<Properties StartupConfiguration="{158C6750-768B-4627-895D-CAF11381C63A}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MakeupMatcher.UI.Droid/Views/UserView.cs">
+﻿<Properties StartupConfiguration="{A07C03B0-0D23-4207-B609-A6044311FF53}|Default">
+  <MonoDevelop.Ide.ItemProperties.MakeupMatcher.UI.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.2A438068-704E-4FD5-969B-14AD0270C689" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MakeupMatcher.UI.iOS/Views/UserView.cs">
     <Files>
       <File FileName="MakeupMatcher.Core/MyClass.cs" Line="1" Column="1" />
       <File FileName="../XamChat/XamChat.Droid/:Users:simon:Projects:MakeupMatcher:MakeupMatcher.Core:Models:Customer.cs" Line="7" Column="10" />
-      <File FileName="MakeupMatcher.Core/Models/UserModel.cs" Line="25" Column="45" />
+      <File FileName="MakeupMatcher.Core/Models/UserModel.cs" Line="15" Column="12" />
       <File FileName="MakeupMatcher.Core/ViewModels/UserViewModel.cs" Line="22" Column="21" />
       <File FileName="MakeupMatcher.Core/App.cs" Line="2" Column="1" />
       <File FileName="MakeupMatcher.Core/ViewModels/SplashScreenViewModel.cs" Line="17" Column="6" />
       <File FileName="MakeupMatcher.UI.Droid/Properties/AndroidManifest.xml" Line="5" Column="8" />
       <File FileName="MakeupMatcher.UI.Droid/Views/SplashScreenView.cs" Line="24" Column="6" />
-      <File FileName="MakeupMatcher.UI.Droid/Views/UserView.cs" Line="52" Column="48" />
+      <File FileName="MakeupMatcher.UI.Droid/Views/UserView.cs" Line="43" Column="1" />
       <File FileName="MakeupMatcher.UI.Droid/Resources/Resource.designer.cs" Line="1" Column="1" />
       <File FileName="MakeupMatcher.UI.Droid/Resources/AboutResources.txt" Line="1" Column="1" />
       <File FileName="MakeupMatcher.UI.Droid/Setup.cs" Line="20" Column="2" />
       <File FileName="MakeupMatcher.Core/ViewModels/MakeupViewModel.cs" Line="13" Column="9" />
       <File FileName="MakeupMatcher.Core/ViewModels/ProductViewModel.cs" Line="23" Column="29" />
       <File FileName="MakeupMatcher.Core/Models/MakeupModel.cs" Line="7" Column="9" />
-      <File FileName="MakeupMatcher.Core/Models/ProductModel.cs" Line="8" Column="24" />
+      <File FileName="MakeupMatcher.Core/Models/ProductModel.cs" Line="9" Column="44" />
       <File FileName="MakeupMatcher.Core/Repositories/UserRepository.cs" Line="59" Column="4" />
       <File FileName="../XamChat/XamChat.Droid/:Users:simon:Projects:MakeupMatcher:MakeupMatcher.UI.Droid:Resources:values:dimens.axml" Line="2" Column="10" />
       <File FileName="MakeupMatcher.UI.Droid/Resources/values/Strings.xml" Line="1" Column="1" />
       <File FileName="MakeupMatcher.UI.Droid/Resources/values/dimens.xml" Line="4" Column="45" />
       <File FileName="../XamChat/XamChat.Droid/:Users:simon:Projects:MakeupMatcher:MakeupMatcher.Core:Database:SQLiteDatabase.cs" Line="16" Column="20" />
+      <File FileName="MakeupMatcher.UI.iOS/AppDelegate.cs" Line="35" Column="40" />
+      <File FileName="MakeupMatcher.Core/packages.config" Line="1" Column="1" />
+      <File FileName="MakeupMatcher.UI.iOS/Setup.cs" Line="21" Column="2" />
+      <File FileName="MakeupMatcher.UI.iOS/Views/UserView.cs" Line="21" Column="23" />
+      <File FileName="MakeupMatcher.UI.iOS/Views/UserView.xib" />
+      <File FileName="MakeupMatcher.UI.Droid/packages.config" Line="1" Column="1" />
+      <File FileName="MakeupMatcher.UI.Droid/Assets/jello.json" Line="1" Column="1" />
+      <File FileName="MakeupMatcher.UI.iOS/Info.plist" />
+      <File FileName="MakeupMatcher.UI.iOS/Animation/heart.json" Line="1" Column="1" />
+      <File FileName="MakeupMatcher.UI.iOS/Views/UserView.designer.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.MakeupMatcher.UI.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
+  <MonoDevelop.Ide.ItemProperties.MakeupMatcher.UI.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Nexus_4_API_21" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

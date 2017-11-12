@@ -70,8 +70,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="Animation\PinJump.gif" />
-    <None Include="Animation\Walkthrough.gif" />
+    <None Include="Animation\jello.json" />
+    <None Include="Animation\block.json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />

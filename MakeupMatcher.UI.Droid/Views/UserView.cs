@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using MakeupMatcher.Core.Models;
 
 using Android.App;
+using Com.Airbnb.Lottie;
 using Android.Content;
 using Android.OS;
 using Android.Runtime;
@@ -24,8 +25,11 @@ namespace MakeupMatcher.UI.Droid.Views
     [Activity(Label = "UserView")]
     public class UserView : MvxActivity
     {
+        private SQLiteConnection db;
 
-        //private SQLiteConnection _connection;
+        private LottieAnimationView animationView;
+        string userName;
+        string userImage;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -44,7 +48,7 @@ namespace MakeupMatcher.UI.Droid.Views
             button.Click += delegate {
                 
                 //setup connection
-                var db = new SQLiteConnection(dbPath);
+                db = new SQLiteConnection(dbPath);
 
                 db.CreateTable<UserModel>();
 
@@ -62,7 +66,7 @@ namespace MakeupMatcher.UI.Droid.Views
             getButton.Click += delegate {
                 TextView displayText = FindViewById<TextView>(Resource.Id.userData);
 
-                var db = new SQLiteConnection(dbPath);
+                db = new SQLiteConnection(dbPath);
 
                 var table = db.Table<UserModel>();
 
@@ -75,6 +79,28 @@ namespace MakeupMatcher.UI.Droid.Views
                 }
             };
 
+
+            EditText usernameField = FindViewById<EditText>(Resource.Id.username);
+            userName = usernameField.Text;
+            EditText userImageField = FindViewById<EditText>(Resource.Id.userimage);
+            userImage = userImageField.Text;
+
+            animationView = FindViewById<LottieAnimationView>(Resource.Id.animation_view);
+
+        }
+
+        protected override void OnStart()
+        {
+            base.OnStart();   
+            animationView.Progress = 0f;
+            animationView.PlayAnimation();
+        }
+
+        protected override void OnStop()
+        {
+            base.OnStop();
+            this.animationView.Progress = 0f;
+            this.animationView.PlayAnimation();
         }
 
         /*private async Task<string> insertUpdateData(UserModel user, string path)
@@ -84,5 +110,6 @@ namespace MakeupMatcher.UI.Droid.Views
                 var db = new SQLiteAsyncConnection(path);
             }
         }*/
+
     }
 }

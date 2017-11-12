@@ -1994,13 +1994,14 @@ containing a value of this type.
         public static final int add=0x7f0b0016;
         public static final int alertTitle=0x7f0b0040;
         public static final int always=0x7f0b0020;
+        public static final int animation_view=0x7f0b0077;
         public static final int beginning=0x7f0b001d;
         public static final int bottom=0x7f0b0025;
         public static final int buttonPanel=0x7f0b0033;
         public static final int cancel_action=0x7f0b005f;
         public static final int checkbox=0x7f0b0043;
         public static final int chronometer=0x7f0b0067;
-        public static final int clicker=0x7f0b0072;
+        public static final int clicker=0x7f0b0074;
         public static final int collapseActionView=0x7f0b0021;
         public static final int contentPanel=0x7f0b0036;
         public static final int custom=0x7f0b003d;
@@ -2013,7 +2014,7 @@ containing a value of this type.
         public static final int end_padder=0x7f0b0071;
         public static final int expand_activities_button=0x7f0b002d;
         public static final int expanded_menu=0x7f0b0042;
-        public static final int get=0x7f0b0073;
+        public static final int get=0x7f0b0075;
         public static final int home=0x7f0b0004;
         public static final int homeAsUp=0x7f0b0010;
         public static final int icon=0x7f0b0031;
@@ -2082,7 +2083,9 @@ containing a value of this type.
         public static final int topPanel=0x7f0b003e;
         public static final int up=0x7f0b0008;
         public static final int useLogo=0x7f0b0015;
-        public static final int userData=0x7f0b0074;
+        public static final int userData=0x7f0b0076;
+        public static final int userimage=0x7f0b0073;
+        public static final int username=0x7f0b0072;
         public static final int weak=0x7f0b0028;
         public static final int withText=0x7f0b0024;
         public static final int wrap_content=0x7f0b001c;
