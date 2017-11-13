@@ -13,6 +13,10 @@ namespace MakeupMatcher.UI.iOS
     [Register ("ViewController")]
     partial class ViewController
     {
+        [Action ("UIButton300_TouchUpInside:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void UIButton300_TouchUpInside (UIKit.UIButton sender);
+
         void ReleaseDesignerOutlets ()
         {
         }

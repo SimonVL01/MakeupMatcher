@@ -22,6 +22,7 @@
         <category android:name="mono.android.intent.category.SEPPUKU.com.exercises.MakeupMatcher_UI_Droid" />
       </intent-filter>
     </receiver>
+    <meta-data android:name="android.arch.lifecycle.VERSION" android:value="27.0.0-SNAPSHOT" />
   </application>
   <meta-data android:name="android.support.VERSION" android:value="25.3.1" />
 </manifest>

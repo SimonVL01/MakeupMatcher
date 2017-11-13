@@ -7,8 +7,7 @@ namespace MakeupMatcher.UI.iOS
 {
     public class Setup : MvxIosSetup
     {
-        public Setup(MvxApplicationDelegate appDelegate,
-                     IMvxIosViewPresenter presenter)
+        public Setup(MvxApplicationDelegate appDelegate, IMvxIosViewPresenter presenter)
             : base(appDelegate, presenter)
         {
         }
