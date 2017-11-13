@@ -16,7 +16,7 @@
 /Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.Core/bin/Debug/Autofac.xml
 /Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.Core/bin/Debug/SQLite-net.pdb
 /Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.Core/bin/Debug/SQLite-net.xml
+/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.Core/obj/Debug/MakeupMatcher.Core.csprojResolveAssemblyReference.cache
 /Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.Core/obj/Debug/MakeupMatcher.Core.csproj.CoreCompileInputs.cache
 /Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.Core/obj/Debug/MakeupMatcher.Core.dll
 /Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.Core/obj/Debug/MakeupMatcher.Core.pdb
-/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.Core/obj/Debug/MakeupMatcher.Core.csprojResolveAssemblyReference.cache

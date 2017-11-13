@@ -13,16 +13,16 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>MinimumOSVersion</key>
-	<string>11.0</string>
+	<string>6.0</string>
 	<key>UIDeviceFamily</key>
 	<array>
 		<integer>1</integer>
 		<integer>2</integer>
 	</array>
 	<key>UILaunchStoryboardName</key>
-	<string>Main</string>
-	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
+	<string>Views/UserView</string>
+	<key>UIMainNibFile</key>
+	<string>UserView</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

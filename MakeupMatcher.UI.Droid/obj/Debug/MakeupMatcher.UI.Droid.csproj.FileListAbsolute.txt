@@ -17,6 +17,9 @@
 /Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.Droid/bin/Debug/SQLitePCLRaw.core.dll
 /Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.Droid/bin/Debug/SQLitePCLRaw.lib.e_sqlite3.dll
 /Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.Droid/bin/Debug/SQLitePCLRaw.provider.e_sqlite3.dll
+/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.Droid/bin/Debug/Xamarin.Android.Arch.Core.Common.dll
+/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.Droid/bin/Debug/Xamarin.Android.Arch.Lifecycle.Common.dll
+/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.Droid/bin/Debug/Xamarin.Android.Arch.Lifecycle.Runtime.dll
 /Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.Droid/bin/Debug/Xamarin.Android.Support.Animated.Vector.Drawable.dll
 /Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.Droid/bin/Debug/Xamarin.Android.Support.Annotations.dll
 /Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.Droid/bin/Debug/Xamarin.Android.Support.Compat.dll
@@ -60,6 +63,3 @@
 /Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.Droid/obj/Debug/res/values/dimens.xml
 /Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.Droid/obj/Debug/R.cs.flag
 /Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.Droid/obj/Debug/uploadflags.txt
-/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.Droid/bin/Debug/Xamarin.Android.Arch.Core.Common.dll
-/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.Droid/bin/Debug/Xamarin.Android.Arch.Lifecycle.Common.dll
-/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.Droid/bin/Debug/Xamarin.Android.Arch.Lifecycle.Runtime.dll

@@ -3,6 +3,7 @@ using MvvmCross.Platform;
 using MvvmCross.Core.ViewModels;
 using MakeupMatcher.Core.ViewModels;
 
+
 namespace MakeupMatcher.Core
 {
     public class App : MvxApplication

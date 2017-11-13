@@ -1,11 +1,11 @@
-using Foundation;
-using System;
-using UIKit;
+﻿using System;
 using MvvmCross.Binding.BindingContext;
 using MvvmCross.iOS.Views;
 using MakeupMatcher.Core.ViewModels;
 
-namespace MakeupMatcher.UI.iOS
+using UIKit;
+
+namespace MakeupMatcher.UI.iOS.Views
 {
     public partial class UserView : MvxViewController<UserViewModel>
     {
@@ -16,6 +16,14 @@ namespace MakeupMatcher.UI.iOS
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
+            // Perform any additional setup after loading the view, typically from a nib.
+        }
+
+        public override void DidReceiveMemoryWarning()
+        {
+            base.DidReceiveMemoryWarning();
+            // Release any cached data, images, etc that aren't in use.
         }
     }
 }
+
