@@ -1,13 +1,13 @@
 ﻿<Properties StartupConfiguration="{B9B140C6-7655-4E40-B6AB-6C9FFE85B8DA}|Default">
-  <MonoDevelop.Ide.ItemProperties.MakeupMatcher.UI.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.D830B11D-86D6-44A0-986E-CA9EDC72F683">
+  <MonoDevelop.Ide.ItemProperties.MakeupMatcher.UI.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.2417C9A2-E83C-40D4-A4FB-DBA497D0A548">
     <MonoDevelop.MacDev.AppleDevelopmentTeam />
   </MonoDevelop.Ide.ItemProperties.MakeupMatcher.UI.iOS>
-  <MonoDevelop.Ide.Workbench ActiveDocument="MakeupMatcher.UI.iOS/Views/UserView.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MakeupMatcher.Core/CustomAppStart.cs">
     <Files>
       <File FileName="MakeupMatcher.Core/MyClass.cs" Line="1" Column="1" />
       <File FileName="MakeupMatcher.Core/Models/UserModel.cs" Line="15" Column="12" />
       <File FileName="MakeupMatcher.Core/ViewModels/UserViewModel.cs" Line="22" Column="21" />
-      <File FileName="MakeupMatcher.Core/App.cs" Line="16" Column="2" />
+      <File FileName="MakeupMatcher.Core/App.cs" Line="1" Column="1" />
       <File FileName="MakeupMatcher.Core/ViewModels/SplashScreenViewModel.cs" Line="17" Column="6" />
       <File FileName="MakeupMatcher.UI.Droid/Properties/AndroidManifest.xml" Line="8" Column="12" />
       <File FileName="MakeupMatcher.UI.Droid/Views/SplashScreenView.cs" Line="24" Column="6" />
@@ -28,16 +28,19 @@
       <File FileName=":Users:vdabcursist:Desktop:eindwerk_MakeupMatcher:MakeupMatcher.UI.iOS:Views:UserView.cs" Line="19" Column="10" />
       <File FileName="MakeupMatcher.UI.iOS/AppDelegate.cs" Line="33" Column="1" />
       <File FileName="MakeupMatcher.UI.iOS/Setup.cs" Line="4" Column="26" />
-      <File FileName=":Users:vdabcursist:Desktop:eindwerk_MakeupMatcher:MakeupMatcher.UI.iOS:Views:UserView.cs" Line="25" Column="13" />
       <File FileName="MakeupMatcher.UI.iOS/Main.cs" Line="12" Column="56" />
       <File FileName="MakeupMatcher.UI.iOS/Info.plist" />
       <File FileName="MakeupMatcher.UI.iOS/Main.storyboard" />
       <File FileName="MakeupMatcher.UI.iOS/Entitlements.plist" />
       <File FileName="MakeupMatcher.UI.iOS/LaunchScreen.storyboard" />
       <File FileName="MakeupMatcher.UI.iOS/packages.config" Line="1" Column="1" />
-      <File FileName="MakeupMatcher.UI.iOS/Views/UserView.cs" Line="19" Column="13" />
+      <File FileName="MakeupMatcher.UI.iOS/Views/UserView.cs" Line="86" Column="1" />
       <File FileName="MakeupMatcher.UI.iOS/Views/UserView.xib" />
       <File FileName="MakeupMatcher.UI.iOS/Views/UserView.designer.cs" Line="1" Column="1" />
+      <File FileName="MakeupMatcher.UI.iOS/heart.json" Line="1" Column="1" />
+      <File FileName="MakeupMatcher.UI.iOS/SQLite.cs" Line="1" Column="1" />
+      <File FileName="MakeupMatcher.UI.iOS/SQLiteAsync.cs" Line="1" Column="1" />
+      <File FileName="MakeupMatcher.Core/CustomAppStart.cs" Line="10" Column="33" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.MakeupMatcher.UI.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_ARMv7a_Nougat" />

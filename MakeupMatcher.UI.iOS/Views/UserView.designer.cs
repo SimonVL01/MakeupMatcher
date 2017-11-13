@@ -20,6 +20,14 @@ namespace MakeupMatcher.UI.iOS.Views
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel info { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton nextPage { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton show { get; set; }
 
         [Outlet]
@@ -31,6 +39,16 @@ namespace MakeupMatcher.UI.iOS.Views
             if (data != null) {
                 data.Dispose ();
                 data = null;
+            }
+
+            if (info != null) {
+                info.Dispose ();
+                info = null;
+            }
+
+            if (nextPage != null) {
+                nextPage.Dispose ();
+                nextPage = null;
             }
 
             if (show != null) {

@@ -113,6 +113,7 @@
   <ItemGroup>
     <Folder Include="Resources\" />
     <Folder Include="Views\" />
+    <Folder Include="Animation\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -143,6 +144,7 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="heart.json" />
+    <AndroidAsset Include="Animation\heart.json" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

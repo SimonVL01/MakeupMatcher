@@ -1,9 +1,9 @@
 # Version: 11.3.0.47 (xcode9.1: 51128b8c)
 # [first argument, ignore] # --cache
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/lib/mtouch/mtouch.exe \
-	/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.iOS/obj/iPhoneSimulator/Debug/mtouch-cache \
+	/Users/simon/Desktop/MakeupMatcher/MakeupMatcher.UI.iOS/obj/iPhoneSimulator/Debug/mtouch-cache \
 	--sim \
-	/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.iOS/bin/iPhoneSimulator/Debug/MakeupMatcher.UI.iOS.app \
+	/Users/simon/Desktop/MakeupMatcher/MakeupMatcher.UI.iOS/bin/iPhoneSimulator/Debug/MakeupMatcher.UI.iOS.app \
 	--executable \
 	MakeupMatcher.UI.iOS \
 	--debug \
@@ -11,37 +11,37 @@
 	--sdkroot \
 	/Applications/Xcode.app/Contents/Developer \
 	--sdk \
-	11.0 \
+	11.1 \
 	--targetver \
-	11.0 \
+	11.1 \
 	--aot-options=-O=-float32 \
 	--http-message-handler=HttpClientHandler \
 	--abi=x86_64 \
 	--symbollist \
-	/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.iOS/obj/iPhoneSimulator/Debug/mtouch-symbols.list \
+	/Users/simon/Desktop/MakeupMatcher/MakeupMatcher.UI.iOS/obj/iPhoneSimulator/Debug/mtouch-symbols.list \
 	--dsym=no \
 	-r \
-	/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/packages/Com.Airbnb.iOS.Lottie.2.1.3.0/lib/xamarinios/Lottie.iOS.dll \
+	/Users/simon/Desktop/MakeupMatcher/packages/Com.Airbnb.iOS.Lottie.2.1.3.0/lib/xamarinios/Lottie.iOS.dll \
 	-r \
-	/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.Core/bin/Debug/MakeupMatcher.Core.dll \
+	/Users/simon/Desktop/MakeupMatcher/MakeupMatcher.Core/bin/Debug/MakeupMatcher.Core.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Microsoft.CSharp.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
 	-r \
-	/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/packages/MvvmCross.Binding.5.4.2/lib/Xamarin.iOS10/MvvmCross.Binding.dll \
+	/Users/simon/Desktop/MakeupMatcher/packages/MvvmCross.Binding.5.4.2/lib/Xamarin.iOS10/MvvmCross.Binding.dll \
 	-r \
-	/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/packages/MvvmCross.Binding.5.4.2/lib/Xamarin.iOS10/MvvmCross.Binding.iOS.dll \
+	/Users/simon/Desktop/MakeupMatcher/packages/MvvmCross.Binding.5.4.2/lib/Xamarin.iOS10/MvvmCross.Binding.iOS.dll \
 	-r \
-	/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/packages/MvvmCross.Core.5.4.2/lib/Xamarin.iOS10/MvvmCross.Core.dll \
+	/Users/simon/Desktop/MakeupMatcher/packages/MvvmCross.Core.5.4.2/lib/Xamarin.iOS10/MvvmCross.Core.dll \
 	-r \
-	/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/packages/MvvmCross.Core.5.4.2/lib/Xamarin.iOS10/MvvmCross.iOS.dll \
+	/Users/simon/Desktop/MakeupMatcher/packages/MvvmCross.Core.5.4.2/lib/Xamarin.iOS10/MvvmCross.iOS.dll \
 	-r \
-	/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/packages/MvvmCross.Binding.5.4.2/lib/Xamarin.iOS10/MvvmCross.Localization.dll \
+	/Users/simon/Desktop/MakeupMatcher/packages/MvvmCross.Binding.5.4.2/lib/Xamarin.iOS10/MvvmCross.Localization.dll \
 	-r \
-	/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/packages/MvvmCross.Platform.5.4.2/lib/Xamarin.iOS10/MvvmCross.Platform.dll \
+	/Users/simon/Desktop/MakeupMatcher/packages/MvvmCross.Platform.5.4.2/lib/Xamarin.iOS10/MvvmCross.Platform.dll \
 	-r \
-	/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/packages/MvvmCross.Platform.5.4.2/lib/Xamarin.iOS10/MvvmCross.Platform.iOS.dll \
+	/Users/simon/Desktop/MakeupMatcher/packages/MvvmCross.Platform.5.4.2/lib/Xamarin.iOS10/MvvmCross.Platform.iOS.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
 	-r \
@@ -325,23 +325,23 @@
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.Xsl.Primitives.dll \
 	-r \
-	/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/packages/Com.Airbnb.iOS.Lottie.2.1.3.0/lib/xamarinios/Lottie.iOS.dll \
+	/Users/simon/Desktop/MakeupMatcher/packages/Com.Airbnb.iOS.Lottie.2.1.3.0/lib/xamarinios/Lottie.iOS.dll \
 	-r \
-	/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.Core/bin/Debug/MakeupMatcher.Core.dll \
+	/Users/simon/Desktop/MakeupMatcher/MakeupMatcher.Core/bin/Debug/MakeupMatcher.Core.dll \
 	-r \
-	/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/packages/MvvmCross.Binding.5.4.2/lib/Xamarin.iOS10/MvvmCross.Binding.dll \
+	/Users/simon/Desktop/MakeupMatcher/packages/MvvmCross.Binding.5.4.2/lib/Xamarin.iOS10/MvvmCross.Binding.dll \
 	-r \
-	/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/packages/MvvmCross.Binding.5.4.2/lib/Xamarin.iOS10/MvvmCross.Binding.iOS.dll \
+	/Users/simon/Desktop/MakeupMatcher/packages/MvvmCross.Binding.5.4.2/lib/Xamarin.iOS10/MvvmCross.Binding.iOS.dll \
 	-r \
-	/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/packages/MvvmCross.Core.5.4.2/lib/Xamarin.iOS10/MvvmCross.Core.dll \
+	/Users/simon/Desktop/MakeupMatcher/packages/MvvmCross.Core.5.4.2/lib/Xamarin.iOS10/MvvmCross.Core.dll \
 	-r \
-	/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/packages/MvvmCross.Core.5.4.2/lib/Xamarin.iOS10/MvvmCross.iOS.dll \
+	/Users/simon/Desktop/MakeupMatcher/packages/MvvmCross.Core.5.4.2/lib/Xamarin.iOS10/MvvmCross.iOS.dll \
 	-r \
-	/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/packages/MvvmCross.Binding.5.4.2/lib/Xamarin.iOS10/MvvmCross.Localization.dll \
+	/Users/simon/Desktop/MakeupMatcher/packages/MvvmCross.Binding.5.4.2/lib/Xamarin.iOS10/MvvmCross.Localization.dll \
 	-r \
-	/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/packages/MvvmCross.Platform.5.4.2/lib/Xamarin.iOS10/MvvmCross.Platform.dll \
+	/Users/simon/Desktop/MakeupMatcher/packages/MvvmCross.Platform.5.4.2/lib/Xamarin.iOS10/MvvmCross.Platform.dll \
 	-r \
-	/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/packages/MvvmCross.Platform.5.4.2/lib/Xamarin.iOS10/MvvmCross.Platform.iOS.dll \
+	/Users/simon/Desktop/MakeupMatcher/packages/MvvmCross.Platform.5.4.2/lib/Xamarin.iOS10/MvvmCross.Platform.iOS.dll \
 	--target-framework \
 	'Xamarin.iOS,v1.0' \
-	/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.iOS/bin/iPhoneSimulator/Debug/MakeupMatcher.UI.iOS.exe \
+	/Users/simon/Desktop/MakeupMatcher/MakeupMatcher.UI.iOS/bin/iPhoneSimulator/Debug/MakeupMatcher.UI.iOS.exe \
