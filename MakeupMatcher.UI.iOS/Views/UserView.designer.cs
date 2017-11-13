@@ -16,13 +16,31 @@ namespace MakeupMatcher.UI.iOS.Views
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UITextField data { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton show { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton store { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
+            if (data != null) {
+                data.Dispose ();
+                data = null;
+            }
+
             if (show != null) {
                 show.Dispose ();
                 show = null;
+            }
+
+            if (store != null) {
+                store.Dispose ();
+                store = null;
             }
         }
     }

@@ -1,11 +1,27 @@
 Function=xamarin_timezone_get_data
 	/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/mscorlib.dll
+Function=xamarin_GetFolderPath
+	/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/mscorlib.dll
 Function=xamarin_log
 	/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/mscorlib.dll
 Function=UIApplicationMain
 	/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
 Function=xamarin_get_block_descriptor
 	/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+ObjectiveCClass=OBJC_CLASS_$_LOTAnimationView
+	/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Lottie.iOS.dll
+ObjectiveCClass=OBJC_CLASS_$_LOTAnimatedControl
+	/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Lottie.iOS.dll
+ObjectiveCClass=OBJC_CLASS_$_LOTAnimatedSwitch
+	/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Lottie.iOS.dll
+ObjectiveCClass=OBJC_CLASS_$_LOTAnimationCache
+	/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Lottie.iOS.dll
+ObjectiveCClass=OBJC_CLASS_$_LOTAnimationTransitionController
+	/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Lottie.iOS.dll
+ObjectiveCClass=OBJC_CLASS_$_LOTCacheProvider
+	/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Lottie.iOS.dll
+ObjectiveCClass=OBJC_CLASS_$_LOTComposition
+	/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Lottie.iOS.dll
 Function=mono_pmip
 Function=xamarin_dyn_objc_msgSend
 Function=xamarin_dyn_objc_msgSendSuper

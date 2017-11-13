@@ -2,6 +2,13 @@ _xamarin_timezone_get_data
 _xamarin_log
 _UIApplicationMain
 _xamarin_get_block_descriptor
+_OBJC_CLASS_$_LOTAnimationView
+_OBJC_CLASS_$_LOTAnimatedControl
+_OBJC_CLASS_$_LOTAnimatedSwitch
+_OBJC_CLASS_$_LOTAnimationCache
+_OBJC_CLASS_$_LOTAnimationTransitionController
+_OBJC_CLASS_$_LOTCacheProvider
+_OBJC_CLASS_$_LOTComposition
 _mono_pmip
 _xamarin_dyn_objc_msgSend
 _xamarin_dyn_objc_msgSendSuper

@@ -1,10 +1,10 @@
 /Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.iOS/bin/iPhoneSimulator/Debug/MakeupMatcher.UI.iOS.exe
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/lib/mono/Xamarin.iOS/mscorlib.dll
-/Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/lib/mono/Xamarin.iOS/../../64bits/Xamarin.iOS.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/lib/mono/Xamarin.iOS/System.Core.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/lib/mono/Xamarin.iOS/System.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/lib/mono/Xamarin.iOS/Mono.Security.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/lib/mono/Xamarin.iOS/System.Xml.dll
-/Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/lib/mono/Xamarin.iOS/System.Core.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/lib/mono/Xamarin.iOS/../../64bits/Xamarin.iOS.dll
 /Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/packages/MvvmCross.Core.5.4.2/lib/Xamarin.iOS10/MvvmCross.iOS.dll
 /Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/packages/MvvmCross.Core.5.4.2/lib/Xamarin.iOS10/MvvmCross.Core.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/lib/mono/Xamarin.iOS/Facades/System.Runtime.dll
@@ -31,3 +31,4 @@
 /Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/packages/MvvmCross.Binding.5.4.2/lib/Xamarin.iOS10/MvvmCross.Localization.dll
 /Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/packages/MvvmCross.Binding.5.4.2/lib/Xamarin.iOS10/MvvmCross.Binding.iOS.dll
 /Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.Core/bin/Debug/MakeupMatcher.Core.dll
+/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/packages/Com.Airbnb.iOS.Lottie.2.1.3.0/lib/xamarinios/Lottie.iOS.dll
