@@ -63,24 +63,6 @@ namespace MakeupMatcher.UI.iOS.Views
 
             };
 
-            /*show.TouchUpInside += (sender, ea) =>
-            {
-                db = new SQLiteConnection(dbPath);
-
-                var table = db.Table<UserModel>();
-
-                foreach(var item in table)
-                {
-                    UserModel user = new UserModel();
-                    user.UserImage = item.UserImage;
-                    user.UserName = item.UserName;
-                    //info.Text += user.ToString() + "/n";
-                }
-
-                info.Text += table.Count();
-
-            };*/
-
             /*LOTAnimationView animation = LOTAnimationView.AnimationNamed("heart");
             animation.Frame = new CGRect(0, 100, this.View.Frame.Size.Width, 250);
             animation.ContentMode = UIViewContentMode.ScaleAspectFill;

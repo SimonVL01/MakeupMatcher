@@ -37,6 +37,8 @@
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
 	<key>NSCameraUsageDescription</key>
-	<string>Allow The User to take pictures to be manipulated.</string>
+	<string>Allow the user to take pictures to be manipulated.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Allow the user to insert library pictures into the app.</string>
 </dict>
 </plist>
