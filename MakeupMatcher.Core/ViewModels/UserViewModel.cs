@@ -3,17 +3,21 @@ using MvvmCross.Core.ViewModels;
 using MakeupMatcher.Core.Models;
 using MvvmCross.Platform.IoC;
 using MvvmCross.Platform;
+using MvvmCross.Core.Navigation;
+using System.Threading.Tasks;
 
 namespace MakeupMatcher.Core.ViewModels
 {
     public class UserViewModel : MvxViewModel
     {
         readonly UserModel _user;
+        private readonly IMvxNavigationService _navigationService;
 
         //Constructor
 
-        public UserViewModel()
+        public UserViewModel(IMvxNavigationService navigationService)
         {
+            _navigationService = navigationService;
             _user = Mvx.IocConstruct<UserModel>();
         }
 
@@ -52,6 +56,19 @@ namespace MakeupMatcher.Core.ViewModels
             }
         }
 
+        string _userPassword;
+
+        public string UserPassword
+        {
+            get { return _user.UserPassWord; }
+            set 
+            {
+                _userPassword = value;
+                _user.UserPassWord = value;
+                RaisePropertyChanged(() => UserPassword);
+            }
+        }
+
         /*MakeupModel _makeupProfile;
 
         public MakeupModel MakeupProfile
@@ -65,7 +82,17 @@ namespace MakeupMatcher.Core.ViewModels
             }
         }*/
 
-        //Methods & Services
+        //NavigationService
        
+        public override void Prepare()
+        {
+            //
+        }
+
+        public async Task PrepareForNext()
+        {
+            await _navigationService.Navigate<MakeupViewModel>();
+        }
+
     }
 }

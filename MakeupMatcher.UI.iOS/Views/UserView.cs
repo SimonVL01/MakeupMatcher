@@ -29,24 +29,38 @@ namespace MakeupMatcher.UI.iOS.Views
 
             dbPath = Path.Combine(libPath, "dbTest.db3");
 
-            store.TouchUpInside += (sender, ea) =>
+            login.TouchUpInside += (sender, e) =>
             {
                 db = new SQLiteConnection(dbPath);
+
+                var table = db.Table<UserModel>();
 
                 db.CreateTable<UserModel>();
 
                 UserModel user = new UserModel();
 
-                user.UserName = "Fabolous Simona";
-                user.UserImage = "blabla/path";
+                user.UserId = table.Count() + 1;
+                user.UserName = username.Text;
+                //user.UserImage = password.Text;
+                user.UserPassWord = password.Text;
+
+                //
 
                 db.Insert(user);
                 db.Close();
 
-                data.Text += user.UserName + " " + user.UserImage + "\n";
+                var confirmAlertController = UIAlertController.Create("Done!","Your Id is " + user.UserId + ", your profilename is " +
+                                                                      user.UserName +  " and your password is " +
+                                                                      user.UserPassWord, UIAlertControllerStyle.Alert);
+
+                confirmAlertController.AddAction(UIAlertAction.Create("Ok", UIAlertActionStyle.Default, null));
+
+                PresentViewController(confirmAlertController, true, null);
+
+                //data.Text += user.UserName + " " + user.UserImage + "\n";
             };
 
-            show.TouchUpInside += (sender, ea) =>
+            /*show.TouchUpInside += (sender, ea) =>
             {
                 db = new SQLiteConnection(dbPath);
 
@@ -62,7 +76,7 @@ namespace MakeupMatcher.UI.iOS.Views
 
                 info.Text += table.Count();
 
-            };
+            };*/
 
             /*LOTAnimationView animation = LOTAnimationView.AnimationNamed("heart");
             animation.Frame = new CGRect(0, 100, this.View.Frame.Size.Width, 250);
@@ -71,6 +85,12 @@ namespace MakeupMatcher.UI.iOS.Views
 
             this.View.AddSubview(animation);
             animation.Play();*/
+
+            var g = new UITapGestureRecognizer(() => View.EndEditing(true));
+            g.CancelsTouchesInView = false;
+
+            View.AddGestureRecognizer(g);
+
         }
 
         public override void DidReceiveMemoryWarning()
@@ -78,6 +98,9 @@ namespace MakeupMatcher.UI.iOS.Views
             base.DidReceiveMemoryWarning();
             // Release any cached data, images, etc that aren't in use.
         }
+
+        //Custom functions
+
     }
 }
 

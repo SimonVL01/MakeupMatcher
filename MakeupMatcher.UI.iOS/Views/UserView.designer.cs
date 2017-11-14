@@ -16,49 +16,31 @@ namespace MakeupMatcher.UI.iOS.Views
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UITextField data { get; set; }
+        UIKit.UIButton login { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel info { get; set; }
+        UIKit.UITextField password { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton nextPage { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton show { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton store { get; set; }
+        UIKit.UITextField username { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
-            if (data != null) {
-                data.Dispose ();
-                data = null;
+            if (login != null) {
+                login.Dispose ();
+                login = null;
             }
 
-            if (info != null) {
-                info.Dispose ();
-                info = null;
+            if (password != null) {
+                password.Dispose ();
+                password = null;
             }
 
-            if (nextPage != null) {
-                nextPage.Dispose ();
-                nextPage = null;
-            }
-
-            if (show != null) {
-                show.Dispose ();
-                show = null;
-            }
-
-            if (store != null) {
-                store.Dispose ();
-                store = null;
+            if (username != null) {
+                username.Dispose ();
+                username = null;
             }
         }
     }

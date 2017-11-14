@@ -7,86 +7,108 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserView">
             <connections>
-                <outlet property="data" destination="154" id="name-outlet-154"/>
-                <outlet property="show" destination="149" id="name-outlet-149"/>
-                <outlet property="store" destination="131" id="name-outlet-131"/>
+                <outlet property="username" destination="154" id="name-outlet-154"/>
+                <outlet property="login" destination="149" id="name-outlet-149"/>
                 <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
-                <outlet property="info" destination="1344" id="name-outlet-1344"/>
+                <outlet property="password" destination="3603" id="name-outlet-3603"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="2">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="131">
-                    <rect key="frame" x="67.5" y="315.5" width="240" height="36"/>
-                    <state key="normal" title="Store Data">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="149">
+                    <rect key="frame" x="112" y="490" width="95" height="30"/>
+                    <state key="normal" title="Login">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
-                    <constraints>
-                        <constraint id="426" firstAttribute="width" constant="240"/>
-                        <constraint id="427" firstAttribute="height" constant="36"/>
-                    </constraints>
+                    <connections/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="149">
-                    <rect key="frame" x="68" y="90" width="240" height="36"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Show Data">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                </button>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="data..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="154">
-                    <rect key="frame" x="68" y="146" width="240" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="154" misplaced="YES">
+                    <rect key="frame" x="40" y="93" width="240" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1344" translatesAutoresizingMaskIntoConstraints="NO" text="Label">
-                    <rect key="frame" x="0.0" y="338" width="600" height="170"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3405" translatesAutoresizingMaskIntoConstraints="NO" text="Make a profile..." misplaced="YES">
+                    <rect key="frame" x="40" y="42" width="240" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24" weight="semibold"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
-                    <constraints>
-                        <constraint id="3169" firstAttribute="height" constant="170"/>
-                    </constraints>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2828" translatesAutoresizingMaskIntoConstraints="NO">
-                    <rect key="frame" x="460" y="516" width="120" height="60"/>
-                    <state key="normal" title="Button">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <constraints>
-                        <constraint id="3161" firstAttribute="width" constant="120"/>
-                        <constraint id="3162" firstAttribute="height" constant="60"/>
-                    </constraints>
-                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3603" misplaced="YES">
+                    <rect key="frame" x="40" y="147" width="240" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <variation key="default">
                 <mask key="subviews">
-                    <exclude reference="131"/>
                     <exclude reference="149"/>
                     <exclude reference="154"/>
+                    <exclude reference="3405"/>
+                    <exclude reference="3603"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="3957"/>
+                    <exclude reference="3959"/>
+                    <exclude reference="3984"/>
+                    <exclude reference="3986"/>
+                    <exclude reference="3988"/>
+                    <exclude reference="3992"/>
+                    <exclude reference="4001"/>
+                    <exclude reference="4003"/>
+                    <exclude reference="4005"/>
+                    <exclude reference="4049"/>
+                    <exclude reference="4051"/>
+                    <exclude reference="4053"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
                 <mask key="subviews">
-                    <include reference="131"/>
                     <include reference="149"/>
                     <include reference="154"/>
+                    <include reference="3405"/>
+                    <include reference="3603"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="3957"/>
+                    <include reference="3959"/>
+                    <include reference="3984"/>
+                    <include reference="3986"/>
+                    <include reference="3988"/>
+                    <include reference="3992"/>
+                    <include reference="4001"/>
+                    <include reference="4003"/>
+                    <include reference="4005"/>
+                    <include reference="4049"/>
+                    <include reference="4051"/>
+                    <include reference="4053"/>
                 </mask>
             </variation>
             <constraints>
-                <constraint id="433" firstItem="131" firstAttribute="centerX" secondItem="2" secondAttribute="centerX"/>
-                <constraint id="434" firstItem="131" firstAttribute="centerY" secondItem="2" secondAttribute="centerY"/>
-                <constraint id="3159" firstItem="2" firstAttribute="bottom" secondItem="2828" secondAttribute="bottom" constant="24"/>
-                <constraint id="3160" firstItem="2" firstAttribute="trailing" secondItem="2828" secondAttribute="trailing" constant="20"/>
-                <constraint id="3166" firstItem="2" firstAttribute="trailing" secondItem="1344" secondAttribute="trailing"/>
-                <constraint id="3172" firstItem="2828" firstAttribute="top" secondItem="1344" secondAttribute="bottom" constant="8"/>
-                <constraint id="3179" firstItem="1344" firstAttribute="leading" secondItem="2" secondAttribute="leading"/>
-                <constraint id="3181" firstItem="1344" firstAttribute="trailing" secondItem="2" secondAttribute="trailing"/>
+                <constraint id="3957" firstItem="2" firstAttribute="trailing" secondItem="154" secondAttribute="trailing" constant="40"/>
+                <constraint id="3959" firstItem="154" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="40"/>
+                <constraint id="3984" firstItem="2" firstAttribute="trailing" secondItem="3405" secondAttribute="trailing" constant="40"/>
+                <constraint id="3986" firstItem="3405" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="40"/>
+                <constraint id="3988" firstItem="3405" firstAttribute="top" secondItem="2" secondAttribute="top" constant="42">
+                    <variation key="heightClass=regular-widthClass=compact" constant="84"/>
+                </constraint>
+                <constraint id="3992" firstItem="154" firstAttribute="top" secondItem="3405" secondAttribute="bottom" constant="21"/>
+                <constraint id="4001" firstItem="2" firstAttribute="trailing" secondItem="3603" secondAttribute="trailing" constant="40"/>
+                <constraint id="4003" firstItem="3603" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="40"/>
+                <constraint id="4005" firstItem="3603" firstAttribute="top" secondItem="154" secondAttribute="bottom" constant="24"/>
+                <constraint id="4049" firstItem="2" firstAttribute="trailing" secondItem="149" secondAttribute="trailing" constant="113"/>
+                <constraint id="4051" firstItem="149" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="112"/>
+                <constraint id="4053" firstItem="2" firstAttribute="bottom" secondItem="149" secondAttribute="bottom" constant="48"/>
             </constraints>
         </view>
     </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <resources>
+        <image name="Image" width="1300" height="867"/>
+    </resources>
 </document>

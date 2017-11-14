@@ -6,7 +6,8 @@
 	<dict>
 		<key>output-files</key>
 		<array>
-			<string>/Users/simon/Desktop/MakeupMatcher/MakeupMatcher.UI.iOS/obj/iPhoneSimulator/Debug/actool/partial-info.plist</string>
+			<string>/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.iOS/obj/iPhoneSimulator/Debug/actool/bundle/Assets.car</string>
+			<string>/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.iOS/obj/iPhoneSimulator/Debug/actool/partial-info.plist</string>
 		</array>
 	</dict>
 </dict>

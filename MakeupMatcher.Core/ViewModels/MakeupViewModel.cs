@@ -2,17 +2,21 @@
 using MvvmCross.Core.ViewModels;
 using MakeupMatcher.Core.Models;
 using MvvmCross.Platform;
+using System.Threading.Tasks;
+using MvvmCross.Core.Navigation;
 
 namespace MakeupMatcher.Core.ViewModels
 {
     public class MakeupViewModel : MvxViewModel
     {
+        private readonly IMvxNavigationService _navigationService;
         readonly MakeupModel _makeupProfile;
 
         //Constructor
 
-        public MakeupViewModel()
+        public MakeupViewModel(IMvxNavigationService navigationService)
         {
+            _navigationService = navigationService;
             _makeupProfile = Mvx.IocConstruct<MakeupModel>();
         }
 
@@ -51,6 +55,15 @@ namespace MakeupMatcher.Core.ViewModels
             }
         }
 
-        //Extra products
+        //Navigation Service
+
+        public override void Prepare()
+        {
+        }
+
+        public override async Task Initialize()
+        {
+            //
+        }
     }
 }

@@ -37,5 +37,17 @@ namespace MakeupMatcher.Core.ViewModels
                 RaisePropertyChanged(() => _productName);
             }
         }
+
+        int _productPrice;
+
+        public int ProductPrice
+        {
+            get { return _product.ProductPrice; }
+            set {
+                _productPrice = value;
+                _product.ProductPrice = value;
+                RaisePropertyChanged(() => _productPrice);
+            }
+        }
     }
 }

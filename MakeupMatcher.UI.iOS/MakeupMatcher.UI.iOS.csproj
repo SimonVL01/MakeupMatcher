@@ -109,16 +109,20 @@
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Image.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Image.imageset\profile_pic.jpeg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
     <Folder Include="Views\" />
     <Folder Include="Animation\" />
+    <Folder Include="iOSServices\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
     <InterfaceDefinition Include="Main.storyboard" />
     <InterfaceDefinition Include="Views\UserView.xib" />
+    <InterfaceDefinition Include="Views\MakeupView.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -135,6 +139,11 @@
     </Compile>
     <Compile Include="SQLiteAsync.cs" />
     <Compile Include="SQLite.cs" />
+    <Compile Include="Views\MakeupView.cs" />
+    <Compile Include="Views\MakeupView.designer.cs">
+      <DependentUpon>MakeupView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="iOSServices\PixelExtractor.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MakeupMatcher.Core\MakeupMatcher.Core.csproj">
