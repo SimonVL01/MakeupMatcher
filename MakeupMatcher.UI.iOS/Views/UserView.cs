@@ -24,12 +24,14 @@ namespace MakeupMatcher.UI.iOS.Views
         {
             base.ViewDidLoad();
 
+            NavigationItem.Title = "Login";
+
             var docsPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments);
             var libPath = Path.Combine(docsPath, "..", "Library");
 
             dbPath = Path.Combine(libPath, "dbTest.db3");
 
-            login.TouchUpInside += (sender, e) =>
+            login.TouchUpInside += async (sender, e) =>
             {
                 db = new SQLiteConnection(dbPath);
 
@@ -49,15 +51,16 @@ namespace MakeupMatcher.UI.iOS.Views
                 db.Insert(user);
                 db.Close();
 
-                var confirmAlertController = UIAlertController.Create("Done!","Your Id is " + user.UserId + ", your profilename is " +
+                /*var confirmAlertController = UIAlertController.Create("Done!","Your Id is " + user.UserId + ", your profilename is " +
                                                                       user.UserName +  " and your password is " +
                                                                       user.UserPassWord, UIAlertControllerStyle.Alert);
 
                 confirmAlertController.AddAction(UIAlertAction.Create("Ok", UIAlertActionStyle.Default, null));
 
-                PresentViewController(confirmAlertController, true, null);
+                PresentViewController(confirmAlertController, true, null);*/
 
-                //data.Text += user.UserName + " " + user.UserImage + "\n";
+                 await ViewModel.GoToMakeupCommand.ExecuteAsync();
+
             };
 
             /*show.TouchUpInside += (sender, ea) =>
@@ -91,6 +94,24 @@ namespace MakeupMatcher.UI.iOS.Views
 
             View.AddGestureRecognizer(g);
 
+        }
+
+        public override void ViewWillDisappear(bool Animated)
+        {
+            if(this.NavigationController != null) {
+                var Controllers = this.NavigationController.ViewControllers;
+                var NewControllers = new UIViewController[Controllers.Length -1];
+                int Index = 0;
+                foreach(var item in Controllers) {
+                    if (item != this) {
+                        NewControllers[Index] = item;
+                        Index++;
+                    }
+
+                }
+                this.NavigationController.ViewControllers = NewControllers;
+            }
+            base.ViewWillDisappear(Animated);
         }
 
         public override void DidReceiveMemoryWarning()

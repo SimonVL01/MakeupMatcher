@@ -89,10 +89,24 @@ namespace MakeupMatcher.Core.ViewModels
             //
         }
 
-        public async Task PrepareForNext()
+        /*public IMvxCommand GoCommand()
         {
             await _navigationService.Navigate<MakeupViewModel>();
+            //ShowViewModel<MakeupViewModel>();
+        }*/
+
+
+
+        private IMvxAsyncCommand _goToMakeupCommand;
+        public IMvxAsyncCommand GoToMakeupCommand
+        {
+            get
+            {
+                _goToMakeupCommand = _goToMakeupCommand ?? new MvxAsyncCommand(() => _navigationService.Navigate<MakeupViewModel>());
+                return _goToMakeupCommand;
+            }
         }
+
 
     }
 }

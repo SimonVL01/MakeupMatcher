@@ -61,9 +61,10 @@ namespace MakeupMatcher.Core.ViewModels
         {
         }
 
-        public override async Task Initialize()
+        /*public override async Task Initialize()
         {
             //
-        }
+        }*/
+
     }
 }

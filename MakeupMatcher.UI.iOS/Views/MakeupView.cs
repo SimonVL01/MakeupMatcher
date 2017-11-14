@@ -13,6 +13,11 @@ namespace MakeupMatcher.UI.iOS.Views
 {
     public partial class MakeupView : MvxViewController<MakeupViewModel>
     {
+        private int TouchX;
+        private int TouchY;
+        private UIColor FavColor;
+
+
         public MakeupView() : base("MakeupView", null)
         {
         }
@@ -21,6 +26,18 @@ namespace MakeupMatcher.UI.iOS.Views
         {
             base.ViewDidLoad();
 
+            NavigationItem.HidesBackButton = true;
+
+            NavigationItem.Title = "Pick a color";
+
+            library.TouchUpInside += (sender, e) => {
+                
+                UIImagePickerController imagePicker = new UIImagePickerController();
+                imagePicker.Delegate = Self;
+                imagePicker.SourceType = UIImagePickerControllerSourceType.Camera;
+                imagePicker.AllowsEditing = true;
+                this.PresentViewController(imagePicker, true, null);
+            };
 
         }
 
