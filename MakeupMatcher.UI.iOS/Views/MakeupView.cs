@@ -30,16 +30,33 @@ namespace MakeupMatcher.UI.iOS.Views
 
             NavigationItem.Title = "Pick a color";
 
+            camera.TouchUpInside += (sender, e) => {
+
+                if (UIImagePickerController.IsSourceTypeAvailable(UIImagePickerControllerSourceType.Camera))
+                {
+                    UIImagePickerController ImagePicker = new UIImagePickerController();
+                    ImagePicker.Delegate = Self;
+                    ImagePicker.SourceType = UIImagePickerControllerSourceType.Camera;
+                    ImagePicker.AllowsEditing = true;
+                    this.PresentViewController(ImagePicker, true, null);
+                } else {
+                }
+            };
+
             library.TouchUpInside += (sender, e) => {
-                
-                UIImagePickerController imagePicker = new UIImagePickerController();
-                imagePicker.Delegate = Self;
-                imagePicker.SourceType = UIImagePickerControllerSourceType.Camera;
-                imagePicker.AllowsEditing = true;
-                this.PresentViewController(imagePicker, true, null);
+
+                if (UIImagePickerController.IsSourceTypeAvailable(UIImagePickerControllerSourceType.PhotoLibrary)) 
+                {
+                    UIImagePickerController ImagePicker = new UIImagePickerController();
+                    ImagePicker.AllowsEditing = true;
+                    ImagePicker.Delegate = Self;
+                    ImagePicker.SourceType = UIImagePickerControllerSourceType.PhotoLibrary;
+                    this.PresentViewController(ImagePicker, true, null);
+                } 
             };
 
         }
+
 
         public override void DidReceiveMemoryWarning()
         {

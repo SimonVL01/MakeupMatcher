@@ -16,6 +16,10 @@ namespace MakeupMatcher.UI.iOS.Views
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton camera { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton filter { get; set; }
 
         [Outlet]
@@ -28,6 +32,11 @@ namespace MakeupMatcher.UI.iOS.Views
 
         void ReleaseDesignerOutlets ()
         {
+            if (camera != null) {
+                camera.Dispose ();
+                camera = null;
+            }
+
             if (filter != null) {
                 filter.Dispose ();
                 filter = null;
