@@ -5,6 +5,10 @@
       <LogicalName>MakeupView.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool/TabBarView.nib">
+      <LogicalName>TabBarView.nib</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool/UserView.nib">
       <LogicalName>UserView.nib</LogicalName>
       <Optimize>false</Optimize>

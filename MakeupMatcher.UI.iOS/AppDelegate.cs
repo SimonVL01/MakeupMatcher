@@ -23,6 +23,7 @@ namespace MakeupMatcher.UI.iOS
         public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
         {
             Window = new UIWindow(UIScreen.MainScreen.Bounds);
+            Window.RootViewController = new UITabBarController();
 
             var presenter = new MvxIosViewPresenter(this, Window);
 

@@ -37,6 +37,7 @@
     <Compile Include="Models\MakeupModel.cs" />
     <Compile Include="Models\ProductModel.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
+    <Compile Include="ViewModels\TabBarViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MvvmCross.Platform">

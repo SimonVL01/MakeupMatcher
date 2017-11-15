@@ -123,6 +123,7 @@
     <InterfaceDefinition Include="Main.storyboard" />
     <InterfaceDefinition Include="Views\UserView.xib" />
     <InterfaceDefinition Include="Views\MakeupView.xib" />
+    <InterfaceDefinition Include="Views\TabBarView.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -145,6 +146,10 @@
     </Compile>
     <Compile Include="iOSServices\PixelExtractor.cs" />
     <Compile Include="iOSServices\LibraryAccessService.cs" />
+    <Compile Include="Views\TabBarView.cs" />
+    <Compile Include="Views\TabBarView.designer.cs">
+      <DependentUpon>TabBarView.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MakeupMatcher.Core\MakeupMatcher.Core.csproj">
