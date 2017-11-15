@@ -24,6 +24,10 @@ namespace MakeupMatcher.UI.iOS.Views
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton pic { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITextField username { get; set; }
 
         void ReleaseDesignerOutlets ()
@@ -36,6 +40,11 @@ namespace MakeupMatcher.UI.iOS.Views
             if (password != null) {
                 password.Dispose ();
                 password = null;
+            }
+
+            if (pic != null) {
+                pic.Dispose ();
+                pic = null;
             }
 
             if (username != null) {
