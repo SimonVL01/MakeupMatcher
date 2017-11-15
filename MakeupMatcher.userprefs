@@ -2,20 +2,20 @@
   <MonoDevelop.Ide.ItemProperties.MakeupMatcher.UI.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.2417C9A2-E83C-40D4-A4FB-DBA497D0A548">
     <MonoDevelop.MacDev.AppleDevelopmentTeam />
   </MonoDevelop.Ide.ItemProperties.MakeupMatcher.UI.iOS>
-  <MonoDevelop.Ide.Workbench ActiveDocument="MakeupMatcher.Core/ViewModels/SplashScreenViewModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MakeupMatcher.UI.iOS/Views/MakeupView.cs">
     <Files>
       <File FileName="MakeupMatcher.Core/MyClass.cs" Line="1" Column="1" />
       <File FileName="MakeupMatcher.Core/Models/UserModel.cs" Line="1" Column="1" />
       <File FileName="MakeupMatcher.Core/ViewModels/UserViewModel.cs" Line="105" Column="114" />
       <File FileName="MakeupMatcher.Core/App.cs" Line="1" Column="1" />
-      <File FileName="MakeupMatcher.Core/ViewModels/SplashScreenViewModel.cs" Line="8" Column="1" />
+      <File FileName="MakeupMatcher.Core/ViewModels/SplashScreenViewModel.cs" Line="11" Column="8" />
       <File FileName="MakeupMatcher.UI.Droid/Properties/AndroidManifest.xml" Line="1" Column="1" />
       <File FileName="MakeupMatcher.UI.Droid/Views/SplashScreenView.cs" Line="1" Column="1" />
       <File FileName="MakeupMatcher.UI.Droid/Views/UserView.cs" Line="1" Column="1" />
       <File FileName="MakeupMatcher.UI.Droid/Resources/Resource.designer.cs" Line="1" Column="1" />
       <File FileName="MakeupMatcher.UI.Droid/Resources/AboutResources.txt" Line="1" Column="1" />
       <File FileName="MakeupMatcher.UI.Droid/Setup.cs" Line="1" Column="1" />
-      <File FileName="MakeupMatcher.Core/ViewModels/MakeupViewModel.cs" Line="1" Column="1" />
+      <File FileName="MakeupMatcher.Core/ViewModels/MakeupViewModel.cs" Line="10" Column="39" />
       <File FileName="MakeupMatcher.Core/ViewModels/ProductViewModel.cs" Line="1" Column="1" />
       <File FileName="MakeupMatcher.Core/Models/MakeupModel.cs" Line="1" Column="1" />
       <File FileName="MakeupMatcher.Core/Models/ProductModel.cs" Line="1" Column="1" />
@@ -26,7 +26,7 @@
       <File FileName="MakeupMatcher.UI.Droid/packages.config" Line="1" Column="1" />
       <File FileName="MakeupMatcher.UI.Droid/Assets/jello.json" Line="1" Column="1" />
       <File FileName=":Users:vdabcursist:Desktop:eindwerk_MakeupMatcher:MakeupMatcher.UI.iOS:Views:UserView.cs" Line="1" Column="1" />
-      <File FileName="MakeupMatcher.UI.iOS/AppDelegate.cs" Line="26" Column="66" />
+      <File FileName="MakeupMatcher.UI.iOS/AppDelegate.cs" Line="28" Column="13" />
       <File FileName="MakeupMatcher.UI.iOS/Setup.cs" Line="1" Column="1" />
       <File FileName="MakeupMatcher.UI.iOS/Main.cs" Line="1" Column="1" />
       <File FileName="MakeupMatcher.UI.iOS/Info.plist" />
@@ -40,13 +40,12 @@
       <File FileName="MakeupMatcher.UI.iOS/heart.json" Line="1" Column="1" />
       <File FileName="MakeupMatcher.UI.iOS/SQLite.cs" Line="1" Column="1" />
       <File FileName="MakeupMatcher.UI.iOS/SQLiteAsync.cs" Line="1" Column="1" />
-      <File FileName="MakeupMatcher.UI.iOS/Views/MakeupView.cs" Line="1" Column="1" />
+      <File FileName="MakeupMatcher.UI.iOS/Views/MakeupView.cs" Line="40" Column="46" />
       <File FileName="MakeupMatcher.UI.iOS/Views/MakeupView.xib" />
       <File FileName="MakeupMatcher.UI.iOS/Views/MakeupView.designer.cs" Line="1" Column="1" />
-      <File FileName="MakeupMatcher.UI.iOS/iOSServices/PixelExtractor.cs" Line="1" Column="1" />
+      <File FileName="MakeupMatcher.UI.iOS/iOSServices/PixelExtractor.cs" Line="55" Column="12" />
       <File FileName="MakeupMatcher.UI.iOS/iOSServices/LibraryAccessService.cs" Line="1" Column="1" />
       <File FileName="MakeupMatcher.UI.iOS/Views/TabBarView.cs" Line="1" Column="1" />
-      <File FileName="MakeupMatcher.Core/ViewModels/TabBarViewModel.cs" Line="8" Column="40" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.MakeupMatcher.UI.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_ARMv7a_Nougat" />

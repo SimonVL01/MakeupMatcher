@@ -19,6 +19,7 @@ namespace MakeupMatcher.UI.iOS.Views
         private int TouchY;
         private UIColor FavColor;
         private UIImagePickerController ImagePicker;
+        private byte[] alphaPixel = { 0, 0, 0, 0 };
 
 
         public MakeupView() : base("MakeupView", null)
@@ -34,6 +35,9 @@ namespace MakeupMatcher.UI.iOS.Views
             NavigationItem.HidesBackButton = true;
 
             NavigationItem.Title = "Pick a color";
+
+            color.Layer.CornerRadius = 15;
+            color.Layer.MasksToBounds = true;
 
             camera.TouchUpInside += (sender, e) => {
 
@@ -125,6 +129,15 @@ namespace MakeupMatcher.UI.iOS.Views
 
         protected void Handle_Canceled(object sender, EventArgs e) {
             ImagePicker.DismissViewController(true, null);
+        }
+
+        protected UIColor GetColorAtTouchPoint(CGPoint Point)
+        {
+            var colorSpace = CGColorSpace.CreateDeviceRGB();
+            var bitmapContext = new CGBitmapContext(alphaPixel, 1, 1, 8, 4, colorSpace, CGBitmapFlags.PremultipliedLast);
+            bitmapContext.TranslateCTM(-Point.X, -Point.Y);
+            View.Layer.RenderInContext(bitmapContext);
+            return UIColor.FromRGBA(alphaPixel[0], alphaPixel[1], alphaPixel[2], alphaPixel[3]);
         }
 
         public override void DidReceiveMemoryWarning()

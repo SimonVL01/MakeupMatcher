@@ -39,32 +39,27 @@ namespace MakeupMatcher.UI.iOS.iOSServices
         public CGContext CreateBitmapContext(CGImage Image) {
             int PixelsWide = (int)Image.Width;
             int PixelsHigh = (int)Image.Height;
+            int BitmapBytesPerPixel = 4;
+            int BitmapPerComponent = BitmapBytesPerPixel * 2;
 
-            int BitmapBytesPerRow = PixelsWide * 4;
-            int BitmapByteCount = BitmapBytesPerRow * PixelsHigh;
+            var IntBytes = PixelsWide * PixelsHigh * BitmapBytesPerPixel;
+            var ColorSpace = CGColorSpace.CreateDeviceRGB();
+            byte[] PixelData = new byte[IntBytes];
 
-            CGColorSpace colorSpace = new CGColorSpaceCreateDeviceRGB();
-
-            var BitmapData = new Malloc(BitmapData);
-            var BitmapInfo = new CGBitmapInfo(CGImageAlphaInfo.PremultipliedFirst);
-            var Size = new CGSize(PixelsWide, PixelsHigh);
-            UIGraphicsBeginImageContextWithOptions(Size, false, 0.0);
-
-            CGContext Context = new CGContext(BitmapData,
-                                          PixelsWide, PixelsHigh, 8, BitmapBytesPerRow, colorSpace, BitmapInfo);
+            CGContext Context = new CGBitmapContext(PixelData, PixelsWide, PixelsHigh, BitmapPerComponent, PixelsWide * BitmapBytesPerPixel, ColorSpace, CGImageAlphaInfo.First);
 
             CGRect Rect = new CGRect(0, 0, PixelsWide, PixelsHigh);
-            Context.DrawImage(Image, Rect);
+            Context.DrawImage(Rect, Image);
 
             return Context;
-        }
+        }/*
 
-        public UIColor GetPixelColorAtPoint(CGPoint point, UIView sourceView) {
-            var Pixel = new UnsafeMutablePointer<char>.Allocate(4);
-            var ColorSpace = new CGColorSpaceCreateDeviceRGB();
-            var BitmapInfo = CGBitmapContext(Pixel, 1, 1, 8, 4, ColorSpace, BitmapInfo);
+        //public UIColor GetPixelColorAtPoint(CGPoint point, UIView sourceView) {
+            //var Pixel = sourceView.;
+            /*var ColorSpace2 = CGColorSpace.CreateDeviceRGB();
+            var BitmapInfo = new CGBitmapContext(4, 1, 1, 8, 4, ColorSpace2, CGImageAlphaInfo.First);
 
-            Context.TranslateCTM(NSLayoutXAxisAnchor, NSLayoutYAxisAnchor);
+            Context.TranslateCTM(point.X, point.Y);
             sourceView.Layer.RenderInContext(Context);
             UIColor Color = new UIColor((Pixel[0]) / 255.0,
                                         (Pixel[1]) / 255.0,
@@ -73,8 +68,18 @@ namespace MakeupMatcher.UI.iOS.iOSServices
 
             Pixel.Deallocate(4);
 
-            return Color;
-        }
+            return Color;*/
+
+            /*byte[] alphaPixel = { 0, 0, 0, 0 };
+            protected UIColor GetColorAtTouchPoint(CGPoint Point)
+            {
+                var colorSpace = CGColorSpace.CreateDeviceRGB();
+                var bitmapContext = new CGBitmapContext(alphaPixel, 1, 1, 8, 4, colorSpace, CGBitmapFlags.PremultipliedLast);
+                bitmapContext.TranslateCTM(-Point.X, -Point.Y);
+                View.Layer.RenderInContext(bitmapContext);
+                return UIColor.FromRGBA(alphaPixel[0], alphaPixel[1], alphaPixel[2], alphaPixel[3]);
+            }
+        //}
 
     }        
 }*/
