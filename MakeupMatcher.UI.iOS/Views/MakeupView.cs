@@ -36,7 +36,7 @@ namespace MakeupMatcher.UI.iOS.Views
 
             NavigationItem.Title = "Pick a color";
 
-            color.Layer.CornerRadius = 15;
+            color.Layer.CornerRadius = 30;
             color.Layer.MasksToBounds = true;
 
             camera.TouchUpInside += (sender, e) => {
@@ -69,6 +69,10 @@ namespace MakeupMatcher.UI.iOS.Views
                     this.PresentViewController(ImagePicker, true, null);
 
                 } 
+            };
+
+            filter.TouchUpInside += async (sender, e) => {
+                await ViewModel.GoToFilterCommand.ExecuteAsync();
             };
 
             //LibraryAccess = new LibraryAccessService();
@@ -138,6 +142,17 @@ namespace MakeupMatcher.UI.iOS.Views
             bitmapContext.TranslateCTM(-Point.X, -Point.Y);
             View.Layer.RenderInContext(bitmapContext);
             return UIColor.FromRGBA(alphaPixel[0], alphaPixel[1], alphaPixel[2], alphaPixel[3]);
+        }
+
+        public override void TouchesBegan(NSSet touches, UIEvent evt)
+        {
+            base.TouchesBegan(touches, evt);
+
+            var touch = touches.AnyObject as UITouch;
+            var location = touch.LocationInView(this.View);
+
+            //color.BackgroundColor = GetColorAtTouchPoint(evt.TouchesForView().);
+            color.BackgroundColor = GetColorAtTouchPoint(location);
         }
 
         public override void DidReceiveMemoryWarning()
