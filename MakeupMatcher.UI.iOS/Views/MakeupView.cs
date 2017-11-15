@@ -5,6 +5,7 @@ using MakeupMatcher.Core.ViewModels;
 using Airbnb.Lottie;
 using MakeupMatcher.Core.Models;
 using SQLite;
+using MakeupMatcher.UI.iOS.iOSServices;
 
 using UIKit;
 using CoreGraphics;
@@ -27,6 +28,8 @@ namespace MakeupMatcher.UI.iOS.Views
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
+
+            ImagePicker = new UIImagePickerController();
 
             NavigationItem.HidesBackButton = true;
 
@@ -63,6 +66,13 @@ namespace MakeupMatcher.UI.iOS.Views
 
                 } 
             };
+
+            //LibraryAccess = new LibraryAccessService();
+            //library.TouchUpInside += (sender, e) => {
+            //imageView.Image = LibraryAccessService.GetAccess(library, this, ImagePicker, imageView.Image);
+
+                //imageView.Image = AccessService.GetAccess();
+            //};
 
         }
 

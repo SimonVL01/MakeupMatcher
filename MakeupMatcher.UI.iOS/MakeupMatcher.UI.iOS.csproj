@@ -144,6 +144,7 @@
       <DependentUpon>MakeupView.cs</DependentUpon>
     </Compile>
     <Compile Include="iOSServices\PixelExtractor.cs" />
+    <Compile Include="iOSServices\LibraryAccessService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MakeupMatcher.Core\MakeupMatcher.Core.csproj">
