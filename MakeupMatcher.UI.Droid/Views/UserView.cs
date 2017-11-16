@@ -29,8 +29,6 @@ namespace MakeupMatcher.UI.Droid.Views
         private SQLiteConnection db;
 
         private LottieAnimationView animationView;
-        string userName;
-        string userImage;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -80,12 +78,34 @@ namespace MakeupMatcher.UI.Droid.Views
                 
             };
 
+            userImage.Click += delegate {
+
+                Intent intent = new Intent(Intent.ActionOpenDocument);
+
+                intent.AddCategory(Intent.CategoryOpenable);
+
+                intent.SetType("image/*");
+                StartActivityForResult(intent, 1);
+
+            };
+
         }
 
         private async void OkAction(object sender, DialogClickEventArgs e) {
             var myButton = sender as Button;
             if (myButton != null) {
                 await ViewModel.GoToMakeupCommand.ExecuteAsync();
+            }
+        }
+
+        protected virtual void OnActivityResult(int _requestCode, Result _resultCode, Intent _resultData)
+        {
+            base.OnActivityResult(_requestCode, _resultCode, _resultData);
+            if (_resultCode == Result.Ok) {
+                
+                ImageView userImage = FindViewById<ImageView>(Resource.Id.userImage);
+                Android.Net.Uri u = _resultData.Data;
+                userImage.SetImageURI(u);
             }
         }
 

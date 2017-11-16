@@ -1025,10 +1025,7 @@ namespace MakeupMatcher.UI.Droid
 			public const int abc_tint_spinner = 2131361872;
 			
 			// aapt resource value: 0x7f0a0051
-			public const int abc_tint_switch_thumb = 2131361873;
-			
-			// aapt resource value: 0x7f0a0052
-			public const int abc_tint_switch_track = 2131361874;
+			public const int abc_tint_switch_track = 2131361873;
 			
 			// aapt resource value: 0x7f0a0004
 			public const int accent_material_dark = 2131361796;
@@ -1192,11 +1189,11 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f0a0036
 			public const int switch_thumb_disabled_material_light = 2131361846;
 			
-			// aapt resource value: 0x7f0a0053
-			public const int switch_thumb_material_dark = 2131361875;
+			// aapt resource value: 0x7f0a0052
+			public const int switch_thumb_material_dark = 2131361874;
 			
-			// aapt resource value: 0x7f0a0054
-			public const int switch_thumb_material_light = 2131361876;
+			// aapt resource value: 0x7f0a0053
+			public const int switch_thumb_material_light = 2131361875;
 			
 			// aapt resource value: 0x7f0a0037
 			public const int switch_thumb_normal_material_dark = 2131361847;

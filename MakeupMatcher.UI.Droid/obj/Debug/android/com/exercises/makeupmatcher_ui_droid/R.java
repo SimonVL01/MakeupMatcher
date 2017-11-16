@@ -1955,8 +1955,7 @@ containing a value of this type.
         public static final int abc_tint_edittext=0x7f0a004e;
         public static final int abc_tint_seek_thumb=0x7f0a004f;
         public static final int abc_tint_spinner=0x7f0a0050;
-        public static final int abc_tint_switch_thumb=0x7f0a0051;
-        public static final int abc_tint_switch_track=0x7f0a0052;
+        public static final int abc_tint_switch_track=0x7f0a0051;
         public static final int accent_material_dark=0x7f0a0004;
         public static final int accent_material_light=0x7f0a0005;
         public static final int background_floating_material_dark=0x7f0a0006;
@@ -2011,8 +2010,8 @@ containing a value of this type.
         public static final int secondary_text_disabled_material_light=0x7f0a0034;
         public static final int switch_thumb_disabled_material_dark=0x7f0a0035;
         public static final int switch_thumb_disabled_material_light=0x7f0a0036;
-        public static final int switch_thumb_material_dark=0x7f0a0053;
-        public static final int switch_thumb_material_light=0x7f0a0054;
+        public static final int switch_thumb_material_dark=0x7f0a0052;
+        public static final int switch_thumb_material_light=0x7f0a0053;
         public static final int switch_thumb_normal_material_dark=0x7f0a0037;
         public static final int switch_thumb_normal_material_light=0x7f0a0038;
         public static final int tooltip_background_dark=0x7f0a0039;
