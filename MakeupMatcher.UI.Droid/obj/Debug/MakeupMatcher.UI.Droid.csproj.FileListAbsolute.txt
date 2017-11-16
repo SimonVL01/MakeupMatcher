@@ -47,7 +47,6 @@
 /Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.Droid/bin/Debug/MvvmCross.Localization.dll.mdb
 /Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.Droid/bin/Debug/SQLite-net.pdb
 /Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.Droid/bin/Debug/SQLite-net.xml
-/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.Droid/obj/Debug/MakeupMatcher.UI.Droid.csprojResolveAssemblyReference.cache
 /Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.Droid/obj/Debug/MakeupMatcher.UI.Droid.csproj.CoreCompileInputs.cache
 /Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.Droid/obj/Debug/MakeupMatcher.UI.Droid.dll
 /Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.Droid/obj/Debug/MakeupMatcher.UI.Droid.pdb
@@ -62,5 +61,7 @@
 /Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.Droid/obj/Debug/res/layout/user.xml
 /Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.Droid/obj/Debug/res/values/dimens.xml
 /Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.Droid/obj/Debug/res/drawable/profile_pic.jpeg
+/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.Droid/obj/Debug/res/drawable/circle.xml
+/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.Droid/obj/Debug/res/layout/makeup.xml
 /Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.Droid/obj/Debug/R.cs.flag
 /Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.Droid/obj/Debug/uploadflags.txt

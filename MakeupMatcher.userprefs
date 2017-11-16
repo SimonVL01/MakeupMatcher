@@ -11,7 +11,7 @@
       <File FileName="MakeupMatcher.Core/ViewModels/SplashScreenViewModel.cs" Line="11" Column="8" />
       <File FileName="MakeupMatcher.UI.Droid/Properties/AndroidManifest.xml" Line="8" Column="12" />
       <File FileName="MakeupMatcher.UI.Droid/Views/SplashScreenView.cs" Line="1" Column="1" />
-      <File FileName="MakeupMatcher.UI.Droid/Views/UserView.cs" Line="53" Column="35" />
+      <File FileName="MakeupMatcher.UI.Droid/Views/UserView.cs" Line="62" Column="53" />
       <File FileName="MakeupMatcher.UI.Droid/Resources/Resource.designer.cs" Line="1" Column="1" />
       <File FileName="MakeupMatcher.UI.Droid/Resources/AboutResources.txt" Line="1" Column="1" />
       <File FileName="MakeupMatcher.UI.Droid/Setup.cs" Line="1" Column="1" />
@@ -21,7 +21,7 @@
       <File FileName="MakeupMatcher.Core/Models/ProductModel.cs" Line="1" Column="1" />
       <File FileName="MakeupMatcher.Core/Repositories/UserRepository.cs" Line="1" Column="1" />
       <File FileName="MakeupMatcher.UI.Droid/Resources/values/Strings.xml" Line="9" Column="1" />
-      <File FileName="MakeupMatcher.UI.Droid/Resources/values/dimens.xml" Line="4" Column="45" />
+      <File FileName="MakeupMatcher.UI.Droid/Resources/values/dimens.xml" Line="6" Column="32" />
       <File FileName="MakeupMatcher.Core/packages.config" Line="1" Column="1" />
       <File FileName="MakeupMatcher.UI.Droid/packages.config" Line="1" Column="1" />
       <File FileName="MakeupMatcher.UI.Droid/Assets/jello.json" Line="1" Column="1" />
@@ -51,6 +51,7 @@
       <File FileName="MakeupMatcher.UI.iOS/Views/FilterView.designer.cs" Line="1" Column="1" />
       <File FileName="MakeupMatcher.UI.iOS/Views/FilterView.xib" />
       <File FileName="MakeupMatcher.UI.Droid/Resources/drawable/circle.xml" Line="8" Column="33" />
+      <File FileName="MakeupMatcher.UI.Droid/Views/MakeupView.cs" Line="34" Column="13" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.MakeupMatcher.UI.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Nexus_4_API_24" />
@@ -58,8 +59,6 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
-    <Watch file="MakeupMatcher.UI.iOS/AppDelegate.cs" line="36" offsetX="415" offsetY="525" expression="UserView" liveUpdate="False" />
-  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
 </Properties>

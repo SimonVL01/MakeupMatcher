@@ -6,6 +6,10 @@ MakeupMatcher.UI.Droid.Views.UserView, MakeupMatcher.UI.Droid;md598f4f8887a6a3d1
 MakeupMatcher.UI.Droid.Views.UserView, MakeupMatcher.UI.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md598f4f8887a6a3d1e4766ed14d63b1e21.UserView
 MakeupMatcher.UI.Droid.Views.UserView;md598f4f8887a6a3d1e4766ed14d63b1e21.UserView
 makeupmatcher.ui.droid.views.UserView;md598f4f8887a6a3d1e4766ed14d63b1e21.UserView
+MakeupMatcher.UI.Droid.Views.MakeupView, MakeupMatcher.UI.Droid;md598f4f8887a6a3d1e4766ed14d63b1e21.MakeupView
+MakeupMatcher.UI.Droid.Views.MakeupView, MakeupMatcher.UI.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md598f4f8887a6a3d1e4766ed14d63b1e21.MakeupView
+MakeupMatcher.UI.Droid.Views.MakeupView;md598f4f8887a6a3d1e4766ed14d63b1e21.MakeupView
+makeupmatcher.ui.droid.views.MakeupView;md598f4f8887a6a3d1e4766ed14d63b1e21.MakeupView
 Com.Airbnb.Lottie.LottieComposition/Factory/ActionCompositionLoaded, Lottie;com.airbnb.lottie.LottieComposition$Factory_ActionCompositionLoaded
 Com.Airbnb.Lottie.LottieComposition+Factory+ActionCompositionLoaded, Lottie, Version=1.5.1.0, Culture=neutral, PublicKeyToken=null;com.airbnb.lottie.LottieComposition$Factory_ActionCompositionLoaded
 Com.Airbnb.Lottie.LottieComposition.Factory.ActionCompositionLoaded;com.airbnb.lottie.LottieComposition$Factory_ActionCompositionLoaded

@@ -130,6 +130,7 @@
     <Compile Include="Views\SplashScreenView.cs" />
     <Compile Include="Views\UserView.cs" />
     <Compile Include="Setup.cs" />
+    <Compile Include="Views\MakeupView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -149,6 +150,7 @@
     <AndroidResource Include="Resources\values\dimens.xml" />
     <AndroidResource Include="Resources\drawable\profile_pic.jpeg" />
     <AndroidResource Include="Resources\drawable\circle.xml" />
+    <AndroidResource Include="Resources\layout\Makeup.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

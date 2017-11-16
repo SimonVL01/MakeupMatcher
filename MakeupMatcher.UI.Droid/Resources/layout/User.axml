@@ -29,7 +29,7 @@
         android:id="@+id/userImage"
         android:layout_width="180dp"
         android:layout_height="180dp"
-        android:scaleType="fitXY"
+        android:scaleType="centerCrop"
         android:layout_below="@id/userPassword"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/padding_vertical"
