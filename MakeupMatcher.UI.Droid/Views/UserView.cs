@@ -33,11 +33,11 @@ namespace MakeupMatcher.UI.Droid.Views
         protected override void OnCreate(Bundle savedInstanceState)
         {
 
+            base.OnCreate(savedInstanceState);
+
             string dbPath = Path.Combine(System.
                 Environment.GetFolderPath
                 (System.Environment.SpecialFolder.Personal), "dbTest.db3");
-
-            base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.User);
 
@@ -45,6 +45,8 @@ namespace MakeupMatcher.UI.Droid.Views
             EditText password = FindViewById<EditText>(Resource.Id.userPassword);
             Button login = FindViewById<Button>(Resource.Id.login);
             ImageView userImage = FindViewById<ImageView>(Resource.Id.userImage);
+
+            //userImage.SetAdjustViewBounds(true);
 
             login.Click += delegate {
                 

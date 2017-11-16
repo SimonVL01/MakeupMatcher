@@ -148,6 +148,7 @@
     <AndroidResource Include="Resources\layout\User.axml" />
     <AndroidResource Include="Resources\values\dimens.xml" />
     <AndroidResource Include="Resources\drawable\profile_pic.jpeg" />
+    <AndroidResource Include="Resources\drawable\circle.xml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
