@@ -67,7 +67,7 @@ namespace MakeupMatcher.Core.ViewModels
             get
             {
                 _goToFilterCommand = _goToFilterCommand ?? new MvxAsyncCommand(() => _navigationService.Navigate<FilterViewModel>());
-                return GoToFilterCommand;
+                return _goToFilterCommand;
             }
         }
 

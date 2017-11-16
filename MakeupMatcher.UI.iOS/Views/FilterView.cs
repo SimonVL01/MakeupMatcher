@@ -19,7 +19,27 @@ namespace MakeupMatcher.UI.iOS.Views
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-            // Perform any additional setup after loading the view, typically from a nib.
+
+            NavigationItem.Title = "Apply Filter";
+
+            int _xCoord = 5;
+            int _yCoord = 5;
+            int _buttonWidth = 70;
+            int _buttonHeight = 70;
+            int _gapBetweenButtons = 5;
+
+            int _itemCount = 0;
+
+            for (int i = 0; i < CoreImage.CIFilter.FilterNamesInCategory("KCICategoryColorAdjustment").Length; i++) {
+                _itemCount = i;
+
+                UIButton filterButton = new UIButton();
+                filterButton.Frame = new CoreGraphics.CGRect(_xCoord, _yCoord, _buttonWidth, _buttonHeight);
+                filterButton.Tag = _itemCount;
+                //filterButton.AddTarget(Self, Action.CreateDelegate();
+
+                //CoreImage.CIFilter filter = new CoreImage.CIFilter("");
+            }
         }
 
         public override void DidReceiveMemoryWarning()

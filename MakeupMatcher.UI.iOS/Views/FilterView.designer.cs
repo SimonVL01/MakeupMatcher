@@ -14,8 +14,16 @@ namespace MakeupMatcher.UI.iOS.Views
     [Register ("FilterView")]
     partial class FilterView
     {
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIImageView image { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
+            if (image != null) {
+                image.Dispose ();
+                image = null;
+            }
         }
     }
 }
