@@ -1025,7 +1025,10 @@ namespace MakeupMatcher.UI.Droid
 			public const int abc_tint_spinner = 2131361872;
 			
 			// aapt resource value: 0x7f0a0051
-			public const int abc_tint_switch_track = 2131361873;
+			public const int abc_tint_switch_thumb = 2131361873;
+			
+			// aapt resource value: 0x7f0a0052
+			public const int abc_tint_switch_track = 2131361874;
 			
 			// aapt resource value: 0x7f0a0004
 			public const int accent_material_dark = 2131361796;
@@ -1189,11 +1192,11 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f0a0036
 			public const int switch_thumb_disabled_material_light = 2131361846;
 			
-			// aapt resource value: 0x7f0a0052
-			public const int switch_thumb_material_dark = 2131361874;
-			
 			// aapt resource value: 0x7f0a0053
-			public const int switch_thumb_material_light = 2131361875;
+			public const int switch_thumb_material_dark = 2131361875;
+			
+			// aapt resource value: 0x7f0a0054
+			public const int switch_thumb_material_light = 2131361876;
 			
 			// aapt resource value: 0x7f0a0037
 			public const int switch_thumb_normal_material_dark = 2131361847;
@@ -1845,11 +1848,11 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f02005a
 			public const int notification_icon_background = 2130837594;
 			
-			// aapt resource value: 0x7f02005f
-			public const int notification_template_icon_bg = 2130837599;
-			
 			// aapt resource value: 0x7f020060
-			public const int notification_template_icon_low_bg = 2130837600;
+			public const int notification_template_icon_bg = 2130837600;
+			
+			// aapt resource value: 0x7f020061
+			public const int notification_template_icon_low_bg = 2130837601;
 			
 			// aapt resource value: 0x7f02005b
 			public const int notification_tile_bg = 2130837595;
@@ -1858,10 +1861,13 @@ namespace MakeupMatcher.UI.Droid
 			public const int notify_panel_notification_icon_bg = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int tooltip_frame_dark = 2130837597;
+			public const int profile_pic = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int tooltip_frame_light = 2130837598;
+			public const int tooltip_frame_dark = 2130837598;
+			
+			// aapt resource value: 0x7f02005f
+			public const int tooltip_frame_light = 2130837599;
 			
 			static Drawable()
 			{
@@ -1969,9 +1975,6 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f0b002c
 			public const int always = 2131427372;
 			
-			// aapt resource value: 0x7f0b0083
-			public const int animation_view = 2131427459;
-			
 			// aapt resource value: 0x7f0b0033
 			public const int async = 2131427379;
 			
@@ -1995,9 +1998,6 @@ namespace MakeupMatcher.UI.Droid
 			
 			// aapt resource value: 0x7f0b0076
 			public const int chronometer = 2131427446;
-			
-			// aapt resource value: 0x7f0b0080
-			public const int clicker = 2131427456;
 			
 			// aapt resource value: 0x7f0b002d
 			public const int collapseActionView = 2131427373;
@@ -2038,9 +2038,6 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f0b0035
 			public const int forever = 2131427381;
 			
-			// aapt resource value: 0x7f0b0081
-			public const int get = 2131427457;
-			
 			// aapt resource value: 0x7f0b0004
 			public const int home = 2131427332;
 			
@@ -2076,6 +2073,9 @@ namespace MakeupMatcher.UI.Droid
 			
 			// aapt resource value: 0x7f0b0040
 			public const int list_item = 2131427392;
+			
+			// aapt resource value: 0x7f0b0081
+			public const int login = 2131427457;
 			
 			// aapt resource value: 0x7f0b0010
 			public const int lottie_layer_name = 2131427344;
@@ -2254,11 +2254,11 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f0b001a
 			public const int useLogo = 2131427354;
 			
-			// aapt resource value: 0x7f0b0082
-			public const int userData = 2131427458;
+			// aapt resource value: 0x7f0b0080
+			public const int userImage = 2131427456;
 			
 			// aapt resource value: 0x7f0b007f
-			public const int userimage = 2131427455;
+			public const int userPassword = 2131427455;
 			
 			// aapt resource value: 0x7f0b007e
 			public const int username = 2131427454;
@@ -2587,6 +2587,15 @@ namespace MakeupMatcher.UI.Droid
 			
 			// aapt resource value: 0x7f060021
 			public const int hello = 2131099681;
+			
+			// aapt resource value: 0x7f060023
+			public const int login = 2131099683;
+			
+			// aapt resource value: 0x7f060024
+			public const int login_complete = 2131099684;
+			
+			// aapt resource value: 0x7f060025
+			public const int ok_button = 2131099685;
 			
 			// aapt resource value: 0x7f060013
 			public const int search_menu_title = 2131099667;

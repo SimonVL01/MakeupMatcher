@@ -63,3 +63,4 @@
 /Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.Droid/obj/Debug/res/values/dimens.xml
 /Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.Droid/obj/Debug/R.cs.flag
 /Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.Droid/obj/Debug/uploadflags.txt
+/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.Droid/obj/Debug/res/drawable/profile_pic.jpeg

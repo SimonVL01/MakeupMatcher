@@ -1,1 +1,1 @@
-<resources><string name="hello">Hello World, Click Me!</string><string name="app_name">MakeupMatcher.UI.Droid</string></resources>
+<resources><string name="hello">Hello World, Click Me!</string><string name="app_name">MakeupMatcher.UI.Droid</string><string name="login">Login</string><string name="login_complete">Done!</string><string name="ok_button">Ok!</string></resources>

@@ -15,34 +15,22 @@
         android:padding="@dimen/padding_vertical"
         android:hint="username" />
     <EditText
-        android:id="@+id/userimage"
+        android:id="@+id/userPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="@dimen/padding_vertical"
-        android:hint="userimage" />
-    <Button
-        android:id="@+id/clicker"
+        android:hint="userPassword"
+        android:inputType="textPassword" />
+    <ImageView
+        android:id="@+id/userImage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Clickedyclick" />
+        android:src="@drawable/profile_pic" />
     <Button
-        android:id="@+id/get"
-        android:layout_width="match_parent"
+        android:id="@+id/login"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:text="get data" />
-    <TextView
-        android:id="@+id/userData"
         android:padding="@dimen/padding_vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="left"
-        android:paddingBottom="@dimen/padding_vertical"
-        android:text="Lorem ipsum" />
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/animation_view"
-        android:layout_width="240dp"
-        android:layout_height="240dp"
-        android:layout_gravity="center"
-        app:lottie_fileName="heart.json"
-        app:lottie_loop="true" />
+        android:text="@string/login"
+        android:layout_gravity="center" />
 </LinearLayout>

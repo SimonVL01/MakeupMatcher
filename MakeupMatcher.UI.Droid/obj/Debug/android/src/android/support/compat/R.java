@@ -1955,7 +1955,8 @@ containing a value of this type.
         public static final int abc_tint_edittext=0x7f0a004e;
         public static final int abc_tint_seek_thumb=0x7f0a004f;
         public static final int abc_tint_spinner=0x7f0a0050;
-        public static final int abc_tint_switch_track=0x7f0a0051;
+        public static final int abc_tint_switch_thumb=0x7f0a0051;
+        public static final int abc_tint_switch_track=0x7f0a0052;
         public static final int accent_material_dark=0x7f0a0004;
         public static final int accent_material_light=0x7f0a0005;
         public static final int background_floating_material_dark=0x7f0a0006;
@@ -2010,8 +2011,8 @@ containing a value of this type.
         public static final int secondary_text_disabled_material_light=0x7f0a0034;
         public static final int switch_thumb_disabled_material_dark=0x7f0a0035;
         public static final int switch_thumb_disabled_material_light=0x7f0a0036;
-        public static final int switch_thumb_material_dark=0x7f0a0052;
-        public static final int switch_thumb_material_light=0x7f0a0053;
+        public static final int switch_thumb_material_dark=0x7f0a0053;
+        public static final int switch_thumb_material_light=0x7f0a0054;
         public static final int switch_thumb_normal_material_dark=0x7f0a0037;
         public static final int switch_thumb_normal_material_light=0x7f0a0038;
         public static final int tooltip_background_dark=0x7f0a0039;
@@ -2224,12 +2225,13 @@ containing a value of this type.
         public static final int notification_bg_normal=0x7f020058;
         public static final int notification_bg_normal_pressed=0x7f020059;
         public static final int notification_icon_background=0x7f02005a;
-        public static final int notification_template_icon_bg=0x7f02005f;
-        public static final int notification_template_icon_low_bg=0x7f020060;
+        public static final int notification_template_icon_bg=0x7f020060;
+        public static final int notification_template_icon_low_bg=0x7f020061;
         public static final int notification_tile_bg=0x7f02005b;
         public static final int notify_panel_notification_icon_bg=0x7f02005c;
-        public static final int tooltip_frame_dark=0x7f02005d;
-        public static final int tooltip_frame_light=0x7f02005e;
+        public static final int profile_pic=0x7f02005d;
+        public static final int tooltip_frame_dark=0x7f02005e;
+        public static final int tooltip_frame_light=0x7f02005f;
     }
     public static final class id {
         public static final int ALT=0x7f0b0026;
@@ -2263,7 +2265,6 @@ containing a value of this type.
         public static final int add=0x7f0b0020;
         public static final int alertTitle=0x7f0b004f;
         public static final int always=0x7f0b002c;
-        public static final int animation_view=0x7f0b0083;
         public static final int async=0x7f0b0033;
         public static final int beginning=0x7f0b0023;
         public static final int blocking=0x7f0b0034;
@@ -2272,7 +2273,6 @@ containing a value of this type.
         public static final int cancel_action=0x7f0b006e;
         public static final int checkbox=0x7f0b0052;
         public static final int chronometer=0x7f0b0076;
-        public static final int clicker=0x7f0b0080;
         public static final int collapseActionView=0x7f0b002d;
         public static final int contentPanel=0x7f0b0045;
         public static final int custom=0x7f0b004c;
@@ -2286,7 +2286,6 @@ containing a value of this type.
         public static final int expand_activities_button=0x7f0b003d;
         public static final int expanded_menu=0x7f0b0051;
         public static final int forever=0x7f0b0035;
-        public static final int get=0x7f0b0081;
         public static final int home=0x7f0b0004;
         public static final int homeAsUp=0x7f0b0015;
         public static final int icon=0x7f0b0041;
@@ -2299,6 +2298,7 @@ containing a value of this type.
         public static final int line3=0x7f0b000a;
         public static final int listMode=0x7f0b0011;
         public static final int list_item=0x7f0b0040;
+        public static final int login=0x7f0b0081;
         public static final int lottie_layer_name=0x7f0b0010;
         public static final int media_actions=0x7f0b0070;
         public static final int message=0x7f0b007d;
@@ -2358,8 +2358,8 @@ containing a value of this type.
         public static final int uniform=0x7f0b0021;
         public static final int up=0x7f0b0008;
         public static final int useLogo=0x7f0b001a;
-        public static final int userData=0x7f0b0082;
-        public static final int userimage=0x7f0b007f;
+        public static final int userImage=0x7f0b0080;
+        public static final int userPassword=0x7f0b007f;
         public static final int username=0x7f0b007e;
         public static final int weak=0x7f0b0038;
         public static final int withText=0x7f0b0030;
@@ -2460,6 +2460,9 @@ containing a value of this type.
         public static final int abc_toolbar_collapse_description=0x7f060012;
         public static final int app_name=0x7f060022;
         public static final int hello=0x7f060021;
+        public static final int login=0x7f060023;
+        public static final int login_complete=0x7f060024;
+        public static final int ok_button=0x7f060025;
         public static final int search_menu_title=0x7f060013;
         public static final int status_bar_notification_info_overflow=0x7f060014;
     }

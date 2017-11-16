@@ -18,12 +18,13 @@ using Android.Widget;
 using MvvmCross.Droid.Views;
 //using SQLite.Net;
 //using SQLite.Net.Platform.XamarinAndroid;
+using MakeupMatcher.Core.ViewModels;
 using SQLite;
 
 namespace MakeupMatcher.UI.Droid.Views
 {
     [Activity(Label = "UserView")]
-    public class UserView : MvxActivity
+    public class UserView : MvxActivity<UserViewModel>
     {
         private SQLiteConnection db;
 
@@ -42,10 +43,12 @@ namespace MakeupMatcher.UI.Droid.Views
 
             SetContentView(Resource.Layout.User);
 
-            Button button = FindViewById<Button>(Resource.Id.clicker);
-            Button getButton = FindViewById<Button>(Resource.Id.get);
+            EditText name = FindViewById<EditText>(Resource.Id.username);
+            EditText password = FindViewById<EditText>(Resource.Id.userPassword);
+            Button login = FindViewById<Button>(Resource.Id.login);
+            ImageView userImage = FindViewById<ImageView>(Resource.Id.userImage);
 
-            button.Click += delegate {
+            login.Click += delegate {
                 
                 //setup connection
                 db = new SQLiteConnection(dbPath);
@@ -55,41 +58,38 @@ namespace MakeupMatcher.UI.Droid.Views
                 //MakeupModel makeup = new MakeupModel();
                 UserModel user = new UserModel();
 
-                user.UserName = "Fabulous Simona";
-                user.UserImage = "blabla/path";
+
+                user.UserId = DatabaseList().ToArray().Count() + 1;
+                user.UserName = name.Text;
+                user.UserPassWord = password.Text;
+                //Uri path = new Uri().LocalPath(userImage);
+                //user.UserImage = path.ToString();
 
                 db.Insert(user);
-
                 db.Close();
+
+                AlertDialog.Builder builder = new AlertDialog.Builder
+                    (this, Android.Resource.Style.ThemeMaterialDialogAlert);
+                builder.SetTitle(Resource.String.login_complete)
+                       .SetMessage("Your Id is " + user.UserId + ", your profilename is " +
+                                                                      user.UserName + " and your image is " +
+                                                                      user.UserImage + " and your password is " +
+                                                                      user.UserPassWord)
+                       .SetPositiveButton("Ok!", OkAction)
+                       .Show();
+                
             };
-
-            getButton.Click += delegate {
-                TextView displayText = FindViewById<TextView>(Resource.Id.userData);
-
-                db = new SQLiteConnection(dbPath);
-
-                var table = db.Table<UserModel>();
-
-                foreach (var item in table)
-                {
-                    UserModel user = new UserModel();
-                    user.UserImage = item.UserImage;
-                    user.UserName = item.UserName;
-                    displayText.Text += user.ToString() + "\n";
-                }
-            };
-
-
-            EditText usernameField = FindViewById<EditText>(Resource.Id.username);
-            userName = usernameField.Text;
-            EditText userImageField = FindViewById<EditText>(Resource.Id.userimage);
-            userImage = userImageField.Text;
-
-            animationView = FindViewById<LottieAnimationView>(Resource.Id.animation_view);
 
         }
 
-        protected override void OnStart()
+        private async void OkAction(object sender, DialogClickEventArgs e) {
+            var myButton = sender as Button;
+            if (myButton != null) {
+                await ViewModel.GoToMakeupCommand.ExecuteAsync();
+            }
+        }
+
+        /*protected override void OnStart()
         {
             base.OnStart();   
             animationView.Progress = 0f;
@@ -101,14 +101,6 @@ namespace MakeupMatcher.UI.Droid.Views
             base.OnStop();
             this.animationView.Progress = 0f;
             this.animationView.PlayAnimation();
-        }
-
-        /*private async Task<string> insertUpdateData(UserModel user, string path)
-        {
-            try
-            {
-                var db = new SQLiteAsyncConnection(path);
-            }
         }*/
 
     }
