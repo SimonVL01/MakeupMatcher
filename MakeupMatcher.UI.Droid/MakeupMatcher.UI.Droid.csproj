@@ -153,6 +153,7 @@
     <AndroidResource Include="Resources\drawable\profile_pic.jpeg" />
     <AndroidResource Include="Resources\drawable\circle.xml" />
     <AndroidResource Include="Resources\layout\Makeup.axml" />
+    <AndroidResource Include="Resources\drawable\img.xml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

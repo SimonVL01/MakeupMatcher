@@ -22,16 +22,19 @@ using MvvmCross.Droid.Views;
 using MakeupMatcher.Core.ViewModels;
 using MakeupMatcher.UI.Droid.DroidServices;
 using SQLite;
-using Java.IO;
 using Android.Provider;
 using Android.Content.PM;
+using Android.Graphics.Drawables;
 
 namespace MakeupMatcher.UI.Droid.Views
 {
     [Activity(Label = "MakeupView")]
-    public class MakeupView : MvxActivity<MakeupViewModel>
+    public class MakeupView : MvxActivity<MakeupViewModel>, Android.Views.View.IOnTouchListener
     {
-        private ImageView imageView;
+        private ImageView _imageView;
+        private Bitmap _bitmap;
+        private Button _color;
+        private GradientDrawable _bgShape;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -43,7 +46,11 @@ namespace MakeupMatcher.UI.Droid.Views
             Button _library = FindViewById<Button>(Resource.Id.library);
             Button _camera = FindViewById<Button>(Resource.Id.camera);
             Button _filter = FindViewById<Button>(Resource.Id.filter);
-            imageView = FindViewById<ImageView>(Resource.Id.imageView);
+            _color = FindViewById<Button>(Resource.Id.color);
+            _imageView = FindViewById<ImageView>(Resource.Id.imageView);
+
+            _bgShape = (GradientDrawable)_color.Background;
+            _bgShape.SetColor(Color.White);
 
             _library.Click += delegate {
                 Intent intent = new Intent(Intent.ActionOpenDocument);
@@ -60,6 +67,10 @@ namespace MakeupMatcher.UI.Droid.Views
             }
 
             _camera.Click += TakePicture;
+
+            _bitmap = ((BitmapDrawable)_imageView.Drawable).Bitmap;
+
+            _imageView.SetOnTouchListener(this);
         }
 
         private void CreateDirectoryForPictures()
@@ -97,7 +108,7 @@ namespace MakeupMatcher.UI.Droid.Views
                 {
                     case 1:
                         Android.Net.Uri u = resultData.Data;
-                        imageView.SetImageURI(u);
+                        _imageView.SetImageURI(u);
                     break;
 
                     case 0:
@@ -107,10 +118,10 @@ namespace MakeupMatcher.UI.Droid.Views
                         SendBroadcast(mediaScanIntent);
 
                         int height = Resources.DisplayMetrics.HeightPixels;
-                        int width = imageView.Height;
+                        int width = _imageView.Height;
                         CameraHelper._bitmap = CameraHelper._file.Path.LoadAndResizeBitmap(width, height);
                         if (CameraHelper._bitmap != null) {
-                            imageView.SetImageBitmap(CameraHelper._bitmap);
+                            _imageView.SetImageBitmap(CameraHelper._bitmap);
                             CameraHelper._bitmap = null;
                         }
                         GC.Collect();
@@ -119,6 +130,24 @@ namespace MakeupMatcher.UI.Droid.Views
                 }
 
             }
+        }
+
+        public bool OnTouch(View v, MotionEvent e)
+        {
+            int x = (int)e.GetX();
+            int y = (int)e.GetY();
+            int pixel = _bitmap.GetPixel(x, y);
+            //Color _uiColor = new Color();
+            Color _uiColor = new Color();
+
+            _uiColor.R = (byte)Color.GetRedComponent(pixel);
+            _uiColor.G = (byte)Color.GetGreenComponent(pixel);
+            _uiColor.B = (byte)Color.GetBlueComponent(pixel);
+            _uiColor.A = (byte)Color.GetAlphaComponent(pixel);
+            //_color.SetBackgroundColor(_uiColor);
+            _bgShape.SetColor(_uiColor);
+
+            return false;
         }
     }
 }

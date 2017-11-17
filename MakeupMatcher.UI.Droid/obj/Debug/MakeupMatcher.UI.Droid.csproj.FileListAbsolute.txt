@@ -133,3 +133,4 @@
 /Users/simon/Desktop/MakeupMatcher/MakeupMatcher.UI.Droid/obj/Debug/res/layout/makeup.xml
 /Users/simon/Desktop/MakeupMatcher/MakeupMatcher.UI.Droid/obj/Debug/R.cs.flag
 /Users/simon/Desktop/MakeupMatcher/MakeupMatcher.UI.Droid/obj/Debug/uploadflags.txt
+/Users/simon/Desktop/MakeupMatcher/MakeupMatcher.UI.Droid/obj/Debug/res/drawable/img.xml

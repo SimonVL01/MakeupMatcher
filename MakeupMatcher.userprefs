@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.ItemProperties.MakeupMatcher.UI.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.2417C9A2-E83C-40D4-A4FB-DBA497D0A548">
     <MonoDevelop.MacDev.AppleDevelopmentTeam />
   </MonoDevelop.Ide.ItemProperties.MakeupMatcher.UI.iOS>
-  <MonoDevelop.Ide.Workbench ActiveDocument="MakeupMatcher.UI.Droid/DroidServices/BitmapHelpers.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="MakeupMatcher.Core/MyClass.cs" Line="1" Column="1" />
       <File FileName="MakeupMatcher.Core/Models/UserModel.cs" Line="1" Column="1" />
@@ -49,8 +49,10 @@
       <File FileName="MakeupMatcher.UI.iOS/Views/FilterView.cs" Line="1" Column="1" />
       <File FileName="MakeupMatcher.Core/ViewModels/FilterViewModel.cs" Line="25" Column="10" />
       <File FileName="MakeupMatcher.UI.Droid/DroidServices/CameraHelper.cs" Line="9" Column="24" />
-      <File FileName="MakeupMatcher.UI.Droid/Views/MakeupView.cs" Line="114" Column="39" />
-      <File FileName="MakeupMatcher.UI.Droid/DroidServices/BitmapHelpers.cs" Line="3" Column="1" />
+      <File FileName="MakeupMatcher.UI.Droid/Views/MakeupView.cs" Line="57" Column="17" />
+      <File FileName="MakeupMatcher.UI.Droid/DroidServices/BitmapHelpers.cs" Line="30" Column="6" />
+      <File FileName="MakeupMatcher.UI.Droid/Resources/drawable/circle.xml" Line="5" Column="31" />
+      <File FileName="MakeupMatcher.UI.Droid/Resources/drawable/img.xml" Line="5" Column="47" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.MakeupMatcher.UI.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Nexus_4_API_21" />
@@ -58,8 +60,6 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
-    <Watch file="MakeupMatcher.UI.iOS/AppDelegate.cs" line="36" offsetX="415" offsetY="525" expression="UserView" liveUpdate="False" />
-  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
 </Properties>
