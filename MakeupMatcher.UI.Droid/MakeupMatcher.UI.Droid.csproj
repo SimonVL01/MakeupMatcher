@@ -131,6 +131,8 @@
     <Compile Include="Views\UserView.cs" />
     <Compile Include="Setup.cs" />
     <Compile Include="Views\MakeupView.cs" />
+    <Compile Include="DroidServices\CameraHelper.cs" />
+    <Compile Include="DroidServices\BitmapHelpers.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -157,6 +159,7 @@
     <Folder Include="Resources\layout\" />
     <Folder Include="Views\" />
     <Folder Include="Resources\raw\" />
+    <Folder Include="DroidServices\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MakeupMatcher.Core\MakeupMatcher.Core.csproj">
