@@ -34,22 +34,24 @@ namespace MakeupMatcher.UI.Droid.Views
     {
         private RecyclerView mRecyclerView;
         private RecyclerView.LayoutManager mLayoutManager;
-        private Adapter mAdapter;
+        private ProductAdapter mAdapter;
+        private ProductModel _productModel;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
+            _productModel = new ProductModel();
+
             SetContentView(Resource.Layout.Product);
 
             mRecyclerView = FindViewById<RecyclerView>(Resource.Id.recyclerView);
 
-            //mAdapter = new ;
-
-            //mRecyclerView.SetAdapter(Adapter);
-
             mLayoutManager = new LinearLayoutManager(this);
             mRecyclerView.SetLayoutManager(mLayoutManager);
+
+            mAdapter = new ProductAdapter(_productModel);
+            mRecyclerView.SetAdapter(mAdapter);
         }
     }
 }

@@ -1,3 +1,11 @@
+MakeupMatcher.UI.Droid.DroidServices.ProductAdapter, MakeupMatcher.UI.Droid;md5b8e759ddabf68585f199b3b06a1195b5.ProductAdapter
+MakeupMatcher.UI.Droid.DroidServices.ProductAdapter, MakeupMatcher.UI.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5b8e759ddabf68585f199b3b06a1195b5.ProductAdapter
+MakeupMatcher.UI.Droid.DroidServices.ProductAdapter;md5b8e759ddabf68585f199b3b06a1195b5.ProductAdapter
+makeupmatcher.ui.droid.droidservices.ProductAdapter;md5b8e759ddabf68585f199b3b06a1195b5.ProductAdapter
+MakeupMatcher.UI.Droid.DroidServices.ProductViewHolder, MakeupMatcher.UI.Droid;md5b8e759ddabf68585f199b3b06a1195b5.ProductViewHolder
+MakeupMatcher.UI.Droid.DroidServices.ProductViewHolder, MakeupMatcher.UI.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5b8e759ddabf68585f199b3b06a1195b5.ProductViewHolder
+MakeupMatcher.UI.Droid.DroidServices.ProductViewHolder;md5b8e759ddabf68585f199b3b06a1195b5.ProductViewHolder
+makeupmatcher.ui.droid.droidservices.ProductViewHolder;md5b8e759ddabf68585f199b3b06a1195b5.ProductViewHolder
 MakeupMatcher.UI.Droid.Views.SplashScreenView, MakeupMatcher.UI.Droid;md598f4f8887a6a3d1e4766ed14d63b1e21.SplashScreenView
 MakeupMatcher.UI.Droid.Views.SplashScreenView, MakeupMatcher.UI.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md598f4f8887a6a3d1e4766ed14d63b1e21.SplashScreenView
 MakeupMatcher.UI.Droid.Views.SplashScreenView;md598f4f8887a6a3d1e4766ed14d63b1e21.SplashScreenView
