@@ -123,6 +123,9 @@
     <Reference Include="Xamarin.Android.Support.v7.AppCompat">
       <HintPath>..\packages\Xamarin.Android.Support.v7.AppCompat.26.1.0.1\lib\MonoAndroid80\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
     </Reference>
+    <Reference Include="Xamarin.Bindings.CircleImageView">
+      <HintPath>..\packages\Xamarin.Bindings.CircleImageView.2.1.0\lib\MonoAndroid403\Xamarin.Bindings.CircleImageView.dll\Xamarin.Bindings.CircleImageView.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Resources\Resource.designer.cs" />

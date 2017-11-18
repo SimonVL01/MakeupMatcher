@@ -133,6 +133,7 @@ class MonoPackageManager_Resources {
 		"Xamarin.Android.Support.Media.Compat.dll",
 		"Xamarin.Android.Support.v7.AppCompat.dll",
 		"Xamarin.Android.Support.Vector.Drawable.dll",
+		"Xamarin.Bindings.CircleImageView.dll",
 		"MakeupMatcher.Core.dll",
 	};
 	public static final String[] Dependencies = new String[]{
