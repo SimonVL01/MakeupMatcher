@@ -71,6 +71,10 @@ namespace MakeupMatcher.UI.Droid.Views
             _bitmap = ((BitmapDrawable)_imageView.Drawable).Bitmap;
 
             _imageView.SetOnTouchListener(this);
+
+            _color.Click += async (sender, e) => {
+                await ViewModel.GoToProductCommand.ExecuteAsync();
+            };
         }
 
         private void CreateDirectoryForPictures()

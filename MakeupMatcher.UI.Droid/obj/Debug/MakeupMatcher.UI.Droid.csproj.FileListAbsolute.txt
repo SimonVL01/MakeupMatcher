@@ -204,3 +204,5 @@
 /Users/simon/Desktop/MakeupMatcher_v2/MakeupMatcher.UI.Droid/obj/Debug/R.cs.flag
 /Users/simon/Desktop/MakeupMatcher_v2/MakeupMatcher.UI.Droid/obj/Debug/uploadflags.txt
 /Users/simon/Desktop/MakeupMatcher_v2/MakeupMatcher.UI.Droid/bin/Debug/Xamarin.Bindings.CircleImageView.dll
+/Users/simon/Desktop/MakeupMatcher_v2/MakeupMatcher.UI.Droid/bin/Debug/Xamarin.Android.Support.v7.RecyclerView.dll
+/Users/simon/Desktop/MakeupMatcher_v2/MakeupMatcher.UI.Droid/obj/Debug/res/layout/product.xml

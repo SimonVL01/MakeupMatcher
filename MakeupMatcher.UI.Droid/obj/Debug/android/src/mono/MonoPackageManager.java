@@ -132,6 +132,7 @@ class MonoPackageManager_Resources {
 		"Xamarin.Android.Support.Fragment.dll",
 		"Xamarin.Android.Support.Media.Compat.dll",
 		"Xamarin.Android.Support.v7.AppCompat.dll",
+		"Xamarin.Android.Support.v7.RecyclerView.dll",
 		"Xamarin.Android.Support.Vector.Drawable.dll",
 		"Xamarin.Bindings.CircleImageView.dll",
 		"MakeupMatcher.Core.dll",

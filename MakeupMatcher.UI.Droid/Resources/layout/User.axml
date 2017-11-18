@@ -25,16 +25,6 @@
         android:layout_marginTop="@dimen/padding_vertical"
         android:hint="userPassword"
         android:inputType="textPassword" />
-<!--<ImageView
-        android:id="@+id/userImage"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:scaleType="centerCrop"
-        android:layout_below="@id/userPassword"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/padding_vertical"
-        android:src="@drawable/profile_pic"
-        android:padding="@dimen/padding_vertical" />-->
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/userImage"
         android:layout_width="150dp"

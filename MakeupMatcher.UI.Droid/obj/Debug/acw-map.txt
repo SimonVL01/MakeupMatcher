@@ -10,6 +10,10 @@ MakeupMatcher.UI.Droid.Views.MakeupView, MakeupMatcher.UI.Droid;md598f4f8887a6a3
 MakeupMatcher.UI.Droid.Views.MakeupView, MakeupMatcher.UI.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md598f4f8887a6a3d1e4766ed14d63b1e21.MakeupView
 MakeupMatcher.UI.Droid.Views.MakeupView;md598f4f8887a6a3d1e4766ed14d63b1e21.MakeupView
 makeupmatcher.ui.droid.views.MakeupView;md598f4f8887a6a3d1e4766ed14d63b1e21.MakeupView
+MakeupMatcher.UI.Droid.Views.ProductView, MakeupMatcher.UI.Droid;md598f4f8887a6a3d1e4766ed14d63b1e21.ProductView
+MakeupMatcher.UI.Droid.Views.ProductView, MakeupMatcher.UI.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md598f4f8887a6a3d1e4766ed14d63b1e21.ProductView
+MakeupMatcher.UI.Droid.Views.ProductView;md598f4f8887a6a3d1e4766ed14d63b1e21.ProductView
+makeupmatcher.ui.droid.views.ProductView;md598f4f8887a6a3d1e4766ed14d63b1e21.ProductView
 Com.Airbnb.Lottie.LottieComposition/Factory/ActionCompositionLoaded, Lottie;com.airbnb.lottie.LottieComposition$Factory_ActionCompositionLoaded
 Com.Airbnb.Lottie.LottieComposition+Factory+ActionCompositionLoaded, Lottie, Version=1.5.1.0, Culture=neutral, PublicKeyToken=null;com.airbnb.lottie.LottieComposition$Factory_ActionCompositionLoaded
 Com.Airbnb.Lottie.LottieComposition.Factory.ActionCompositionLoaded;com.airbnb.lottie.LottieComposition$Factory_ActionCompositionLoaded
@@ -402,3 +406,19 @@ Android.Support.V7.App.ActionBar/ITabListenerImplementor, Xamarin.Android.Suppor
 Android.Support.V7.App.ActionBar+ITabListenerImplementor, Xamarin.Android.Support.v7.AppCompat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v7.app.ActionBar_TabListenerImplementor
 Android.Support.V7.App.ActionBar.ITabListenerImplementor;mono.android.support.v7.app.ActionBar_TabListenerImplementor
 mono.android.support.v7.app.ActionBar_TabListenerImplementor;mono.android.support.v7.app.ActionBar_TabListenerImplementor
+Android.Support.V7.Widget.RecyclerView/ItemAnimator/IItemAnimatorFinishedListenerImplementor, Xamarin.Android.Support.v7.RecyclerView;mono.android.support.v7.widget.RecyclerView_ItemAnimator_ItemAnimatorFinishedListenerImplementor
+Android.Support.V7.Widget.RecyclerView+ItemAnimator+IItemAnimatorFinishedListenerImplementor, Xamarin.Android.Support.v7.RecyclerView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v7.widget.RecyclerView_ItemAnimator_ItemAnimatorFinishedListenerImplementor
+Android.Support.V7.Widget.RecyclerView.ItemAnimator.IItemAnimatorFinishedListenerImplementor;mono.android.support.v7.widget.RecyclerView_ItemAnimator_ItemAnimatorFinishedListenerImplementor
+mono.android.support.v7.widget.RecyclerView_ItemAnimator_ItemAnimatorFinishedListenerImplementor;mono.android.support.v7.widget.RecyclerView_ItemAnimator_ItemAnimatorFinishedListenerImplementor
+Android.Support.V7.Widget.RecyclerView/IOnChildAttachStateChangeListenerImplementor, Xamarin.Android.Support.v7.RecyclerView;mono.android.support.v7.widget.RecyclerView_OnChildAttachStateChangeListenerImplementor
+Android.Support.V7.Widget.RecyclerView+IOnChildAttachStateChangeListenerImplementor, Xamarin.Android.Support.v7.RecyclerView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v7.widget.RecyclerView_OnChildAttachStateChangeListenerImplementor
+Android.Support.V7.Widget.RecyclerView.IOnChildAttachStateChangeListenerImplementor;mono.android.support.v7.widget.RecyclerView_OnChildAttachStateChangeListenerImplementor
+mono.android.support.v7.widget.RecyclerView_OnChildAttachStateChangeListenerImplementor;mono.android.support.v7.widget.RecyclerView_OnChildAttachStateChangeListenerImplementor
+Android.Support.V7.Widget.RecyclerView/IOnItemTouchListenerImplementor, Xamarin.Android.Support.v7.RecyclerView;mono.android.support.v7.widget.RecyclerView_OnItemTouchListenerImplementor
+Android.Support.V7.Widget.RecyclerView+IOnItemTouchListenerImplementor, Xamarin.Android.Support.v7.RecyclerView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v7.widget.RecyclerView_OnItemTouchListenerImplementor
+Android.Support.V7.Widget.RecyclerView.IOnItemTouchListenerImplementor;mono.android.support.v7.widget.RecyclerView_OnItemTouchListenerImplementor
+mono.android.support.v7.widget.RecyclerView_OnItemTouchListenerImplementor;mono.android.support.v7.widget.RecyclerView_OnItemTouchListenerImplementor
+Android.Support.V7.Widget.RecyclerView/IRecyclerListenerImplementor, Xamarin.Android.Support.v7.RecyclerView;mono.android.support.v7.widget.RecyclerView_RecyclerListenerImplementor
+Android.Support.V7.Widget.RecyclerView+IRecyclerListenerImplementor, Xamarin.Android.Support.v7.RecyclerView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v7.widget.RecyclerView_RecyclerListenerImplementor
+Android.Support.V7.Widget.RecyclerView.IRecyclerListenerImplementor;mono.android.support.v7.widget.RecyclerView_RecyclerListenerImplementor
+mono.android.support.v7.widget.RecyclerView_RecyclerListenerImplementor;mono.android.support.v7.widget.RecyclerView_RecyclerListenerImplementor
