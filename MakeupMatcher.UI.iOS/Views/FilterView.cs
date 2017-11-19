@@ -38,33 +38,27 @@ namespace MakeupMatcher.UI.iOS.Views
                 _itemCount = i;
 
                 UIButton filterButton = new UIButton();
-                filterButton.Frame = new CoreGraphics.CGRect(_xCoord, _yCoord, _buttonWidth, _buttonHeight);
+                filterButton.Frame = new CoreGraphics.CGRect(View.Frame.Width - 20, _yCoord, _buttonWidth, _buttonHeight);
                 filterButton.Tag = _itemCount;
-                //filterButton.AddTarget(Self, FilterButtonTapped(imageButton), UIControlEvent.TouchUpInside);
                 filterButton.TouchUpInside += (sender, e) => FilterButtonTapped(filterButton);
 
+                var imageView = new UIImageView(UIImage.FromBundle("Image"));
+
                 CIContext ciContext = new CIContext(null);
-                CIImage coreImage = new CIImage(image.Image);
-                //CIFilter filter = new CIFilter();
+                CIImage coreImage = new CIImage(imageView.Image);
+
                 var filter = new CISepiaTone();
                 filter.Image = coreImage;
-                filter.Intensity = 0.9f;
 
-
-                filter.SetDefaults();
-                filter.SetValueForKey(coreImage, CIFilterInputKey.BackgroundImage);
-                var filteredImageData = filter.ValueForKey(CIFilterInputKey.BackgroundImage) as CIImage;
-                var filteredImageRef = ciContext.CreateCGImage(filteredImageData, filteredImageData.Extent);
-
-                UIImage imageForButton = new UIImage(filteredImageRef);
+                UIImage imageForButton = new UIImage(filter.Image.CreateByFiltering(CIFilterNames[i]));
                 filterButton.SetBackgroundImage(imageForButton, UIControlState.Normal);
 
-                _xCoord += _buttonWidth + _gapBetweenButtons;
+                _yCoord += _buttonHeight + _gapBetweenButtons;
                 scrollview.AddSubview(filterButton);
 
             }
 
-            scrollview.ContentSize = new CoreGraphics.CGSize(_buttonWidth * (float)_itemCount + 2, _yCoord);
+            scrollview.ContentSize = new CoreGraphics.CGSize(_buttonHeight * (float)_itemCount + 2, _xCoord);
         }
 
         public override void DidReceiveMemoryWarning()

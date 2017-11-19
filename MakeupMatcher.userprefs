@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.ItemProperties.MakeupMatcher.UI.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.2417C9A2-E83C-40D4-A4FB-DBA497D0A548">
     <MonoDevelop.MacDev.AppleDevelopmentTeam />
   </MonoDevelop.Ide.ItemProperties.MakeupMatcher.UI.iOS>
-  <MonoDevelop.Ide.Workbench ActiveDocument="MakeupMatcher.UI.iOS/Views/FilterView.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="MakeupMatcher.Core/MyClass.cs" Line="1" Column="1" />
       <File FileName="MakeupMatcher.Core/Models/UserModel.cs" Line="1" Column="1" />
@@ -34,7 +34,7 @@
       <File FileName="MakeupMatcher.UI.iOS/Entitlements.plist" />
       <File FileName="MakeupMatcher.UI.iOS/LaunchScreen.storyboard" />
       <File FileName="MakeupMatcher.UI.iOS/packages.config" Line="1" Column="1" />
-      <File FileName="MakeupMatcher.UI.iOS/Views/UserView.cs" Line="34" Column="31" />
+      <File FileName="MakeupMatcher.UI.iOS/Views/UserView.cs" Line="67" Column="116" />
       <File FileName="MakeupMatcher.UI.iOS/Views/UserView.xib" />
       <File FileName="MakeupMatcher.UI.iOS/Views/UserView.designer.cs" Line="1" Column="1" />
       <File FileName="MakeupMatcher.UI.iOS/heart.json" Line="1" Column="1" />
@@ -46,7 +46,7 @@
       <File FileName="MakeupMatcher.UI.iOS/iOSServices/PixelExtractor.cs" Line="55" Column="12" />
       <File FileName="MakeupMatcher.UI.iOS/iOSServices/LibraryAccessService.cs" Line="1" Column="1" />
       <File FileName="MakeupMatcher.UI.iOS/Views/TabBarView.cs" Line="30" Column="26" />
-      <File FileName="MakeupMatcher.UI.iOS/Views/FilterView.cs" Line="59" Column="6" />
+      <File FileName="MakeupMatcher.UI.iOS/Views/FilterView.cs" Line="45" Column="17" />
       <File FileName="MakeupMatcher.Core/ViewModels/FilterViewModel.cs" Line="25" Column="10" />
       <File FileName="MakeupMatcher.UI.Droid/DroidServices/CameraHelper.cs" Line="9" Column="24" />
       <File FileName="MakeupMatcher.UI.Droid/Views/MakeupView.cs" Line="76" Column="67" />
