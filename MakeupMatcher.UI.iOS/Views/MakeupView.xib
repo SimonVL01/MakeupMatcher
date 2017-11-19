@@ -45,7 +45,7 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8761" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
                     <rect key="frame" x="236" y="86" width="60" height="60"/>
-                    <state key="normal">
+                    <state key="normal" title="Go!">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <variation key="heightClass=regular-widthClass=compact">
@@ -54,6 +54,7 @@
                             <include reference="11572"/>
                             <include reference="11573"/>
                         </mask>
+                        <color key="tintColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
                     </variation>
                     <constraints>
                         <constraint id="11572" firstAttribute="width" constant="60"/>

@@ -9,13 +9,13 @@ using MakeupMatcher.UI.iOS.iOSServices;
 using UIKit;
 using CoreImage;
 using Foundation;
+using CoreGraphics;
 
 namespace MakeupMatcher.UI.iOS.Views
 {
     public partial class FilterView : MvxViewController
     {
-
-
+        
         public FilterView() : base("FilterView", null)
         {
         }
@@ -25,6 +25,20 @@ namespace MakeupMatcher.UI.iOS.Views
             base.ViewDidLoad();
 
             NavigationItem.Title = "Apply Filter";
+            //NavigationController.NavigationBar.BackItem.Title = "cancel";
+            var saveButton = new UIBarButtonItem("Save",
+                                                 UIBarButtonItemStyle.Done,
+                                                 null);
+
+            var cancelButton = new UIBarButtonItem();
+            cancelButton.Title = "Cancel";
+
+
+            NavigationItem.RightBarButtonItem = saveButton;
+            NavigationItem.BackBarButtonItem = cancelButton;
+
+            //CGRect frame = new CGRect(15, 15, View.Frame.Width - 15, View.Frame.Height - 15);
+
 
             int _xCoord = 5;
             int _yCoord = 5;
@@ -59,6 +73,7 @@ namespace MakeupMatcher.UI.iOS.Views
             }
 
             scrollview.ContentSize = new CoreGraphics.CGSize(_buttonHeight * (float)_itemCount + 2, _xCoord);
+
         }
 
         public override void DidReceiveMemoryWarning()
@@ -69,9 +84,9 @@ namespace MakeupMatcher.UI.iOS.Views
 
         public void FilterButtonTapped(UIButton button)
         {
-            imageButton = button as UIButton;
+            button = button as UIButton;
 
-            image.Image = imageButton.BackgroundImageForState(UIControlState.Normal);
+            image.Image = button.CurrentBackgroundImage;
         }
 
         public void SavePicButton(UIButton button)

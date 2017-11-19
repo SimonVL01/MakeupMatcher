@@ -82,6 +82,10 @@ namespace MakeupMatcher.UI.iOS.Views
                 //imageView.Image = AccessService.GetAccess();
             //};
 
+            color.TouchUpInside += async (sender, e) => {
+                await ViewModel.GoToProductCommand.ExecuteAsync();
+            };
+
         }
 
         protected void Handle_FinishedPickingMedia(object _sender, UIImagePickerMediaPickedEventArgs a)

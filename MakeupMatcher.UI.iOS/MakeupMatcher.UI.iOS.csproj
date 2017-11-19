@@ -125,6 +125,7 @@
     <InterfaceDefinition Include="Views\MakeupView.xib" />
     <InterfaceDefinition Include="Views\TabBarView.xib" />
     <InterfaceDefinition Include="Views\FilterView.xib" />
+    <InterfaceDefinition Include="Views\ProductView.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -154,6 +155,10 @@
     <Compile Include="Views\FilterView.cs" />
     <Compile Include="Views\FilterView.designer.cs">
       <DependentUpon>FilterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProductView.cs" />
+    <Compile Include="Views\ProductView.designer.cs">
+      <DependentUpon>ProductView.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

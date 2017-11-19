@@ -23,5 +23,15 @@ namespace MakeupMatcher.Core.ViewModels
         public FilterViewModel(IMvxNavigationService navigationService) {
             _navigationService = navigationService;
         }
+
+        private IMvxAsyncCommand _goToMakeupCommand;
+        public IMvxAsyncCommand GoToMakeupCommand
+        {
+            get
+            {
+                _goToMakeupCommand = _goToMakeupCommand ?? new MvxAsyncCommand(() => _navigationService.Navigate<MakeupViewModel>());
+                return _goToMakeupCommand;
+            }
+        }
     }
 }
