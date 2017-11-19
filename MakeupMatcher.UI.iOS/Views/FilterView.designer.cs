@@ -18,11 +18,29 @@ namespace MakeupMatcher.UI.iOS.Views
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIImageView image { get; set; }
 
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton imageButton { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIScrollView scrollview { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
             if (image != null) {
                 image.Dispose ();
                 image = null;
+            }
+
+            if (imageButton != null) {
+                imageButton.Dispose ();
+                imageButton = null;
+            }
+
+            if (scrollview != null) {
+                scrollview.Dispose ();
+                scrollview = null;
             }
         }
     }
