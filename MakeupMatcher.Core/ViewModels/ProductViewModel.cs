@@ -38,15 +38,40 @@ namespace MakeupMatcher.Core.ViewModels
             }
         }
 
-        int _productPrice;
+        string _productBrand;
 
-        public int ProductPrice
+        public string ProductBrand
+        {
+            get { return _product.ProductBrand; }
+            set
+            {
+                _productBrand = value;
+                _product.ProductBrand = value;
+                RaisePropertyChanged(() => _productBrand);
+            }
+        }
+
+        double _productPrice;
+
+        public double ProductPrice
         {
             get { return _product.ProductPrice; }
             set {
                 _productPrice = value;
                 _product.ProductPrice = value;
                 RaisePropertyChanged(() => _productPrice);
+            }
+        }
+
+        bool _favorite;
+
+        public bool Favorite
+        {
+            get { return _product.Favorite; }
+            set {
+                _favorite = value;
+                _product.Favorite = value;
+                RaisePropertyChanged(() => _favorite);
             }
         }
     }

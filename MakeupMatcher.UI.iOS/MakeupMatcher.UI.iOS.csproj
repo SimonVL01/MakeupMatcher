@@ -146,7 +146,6 @@
     <Compile Include="Views\MakeupView.designer.cs">
       <DependentUpon>MakeupView.cs</DependentUpon>
     </Compile>
-    <Compile Include="iOSServices\PixelExtractor.cs" />
     <Compile Include="iOSServices\LibraryAccessService.cs" />
     <Compile Include="Views\TabBarView.cs" />
     <Compile Include="Views\TabBarView.designer.cs">
@@ -160,6 +159,7 @@
     <Compile Include="Views\ProductView.designer.cs">
       <DependentUpon>ProductView.cs</DependentUpon>
     </Compile>
+    <Compile Include="iOSServices\RootTableSource.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MakeupMatcher.Core\MakeupMatcher.Core.csproj">
