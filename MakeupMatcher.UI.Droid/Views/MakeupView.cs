@@ -72,9 +72,9 @@ namespace MakeupMatcher.UI.Droid.Views
 
             _imageView.SetOnTouchListener(this);
 
-            _color.Click += async (sender, e) => {
-                await ViewModel.GoToProductCommand.ExecuteAsync();
-            };
+            _color.Click += async (sender, e) => await ViewModel.GoToProductCommand.ExecuteAsync();
+
+            _filter.Click += async (sender, e) => await ViewModel.GoToFilterCommand.ExecuteAsync();
         }
 
         private void CreateDirectoryForPictures()
