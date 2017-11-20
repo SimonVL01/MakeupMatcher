@@ -56,10 +56,10 @@ namespace MakeupMatcher.UI.Droid.Views
             Bitmap imgResized = Bitmap.CreateScaledBitmap(originalImage, 70, 70, true);
             Bitmap imgResizedForEditing = Bitmap.CreateScaledBitmap(originalImage, 500, 500, true);
 
-            b1.Background = new BitmapDrawable(Resources, ApplyInvertEffect(imgResized));
+            b1.Background = new BitmapDrawable(Resources, ApplySepiaToningEffect(imgResized, 8, 100, 6, 0));
             b2.Background = new BitmapDrawable(Resources, ApplyGammaEffect(imgResized, 4.5, 1.75, 3.25));
             b3.Background = new BitmapDrawable(Resources, ApplySaturationFilter(imgResized, 7));
-            b4.Background = new BitmapDrawable(Resources, ApplyHueFilter(imgResized, 75));
+            b4.Background = new BitmapDrawable(Resources, ApplySepiaToningEffect(imgResized, 10, 14.5, 7, 18.5));
             b5.Background = new BitmapDrawable(Resources,ApplyColorFilterEffect(imgResized, 0.9, 0.9, 0.0));
             b6.Background = new BitmapDrawable(Resources, Blue(imgResized));
             b7.Background = new BitmapDrawable(Resources, Warm(imgResized));
@@ -68,10 +68,10 @@ namespace MakeupMatcher.UI.Droid.Views
 
             bmp = abmp.Bitmap;
 
-            b1.Click += (sender, e) => img.SetImageBitmap(ApplyInvertEffect(imgResizedForEditing));
+            b1.Click += (sender, e) => img.SetImageBitmap(ApplySepiaToningEffect(imgResizedForEditing, 8, 100, 6, 0));
             b2.Click += (sender, e) => img.SetImageBitmap(ApplyGammaEffect(imgResizedForEditing, 4.5, 1.75, 3.25));
             b3.Click += (sender, e) => img.SetImageBitmap(ApplySaturationFilter(imgResizedForEditing, 7));
-            b4.Click += (sender, e) => img.SetImageBitmap(ApplyHueFilter(imgResizedForEditing, 75));
+            b4.Click += (sender, e) => img.SetImageBitmap(ApplySepiaToningEffect(imgResizedForEditing, 10, 14.5, 7, 18.5));
             b5.Click += (sender, e) => img.SetImageBitmap(ApplyColorFilterEffect(imgResizedForEditing, 0.9, 0.9, 0.0));
             b6.Click += (sender, e) => img.SetImageBitmap(Blue(imgResizedForEditing));
             b7.Click += (sender, e) => img.SetImageBitmap(Warm(imgResizedForEditing));
@@ -308,6 +308,48 @@ namespace MakeupMatcher.UI.Droid.Views
                     R = (int)(Color.GetRedComponent(pixel) * red);
                     G = (int)(Color.GetGreenComponent(pixel) * green);
                     B = (int)(Color.GetBlueComponent(pixel) * blue);
+
+                    bmOut.SetPixel(x, y, Color.Argb(A, R, G, B));
+                }
+            }
+
+            return bmOut;
+        }
+
+        public Bitmap ApplySepiaToningEffect(Bitmap _src, int depth, double red, double green, double blue) {
+            int width = _src.Width;
+            int height = _src.Height;
+
+            Bitmap bmOut = Bitmap.CreateBitmap(width, height, _src.GetConfig());
+
+            const double GS_RED = 0.3;
+            const double GS_GREEN = 0.59;
+            const double GS_BLUE = 0.11;
+
+            int A, R, G, B;
+            int pixel;
+
+            for (int x = 0; x < width; ++x)
+            {
+                for (int y = 0; y < height; ++y)
+                {
+                    pixel = _src.GetPixel(x, y);
+
+                    A = Color.GetAlphaComponent(pixel);
+                    R = Color.GetRedComponent(pixel);
+                    G = Color.GetGreenComponent(pixel);
+                    B = Color.GetBlueComponent(pixel);
+
+                    B = G = R = (int)(GS_RED * R + GS_GREEN * G + GS_BLUE * B);
+
+                    R += (depth * (int)red);
+                    if(R > 255) { R = 255; }
+
+                    G += (depth * (int)green);
+                    if(G > 255) { G = 255; }
+
+                    B += (depth * (int)blue);
+                    if(B > 255) { B = 255; }
 
                     bmOut.SetPixel(x, y, Color.Argb(A, R, G, B));
                 }
