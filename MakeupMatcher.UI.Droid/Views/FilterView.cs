@@ -56,25 +56,25 @@ namespace MakeupMatcher.UI.Droid.Views
             Bitmap imgResized = Bitmap.CreateScaledBitmap(originalImage, 70, 70, true);
             Bitmap imgResizedForEditing = Bitmap.CreateScaledBitmap(originalImage, 500, 500, true);
 
-            b1.Background = new BitmapDrawable(Resources, ApplySepiaToningEffect(imgResized, 8, 100, 6, 0));
+            b1.Background = new BitmapDrawable(Resources, ApplySepiaToningEffect(imgResized, 5, 20, 10, 0));
             b2.Background = new BitmapDrawable(Resources, ApplyGammaEffect(imgResized, 4.5, 1.75, 3.25));
-            b3.Background = new BitmapDrawable(Resources, ApplySaturationFilter(imgResized, 7));
-            b4.Background = new BitmapDrawable(Resources, ApplySepiaToningEffect(imgResized, 10, 14.5, 7, 18.5));
+            b3.Background = new BitmapDrawable(Resources, ApplyGammaEffect(imgResized, 2, 4.25, 3.25));
+            b4.Background = new BitmapDrawable(Resources, ApplyContrastEffect(imgResized, 0.3));
             b5.Background = new BitmapDrawable(Resources,ApplyColorFilterEffect(imgResized, 0.9, 0.9, 0.0));
-            b6.Background = new BitmapDrawable(Resources, Blue(imgResized));
-            b7.Background = new BitmapDrawable(Resources, Warm(imgResized));
+            b6.Background = new BitmapDrawable(Resources, ApplyBrightnessEffect(imgResized, -45));
+            b7.Background = new BitmapDrawable(Resources, ApplyBrightnessEffect(imgResized, 75));
      
             BitmapDrawable abmp = (BitmapDrawable)img.Drawable;
 
             bmp = abmp.Bitmap;
 
-            b1.Click += (sender, e) => img.SetImageBitmap(ApplySepiaToningEffect(imgResizedForEditing, 8, 100, 6, 0));
+            b1.Click += (sender, e) => img.SetImageBitmap(ApplySepiaToningEffect(imgResizedForEditing, 5, 20, 10, 0));
             b2.Click += (sender, e) => img.SetImageBitmap(ApplyGammaEffect(imgResizedForEditing, 4.5, 1.75, 3.25));
-            b3.Click += (sender, e) => img.SetImageBitmap(ApplySaturationFilter(imgResizedForEditing, 7));
-            b4.Click += (sender, e) => img.SetImageBitmap(ApplySepiaToningEffect(imgResizedForEditing, 10, 14.5, 7, 18.5));
+            b3.Click += (sender, e) => img.SetImageBitmap(ApplyGammaEffect(imgResizedForEditing, 2, 4.25, 3.25));
+            b4.Click += (sender, e) => img.SetImageBitmap(ApplyContrastEffect(imgResizedForEditing, 0.3));
             b5.Click += (sender, e) => img.SetImageBitmap(ApplyColorFilterEffect(imgResizedForEditing, 0.9, 0.9, 0.0));
-            b6.Click += (sender, e) => img.SetImageBitmap(Blue(imgResizedForEditing));
-            b7.Click += (sender, e) => img.SetImageBitmap(Warm(imgResizedForEditing));
+            b6.Click += (sender, e) => img.SetImageBitmap(ApplyBrightnessEffect(imgResizedForEditing, -45));
+            b7.Click += (sender, e) => img.SetImageBitmap(ApplyBrightnessEffect(imgResizedForEditing, 75));
 
             //img.SetImageBitmap(Blue(bmp));
 
@@ -103,145 +103,37 @@ namespace MakeupMatcher.UI.Droid.Views
             return _operation;
         }
 
-        public Bitmap Dark(Bitmap bm)
-        {
-            Bitmap _operation = Bitmap.CreateBitmap(bm.Width, bm.Height, bm.GetConfig());
 
-            for (int i = 0; i < bm.Width; i++)
-            {
-                for (int j = 0; j < bm.Height; j++)
-                {
-                    int p = bm.GetPixel(i, j);
-                    int r = Color.GetRedComponent(p);
-                    int g = Color.GetGreenComponent(p);
-                    int b = Color.GetBlueComponent(p);
-                    int a = Color.GetAlphaComponent(p);
+        public Bitmap ApplyContrastEffect(Bitmap _src, double value) {
+            int width = _src.Width;
+            int height = _src.Height;
 
-                    r = r - 5;
-                    g = g - 20;
-                    //b = b - 25;
-                    //a = a;
-                    _operation.SetPixel(i, j, Color.Argb(a, r, g, b));
-                }
-            }
-            //img.SetImageBitmap(operation);
-            return _operation;
-        }
-
-        public Bitmap Gamma(Bitmap bm) {
-            Bitmap _operation = Bitmap.CreateBitmap(bm.Width, bm.Height, bm.GetConfig());
-
-            for (int i = 0; i < bm.Width; i++)
-            {
-                for (int j = 0; j < bm.Height; j++)
-                {
-                    int p = bm.GetPixel(i, j);
-                    int r = Color.GetRedComponent(p);
-                    int g = Color.GetGreenComponent(p);
-                    int b = Color.GetBlueComponent(p);
-                    int a = Color.GetAlphaComponent(p);
-
-                    r = r + 5;
-                    //g = g + 50;
-                    //b = b - 5;
-                    //a = 100 + a;
-                    _operation.SetPixel(i, j, Color.Argb(a, r, g, b));
-                }
-            }
-            //img.SetImageBitmap(operation);
-            return _operation;
-        }
-
-        public Bitmap Green(Bitmap bm) {
-            Bitmap _operation = Bitmap.CreateBitmap(bm.Width, bm.Height, bm.GetConfig());
-
-            for (int i = 0; i < bm.Width; i++)
-            {
-                for (int j = 0; j < bm.Height; j++)
-                {
-                    int p = bm.GetPixel(i, j);
-                    int r = Color.GetRedComponent(p);
-                    int g = Color.GetGreenComponent(p);
-                    int b = Color.GetBlueComponent(p);
-                    int a = Color.GetAlphaComponent(p);
-
-                    r = 25 + r;
-                    g = 50 + g;
-                    b = 25 + b;
-                    //a = 100 + a;
-                    _operation.SetPixel(i, j, Color.Argb(a, r, g, b));
-                }
-            }
-            //img.SetImageBitmap(operation);
-            return _operation;
-        }
-
-        public Bitmap Blue(Bitmap bm) {
-            Bitmap _operation = Bitmap.CreateBitmap(bm.Width, bm.Height, bm.GetConfig());
-
-            for (int i = 0; i < bm.Width; i++)
-            {
-                for (int j = 0; j < bm.Height; j++)
-                {
-                    int p = bm.GetPixel(i, j);
-                    int r = Color.GetRedComponent(p);
-                    int g = Color.GetGreenComponent(p);
-                    int b = Color.GetBlueComponent(p);
-                    int a = Color.GetAlphaComponent(p);
-
-                    //r = 15 + r;
-                    //g = 5 - g;
-                    b = 45 + b;
-                    //a = 100 + a;
-                    _operation.SetPixel(i, j, Color.Argb(a, r, g, b));
-                }
-            }
-            //img.SetImageBitmap(operation);
-            return _operation;
-        }
-
-        public Bitmap Warm(Bitmap bm) {
-            Bitmap _operation = Bitmap.CreateBitmap(bm.Width, bm.Height, bm.GetConfig());
-
-            for (int i = 0; i < bm.Width; i++)
-            {
-                for (int j = 0; j < bm.Height; j++)
-                {
-                    int p = bm.GetPixel(i, j);
-                    int r = Color.GetRedComponent(p);
-                    int g = Color.GetGreenComponent(p);
-                    int b = Color.GetBlueComponent(p);
-                    int a = Color.GetAlphaComponent(p);
-
-                    r = 150 + r;
-                    g = 100 + g;
-                    //b = 100 + b;
-                    //a = 100 + a;
-                    _operation.SetPixel(i, j, Color.Argb(a, r, g, b));
-                }
-            }
-            //img.SetImageBitmap(operation);
-            return _operation;
-        }
-
-        public Bitmap ApplyInvertEffect(Bitmap _src) 
-        {
-            Bitmap bmOut = Bitmap.CreateBitmap(_src.Width, _src.Height, _src.GetConfig());
+            Bitmap bmOut = Bitmap.CreateBitmap(width, height, _src.GetConfig());
 
             int A, R, G, B;
-            int pixelColor;
+            int pixel;
 
-            int height = _src.Height;
-            int width = _src.Width;
+            double contrast = Math.Pow((100 + value) / 100, 2);
 
-            for (int y = 0; y < height; y++) {
-                for (int x = 0; x < width; x++) {
-                    pixelColor = _src.GetPixel(x, y);
+            for (int x = 0; x < width; ++x) {
+                for (int y = 0; y < height; ++y) {
+                    pixel = _src.GetPixel(x, y);
 
-                    A = Color.GetAlphaComponent(pixelColor);
-                    R = 255 - Color.GetRedComponent(pixelColor);
-                    G = 255 - Color.GetGreenComponent(pixelColor);
-                    B = 255 - Color.GetBlueComponent(pixelColor);
+                    A = Color.GetAlphaComponent(pixel);
+                    R = Color.GetRedComponent(pixel);
+                    R = (int)(((((R / 255.0) - 0.5) * contrast) + 0.5) * 255.0);
+                    if(R < 0) { R = 0; }
+                    else if(R > 255) { R = 255; }
+
+                    G = Color.GetBlueComponent(pixel);
+                    G = (int)(((((G / 255.0) - 0.5) * contrast) + 0.5) * 255.0);
+                    if(G < 0) { G = 0; }
+                    else if(G > 255) { G = 255; }
+
+                    B = Color.GetBlueComponent(pixel);
+                    B = (int)(((((B / 255.0) - 0.5) * contrast) + 0.5) * 255.0);
+                    if(B > 255) { B = 0; }
+                    else if(B > 255) { B = 255; }
 
                     bmOut.SetPixel(x, y, Color.Argb(A, R, G, B));
                 }
@@ -358,73 +250,6 @@ namespace MakeupMatcher.UI.Droid.Views
             return bmOut;
         }
 
-        /*public Bitmap ApplyTintEffect(Bitmap _src, int degree) {
-            int width = _src.Width;
-            int height = _src.Height;
-
-            int[] pix = new int[width * height];
-            _src.GetPixels(pix, 0, width, 0, 0, width, height);
-
-            int RY, GY, BY, RYY, GYY, BYY, R, G, B, Y;
-            double angle = (Math.PI * (double)degree) / 90;
-
-            for (int y = 0; y < height; y++) {
-                for (int x = 0; x < width; x++) {
-                    int r = (pix[index] >> 16) & new Color(0f00);
-                }
-            }
-        }*/
-
-        /*public Bitmap ApplySnowEffect(Bitmap _src) {
-            int width = _src.Width;
-            int height = _src.Height;
-            int[] pixels = new int[width * height];
-            _src.GetPixels(pixels, 0, width, 0, 0, width, height);
-
-            Random random = new Random();
-            int R, G, B, index = 0, thresHold = 50;
-
-            for (int y = 0; y < width; ++y) {
-                for (int x = 0; x < width; ++x) {
-                    index = y * width + x;
-
-                    R = Color.GetRedComponent(pixels[index]);
-                    G = Color.GetGreenComponent(pixels[index]);
-                    B = Color.GetBlueComponent(pixels[index]);
-                    const int COLOR_MAX = 256;
-
-                    thresHold = random.Next(COLOR_MAX);
-
-                    if(R > thresHold && G > thresHold && B > thresHold) {
-                        pixels[index] = Color.Rgb(COLOR_MAX, COLOR_MAX, COLOR_MAX);
-                    }
-                }
-            }
-
-            Bitmap bmOut = Bitmap.CreateBitmap(width, height, Bitmap.Config.Rgb565);
-            bmOut.SetPixels(pixels, 0, width, 0, 0, width, height);
-            return bmOut;
-        }*/
-
-        /*public Bitmap ApplyShadingFilter(Bitmap _src, int shadingColor) {
-            int width = _src.Width;
-            int height = _src.Height;
-            int[] pixels = new int[width * height];
-            _src.GetPixels(pixels, 0, width, 0, 0, width, height);
-
-            int index = 0;
-            for (int y = 0; y < height; ++y) {
-                for (int x = 0; x < width; ++x) {
-                    index = y * width + x;
-                    pixels[index] &= shadingColor;
-                }
-            }
-
-            Bitmap bmOut = Bitmap.CreateBitmap(width, height, Bitmap.Config.Argb8888);
-            bmOut.SetPixels(pixels, 0, width, 0, 0, width, height);
-            return bmOut;
-        }*/
-
         public Bitmap ApplySaturationFilter(Bitmap _src, int level) {
             int width = _src.Width;
             int height = _src.Height;
@@ -480,37 +305,40 @@ namespace MakeupMatcher.UI.Droid.Views
             return bmOut;
         }
 
-        public Bitmap ApplyReflection(Bitmap _src) {
-            const int REFLECTION_GAP = 4;
-
+        public Bitmap ApplyBrightnessEffect(Bitmap _src, int value) {
             int width = _src.Width;
             int height = _src.Height;
 
-            Matrix matrix = new Matrix();
-            matrix.PreScale(1, -1);
+            Bitmap bmOut = Bitmap.CreateBitmap(width, height, _src.GetConfig());
 
-            Bitmap reflectionImage = Bitmap.CreateBitmap(_src, 0, height / 2, width, height / 2, matrix, false);
-            Bitmap bitmapWithReflection = Bitmap.CreateBitmap(width, (height + height / 2), Bitmap.Config.Argb8888);
+            int A, R, G, B;
+            int pixel;
 
-            Canvas canvas = new Canvas(bitmapWithReflection);
-            canvas.DrawBitmap(_src, 0, 0, null);
+            for (int x = 0; x < width; ++x) {
+                for (int y = 0; y < height; ++y) {
+                    pixel = _src.GetPixel(x, y);
+                    A = Color.GetAlphaComponent(pixel);
+                    R = Color.GetRedComponent(pixel);
+                    G = Color.GetGreenComponent(pixel);
+                    B = Color.GetBlueComponent(pixel);
 
-            Paint defaultPaint = new Paint();
-            canvas.DrawRect(0, height, width, height + REFLECTION_GAP, defaultPaint);
-            canvas.DrawBitmap(reflectionImage, 0, height + REFLECTION_GAP, null);
+                    R += value;
+                    if(R > 255) { R = 255; }
+                    else if(R < 0) { R = 0; }
 
-            Paint paint = new Paint();
+                    G += value;
+                    if(G > 255) { G = 255; }
+                    else if(G < 0) { G = 0; }
 
-            LinearGradient shader = new LinearGradient(0, _src.Height, 0,
-                                    bitmapWithReflection.Height + REFLECTION_GAP,
-                                    new Color(0x70ffffff), new Color(0x00ffffff),
-                                    Shader.TileMode.Clamp);
+                    B += value;
+                    if(B > 255) { B = 255; }
+                    else if(B < 0) { B = 0; }
 
-            paint.SetShader(shader);
-            paint.SetXfermode(new PorterDuffXfermode(PorterDuff.Mode.DstIn));
-            canvas.DrawRect(0, height, width, bitmapWithReflection.Height + REFLECTION_GAP, paint);
+                    bmOut.SetPixel(x, y, Color.Argb(A, R, G, B));
+                }
+            }
 
-            return bitmapWithReflection;
+            return bmOut;
         }
 
     }
