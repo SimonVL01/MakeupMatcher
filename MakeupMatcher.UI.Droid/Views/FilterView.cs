@@ -60,10 +60,10 @@ namespace MakeupMatcher.UI.Droid.Views
             b2.Background = new BitmapDrawable(Resources, ApplyGammaEffect(imgResized, 4.5, 1.75, 3.25));
             b3.Background = new BitmapDrawable(Resources, ApplyGammaEffect(imgResized, 2, 4.25, 3.25));
             b4.Background = new BitmapDrawable(Resources, ApplyContrastEffect(imgResized, 0.3));
-            b5.Background = new BitmapDrawable(Resources,ApplyColorFilterEffect(imgResized, 0.9, 0.9, 0.0));
+            b5.Background = new BitmapDrawable(Resources, ApplyColorFilterEffect(imgResized, 0.9, 0.9, 0.0));
             b6.Background = new BitmapDrawable(Resources, ApplyBrightnessEffect(imgResized, -45));
             b7.Background = new BitmapDrawable(Resources, ApplyBrightnessEffect(imgResized, 75));
-     
+
             BitmapDrawable abmp = (BitmapDrawable)img.Drawable;
 
             bmp = abmp.Bitmap;
@@ -80,12 +80,33 @@ namespace MakeupMatcher.UI.Droid.Views
 
         }
 
-        public Bitmap Bright(Bitmap bm) {
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            MenuInflater.Inflate(Resource.Menu.FilterMenu, menu);
+            return base.OnPrepareOptionsMenu(menu);
+
+        }
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            switch (item.ItemId)
+            {
+                case Resource.Id.save:
+                    SavePicture();
+                    return true;
+            }
+            return base.OnOptionsItemSelected(item);
+        }
+
+        public Bitmap Bright(Bitmap bm)
+        {
             Bitmap _operation = Bitmap.CreateBitmap(bm.Width, bm.Height, bm.GetConfig());
             //operation = Bitmap.CreateBitmap(bm.Width, bm.Height, bm.GetConfig());
 
-            for (int i = 0; i < bm.Width; i++) {
-                for (int j = 0; j < bm.Height; j++) {
+            for (int i = 0; i < bm.Width; i++)
+            {
+                for (int j = 0; j < bm.Height; j++)
+                {
                     int p = bm.GetPixel(i, j);
                     int r = (Color.GetRedComponent(p) + 100) / 255;
                     int g = (Color.GetGreenComponent(p) + 100) / 255;
@@ -104,7 +125,8 @@ namespace MakeupMatcher.UI.Droid.Views
         }
 
 
-        public Bitmap ApplyContrastEffect(Bitmap _src, double value) {
+        public Bitmap ApplyContrastEffect(Bitmap _src, double value)
+        {
             int width = _src.Width;
             int height = _src.Height;
 
@@ -115,25 +137,27 @@ namespace MakeupMatcher.UI.Droid.Views
 
             double contrast = Math.Pow((100 + value) / 100, 2);
 
-            for (int x = 0; x < width; ++x) {
-                for (int y = 0; y < height; ++y) {
+            for (int x = 0; x < width; ++x)
+            {
+                for (int y = 0; y < height; ++y)
+                {
                     pixel = _src.GetPixel(x, y);
 
                     A = Color.GetAlphaComponent(pixel);
                     R = Color.GetRedComponent(pixel);
                     R = (int)(((((R / 255.0) - 0.5) * contrast) + 0.5) * 255.0);
-                    if(R < 0) { R = 0; }
-                    else if(R > 255) { R = 255; }
+                    if (R < 0) { R = 0; }
+                    else if (R > 255) { R = 255; }
 
                     G = Color.GetBlueComponent(pixel);
                     G = (int)(((((G / 255.0) - 0.5) * contrast) + 0.5) * 255.0);
-                    if(G < 0) { G = 0; }
-                    else if(G > 255) { G = 255; }
+                    if (G < 0) { G = 0; }
+                    else if (G > 255) { G = 255; }
 
                     B = Color.GetBlueComponent(pixel);
                     B = (int)(((((B / 255.0) - 0.5) * contrast) + 0.5) * 255.0);
-                    if(B > 255) { B = 0; }
-                    else if(B > 255) { B = 255; }
+                    if (B > 255) { B = 0; }
+                    else if (B > 255) { B = 255; }
 
                     bmOut.SetPixel(x, y, Color.Argb(A, R, G, B));
                 }
@@ -160,14 +184,17 @@ namespace MakeupMatcher.UI.Droid.Views
             int[] gammaG = new int[MAX_SIZE];
             int[] gammaB = new int[MAX_SIZE];
 
-            for (int i = 0; i < MAX_SIZE; ++i) {
+            for (int i = 0; i < MAX_SIZE; ++i)
+            {
                 gammaR[i] = (int)Math.Min(MAX_VALUE_INT, (int)((MAX_VALUE_DBL * Math.Pow(i / MAX_VALUE_DBL, REVERSE / red)) + 0.5));
                 gammaG[i] = (int)Math.Min(MAX_VALUE_INT, (int)((MAX_VALUE_DBL * Math.Pow(i / MAX_VALUE_DBL, REVERSE / green)) + 0.5));
                 gammaB[i] = (int)Math.Min(MAX_VALUE_INT, (int)((MAX_VALUE_DBL * Math.Pow(i / MAX_VALUE_DBL, REVERSE / blue)) + 0.5));
             }
 
-            for (int x = 0; x < width; ++x) {
-                for (int y = 0; y < height; ++y) {
+            for (int x = 0; x < width; ++x)
+            {
+                for (int y = 0; y < height; ++y)
+                {
                     pixel = _src.GetPixel(x, y);
                     A = Color.GetAlphaComponent(pixel);
 
@@ -182,7 +209,8 @@ namespace MakeupMatcher.UI.Droid.Views
             return bmOut;
         }
 
-        public Bitmap ApplyColorFilterEffect(Bitmap _src, double red, double green, double blue) {
+        public Bitmap ApplyColorFilterEffect(Bitmap _src, double red, double green, double blue)
+        {
             int width = _src.Width;
             int height = _src.Height;
 
@@ -208,7 +236,8 @@ namespace MakeupMatcher.UI.Droid.Views
             return bmOut;
         }
 
-        public Bitmap ApplySepiaToningEffect(Bitmap _src, int depth, double red, double green, double blue) {
+        public Bitmap ApplySepiaToningEffect(Bitmap _src, int depth, double red, double green, double blue)
+        {
             int width = _src.Width;
             int height = _src.Height;
 
@@ -235,13 +264,13 @@ namespace MakeupMatcher.UI.Droid.Views
                     B = G = R = (int)(GS_RED * R + GS_GREEN * G + GS_BLUE * B);
 
                     R += (depth * (int)red);
-                    if(R > 255) { R = 255; }
+                    if (R > 255) { R = 255; }
 
                     G += (depth * (int)green);
-                    if(G > 255) { G = 255; }
+                    if (G > 255) { G = 255; }
 
                     B += (depth * (int)blue);
-                    if(B > 255) { B = 255; }
+                    if (B > 255) { B = 255; }
 
                     bmOut.SetPixel(x, y, Color.Argb(A, R, G, B));
                 }
@@ -250,7 +279,8 @@ namespace MakeupMatcher.UI.Droid.Views
             return bmOut;
         }
 
-        public Bitmap ApplySaturationFilter(Bitmap _src, int level) {
+        public Bitmap ApplySaturationFilter(Bitmap _src, int level)
+        {
             int width = _src.Width;
             int height = _src.Height;
             int[] pixels = new int[width * height];
@@ -259,8 +289,10 @@ namespace MakeupMatcher.UI.Droid.Views
 
             int index = 0;
 
-            for (int y = 0; y < height; ++y) {
-                for (int x = 0; x < width; ++x) {
+            for (int y = 0; y < height; ++y)
+            {
+                for (int x = 0; x < width; ++x)
+                {
                     index = y * width + x;
 
                     Color.ColorToHSV(new Android.Graphics.Color(pixels[index]), HSV);
@@ -305,7 +337,8 @@ namespace MakeupMatcher.UI.Droid.Views
             return bmOut;
         }
 
-        public Bitmap ApplyBrightnessEffect(Bitmap _src, int value) {
+        public Bitmap ApplyBrightnessEffect(Bitmap _src, int value)
+        {
             int width = _src.Width;
             int height = _src.Height;
 
@@ -314,8 +347,10 @@ namespace MakeupMatcher.UI.Droid.Views
             int A, R, G, B;
             int pixel;
 
-            for (int x = 0; x < width; ++x) {
-                for (int y = 0; y < height; ++y) {
+            for (int x = 0; x < width; ++x)
+            {
+                for (int y = 0; y < height; ++y)
+                {
                     pixel = _src.GetPixel(x, y);
                     A = Color.GetAlphaComponent(pixel);
                     R = Color.GetRedComponent(pixel);
@@ -323,22 +358,26 @@ namespace MakeupMatcher.UI.Droid.Views
                     B = Color.GetBlueComponent(pixel);
 
                     R += value;
-                    if(R > 255) { R = 255; }
-                    else if(R < 0) { R = 0; }
+                    if (R > 255) { R = 255; }
+                    else if (R < 0) { R = 0; }
 
                     G += value;
-                    if(G > 255) { G = 255; }
-                    else if(G < 0) { G = 0; }
+                    if (G > 255) { G = 255; }
+                    else if (G < 0) { G = 0; }
 
                     B += value;
-                    if(B > 255) { B = 255; }
-                    else if(B < 0) { B = 0; }
+                    if (B > 255) { B = 255; }
+                    else if (B < 0) { B = 0; }
 
                     bmOut.SetPixel(x, y, Color.Argb(A, R, G, B));
                 }
             }
 
             return bmOut;
+        }
+
+        public async void SavePicture() {
+            await ViewModel.GoToMakeupCommand.ExecuteAsync();
         }
 
     }

@@ -2302,6 +2302,9 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f070082
 			public const int right_side = 2131165314;
 			
+			// aapt resource value: 0x7f070093
+			public const int save = 2131165331;
+			
 			// aapt resource value: 0x7f07001d
 			public const int screen = 2131165213;
 			
@@ -2655,6 +2658,22 @@ namespace MakeupMatcher.UI.Droid
 			}
 			
 			private Layout()
+			{
+			}
+		}
+		
+		public partial class Menu
+		{
+			
+			// aapt resource value: 0x7f0d0000
+			public const int FilterMenu = 2131558400;
+			
+			static Menu()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Menu()
 			{
 			}
 		}
