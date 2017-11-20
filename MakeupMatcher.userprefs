@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.ItemProperties.MakeupMatcher.UI.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.2417C9A2-E83C-40D4-A4FB-DBA497D0A548">
     <MonoDevelop.MacDev.AppleDevelopmentTeam />
   </MonoDevelop.Ide.ItemProperties.MakeupMatcher.UI.iOS>
-  <MonoDevelop.Ide.Workbench ActiveDocument="MakeupMatcher.UI.Droid/Resources/menu/FilterMenu.axml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MakeupMatcher.UI.Droid/Views/ProductView.cs">
     <Files>
       <File FileName="MakeupMatcher.Core/MyClass.cs" Line="1" Column="1" />
       <File FileName="MakeupMatcher.Core/Models/UserModel.cs" Line="1" Column="1" />
@@ -38,12 +38,13 @@
       <File FileName="MakeupMatcher.UI.iOS/Views/UserView.xib" />
       <File FileName="MakeupMatcher.UI.iOS/Views/UserView.designer.cs" Line="1" Column="1" />
       <File FileName="MakeupMatcher.UI.iOS/heart.json" Line="1" Column="1" />
-      <File FileName="MakeupMatcher.UI.Droid/Views/FilterView.cs" Line="75" Column="19" />
+      <File FileName="MakeupMatcher.UI.Droid/Views/FilterView.cs" Line="86" Column="23" />
       <File FileName="MakeupMatcher.UI.Droid/Views/MakeupView.cs" Line="77" Column="87" />
-      <File FileName="MakeupMatcher.UI.Droid/Resources/menu/FilterMenu.axml" Line="1" Column="1" />
+      <File FileName="MakeupMatcher.UI.Droid/Resources/menu/FilterMenu.axml" Line="5" Column="32" />
+      <File FileName="MakeupMatcher.UI.Droid/Views/ProductView.cs" Line="50" Column="60" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.MakeupMatcher.UI.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
+  <MonoDevelop.Ide.ItemProperties.MakeupMatcher.UI.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Nexus_4_API_21" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

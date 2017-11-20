@@ -2101,6 +2101,9 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f07002d
 			public const int always = 2131165229;
 			
+			// aapt resource value: 0x7f07008f
+			public const int animation_view = 2131165327;
+			
 			// aapt resource value: 0x7f070034
 			public const int async = 2131165236;
 			
@@ -2242,8 +2245,8 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f070041
 			public const int list_item = 2131165249;
 			
-			// aapt resource value: 0x7f070092
-			public const int login = 2131165330;
+			// aapt resource value: 0x7f070094
+			public const int login = 2131165332;
 			
 			// aapt resource value: 0x7f070011
 			public const int lottie_layer_name = 2131165201;
@@ -2251,8 +2254,8 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f07007e
 			public const int media_actions = 2131165310;
 			
-			// aapt resource value: 0x7f07008e
-			public const int message = 2131165326;
+			// aapt resource value: 0x7f070090
+			public const int message = 2131165328;
 			
 			// aapt resource value: 0x7f070026
 			public const int middle = 2131165222;
@@ -2302,8 +2305,8 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f070082
 			public const int right_side = 2131165314;
 			
-			// aapt resource value: 0x7f070093
-			public const int save = 2131165331;
+			// aapt resource value: 0x7f070095
+			public const int save = 2131165333;
 			
 			// aapt resource value: 0x7f07001d
 			public const int screen = 2131165213;
@@ -2383,6 +2386,9 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f070038
 			public const int strong = 2131165240;
 			
+			// aapt resource value: 0x7f07008e
+			public const int subText = 2131165326;
+			
 			// aapt resource value: 0x7f070056
 			public const int submenuarrow = 2131165270;
 			
@@ -2434,14 +2440,14 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f07001b
 			public const int useLogo = 2131165211;
 			
+			// aapt resource value: 0x7f070093
+			public const int userImage = 2131165331;
+			
+			// aapt resource value: 0x7f070092
+			public const int userPassword = 2131165330;
+			
 			// aapt resource value: 0x7f070091
-			public const int userImage = 2131165329;
-			
-			// aapt resource value: 0x7f070090
-			public const int userPassword = 2131165328;
-			
-			// aapt resource value: 0x7f07008f
-			public const int username = 2131165327;
+			public const int username = 2131165329;
 			
 			// aapt resource value: 0x7f070039
 			public const int weak = 2131165241;

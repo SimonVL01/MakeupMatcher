@@ -2480,6 +2480,7 @@ containing a value of this type.
         public static final int add=0x7f070021;
         public static final int alertTitle=0x7f070050;
         public static final int always=0x7f07002d;
+        public static final int animation_view=0x7f07008f;
         public static final int async=0x7f070034;
         public static final int beginning=0x7f070024;
         public static final int blocking=0x7f070035;
@@ -2527,10 +2528,10 @@ containing a value of this type.
         public static final int line3=0x7f07000b;
         public static final int listMode=0x7f070012;
         public static final int list_item=0x7f070041;
-        public static final int login=0x7f070092;
+        public static final int login=0x7f070094;
         public static final int lottie_layer_name=0x7f070011;
         public static final int media_actions=0x7f07007e;
-        public static final int message=0x7f07008e;
+        public static final int message=0x7f070090;
         public static final int middle=0x7f070026;
         public static final int multiply=0x7f07001c;
         public static final int never=0x7f070030;
@@ -2547,7 +2548,7 @@ containing a value of this type.
         public static final int recyclerView=0x7f07008b;
         public static final int right_icon=0x7f070086;
         public static final int right_side=0x7f070082;
-        public static final int save=0x7f070093;
+        public static final int save=0x7f070095;
         public static final int screen=0x7f07001d;
         public static final int scrollIndicatorDown=0x7f07004b;
         public static final int scrollIndicatorUp=0x7f070047;
@@ -2574,6 +2575,7 @@ containing a value of this type.
         public static final int src_over=0x7f070020;
         public static final int status_bar_latest_event_content=0x7f07007d;
         public static final int strong=0x7f070038;
+        public static final int subText=0x7f07008e;
         public static final int submenuarrow=0x7f070056;
         public static final int submit_area=0x7f070067;
         public static final int tabMode=0x7f070014;
@@ -2591,9 +2593,9 @@ containing a value of this type.
         public static final int uniform=0x7f070022;
         public static final int up=0x7f070009;
         public static final int useLogo=0x7f07001b;
-        public static final int userImage=0x7f070091;
-        public static final int userPassword=0x7f070090;
-        public static final int username=0x7f07008f;
+        public static final int userImage=0x7f070093;
+        public static final int userPassword=0x7f070092;
+        public static final int username=0x7f070091;
         public static final int weak=0x7f070039;
         public static final int withText=0x7f070031;
         public static final int wrap_content=0x7f070023;

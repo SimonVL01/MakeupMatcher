@@ -52,6 +52,9 @@ namespace MakeupMatcher.UI.Droid.Views
 
             mAdapter = new ProductAdapter(_productModel);
             mRecyclerView.SetAdapter(mAdapter);
+
+            //LottieAnimationView animationView = (LottieAnimationView)FindViewById(Resource.Id.animation_view);
+            //animationView.SetAnimation("");
         }
     }
 }
