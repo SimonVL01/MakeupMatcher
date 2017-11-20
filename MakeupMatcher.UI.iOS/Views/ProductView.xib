@@ -9,88 +9,29 @@
             <connections>
                 <outlet property="brand" destination="447" id="name-outlet-447"/>
                 <outlet property="product" destination="395" id="name-outlet-395"/>
+                <outlet property="tableView" destination="6268" id="name-outlet-6268"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewController id="287">
-            <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="288">
+        <viewController id="6215">
+            <layoutGuides>
+                <viewControllerLayoutGuide type="top" id="6213"/>
+                <viewControllerLayoutGuide type="bottom" id="6214"/>
+            </layoutGuides>
+            <view key="view" contentMode="scaleToFill" id="6216">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                <prototypes>
-                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="291" rowHeight="72">
-                        <rect key="frame" x="0.0" y="28" width="320" height="72"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="291" id="292">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="71.5"/>
-                            <autoresizingMask key="autoresizingMask"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="395" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" ambiguous="YES">
-                                    <rect key="frame" x="90" y="12" width="180" height="21"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="447" translatesAutoresizingMaskIntoConstraints="NO" text="Lancome Paris" misplaced="YES" ambiguous="YES">
-                                    <rect key="frame" x="90" y="38" width="180" height="21"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="1774" translatesAutoresizingMaskIntoConstraints="NO" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="24" y="11" width="42" height="42"/>
-                                </imageView>
-                            </subviews>
-                            <variation key="default">
-                                <mask key="subviews">
-                                    <exclude reference="395"/>
-                                    <exclude reference="447"/>
-                                    <exclude reference="1774"/>
-                                </mask>
-                                <mask key="constraints">
-                                    <exclude reference="3774"/>
-                                    <exclude reference="3878"/>
-                                    <exclude reference="4440"/>
-                                    <exclude reference="4492"/>
-                                    <exclude reference="4544"/>
-                                    <exclude reference="4596"/>
-                                </mask>
-                            </variation>
-                            <variation key="heightClass=regular-widthClass=compact">
-                                <mask key="subviews">
-                                    <include reference="395"/>
-                                    <include reference="447"/>
-                                    <include reference="1774"/>
-                                </mask>
-                                <mask key="constraints">
-                                    <include reference="3774"/>
-                                    <include reference="3878"/>
-                                    <include reference="4440"/>
-                                    <include reference="4492"/>
-                                    <include reference="4544"/>
-                                    <include reference="4596"/>
-                                </mask>
-                            </variation>
-                            <constraints>
-                                <constraint id="3774" firstItem="1774" firstAttribute="leading" secondItem="292" secondAttribute="leading" constant="24"/>
-                                <constraint id="3878" firstItem="292" firstAttribute="centerY" secondItem="1774" secondAttribute="centerY" constant="18">
-                                    <variation key="heightClass=regular-widthClass=compact" constant="1"/>
-                                </constraint>
-                                <constraint id="4440" firstItem="395" firstAttribute="leading" secondItem="1774" secondAttribute="trailing" constant="24"/>
-                                <constraint id="4492" firstItem="395" firstAttribute="top" secondItem="292" secondAttribute="top" constant="12"/>
-                                <constraint id="4544" firstItem="447" firstAttribute="leading" secondItem="1774" secondAttribute="trailing" constant="23"/>
-                                <constraint id="4596" firstItem="447" firstAttribute="top" secondItem="395" secondAttribute="centerY" constant="15"/>
-                            </constraints>
-                        </tableViewCellContentView>
-                    </tableViewCell>
-                </prototypes>
-                <connections>
-                    <outlet property="dataSource" destination="287" id="289"/>
-                    <outlet property="delegate" destination="287" id="290"/>
-                </connections>
-            </tableView>
-            <point key="canvasLocation" x="283" y="92"/>
-        </tableViewController>
+                <subviews>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6268" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </tableView>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="40" y="89"/>
+        </viewController>
     </objects>
     <resources>
         <image name="Image" width="1300" height="867"/>

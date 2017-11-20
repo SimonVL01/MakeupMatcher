@@ -145,6 +145,7 @@
     <Compile Include="Views\ProductView.cs" />
     <Compile Include="DroidServices\ProductAdapter.cs" />
     <Compile Include="DroidServices\ProductViewHolder.cs" />
+    <Compile Include="Views\FilterView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -168,6 +169,7 @@
     <AndroidResource Include="Resources\drawable\img.xml" />
     <AndroidResource Include="Resources\layout\Product.axml" />
     <AndroidResource Include="Resources\layout\ProductCardView.axml" />
+    <AndroidResource Include="Resources\layout\Filter.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

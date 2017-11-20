@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
+	<dimen name="margin_horizontal">4dp</dimen>
+	<dimen name="margin_vertical">8dp</dimen>
 	<dimen name="padding_horizontal">16dp</dimen>
 	<dimen name="padding_vertical">16dp</dimen>
 	<dimen name="button_width">96dp</dimen>

@@ -16,22 +16,13 @@ namespace MakeupMatcher.UI.iOS.Views
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel brand { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel product { get; set; }
+        UIKit.UITableView tableView { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
-            if (brand != null) {
-                brand.Dispose ();
-                brand = null;
-            }
-
-            if (product != null) {
-                product.Dispose ();
-                product = null;
+            if (tableView != null) {
+                tableView.Dispose ();
+                tableView = null;
             }
         }
     }

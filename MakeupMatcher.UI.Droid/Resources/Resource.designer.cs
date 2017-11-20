@@ -1526,11 +1526,11 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f06000d
 			public const int abc_text_size_title_material_toolbar = 2131099661;
 			
-			// aapt resource value: 0x7f06007b
-			public const int button_height = 2131099771;
+			// aapt resource value: 0x7f06007d
+			public const int button_height = 2131099773;
 			
-			// aapt resource value: 0x7f06007a
-			public const int button_width = 2131099770;
+			// aapt resource value: 0x7f06007c
+			public const int button_width = 2131099772;
 			
 			// aapt resource value: 0x7f060006
 			public const int cardview_compat_inset_shadow = 2131099654;
@@ -1601,6 +1601,12 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f060005
 			public const int item_touch_helper_swipe_escape_velocity = 2131099653;
 			
+			// aapt resource value: 0x7f060078
+			public const int margin_horizontal = 2131099768;
+			
+			// aapt resource value: 0x7f060079
+			public const int margin_vertical = 2131099769;
+			
 			// aapt resource value: 0x7f06006d
 			public const int notification_action_icon_size = 2131099757;
 			
@@ -1646,11 +1652,11 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f060077
 			public const int notification_top_pad_large_text = 2131099767;
 			
-			// aapt resource value: 0x7f060078
-			public const int padding_horizontal = 2131099768;
+			// aapt resource value: 0x7f06007a
+			public const int padding_horizontal = 2131099770;
 			
-			// aapt resource value: 0x7f060079
-			public const int padding_vertical = 2131099769;
+			// aapt resource value: 0x7f06007b
+			public const int padding_vertical = 2131099771;
 			
 			// aapt resource value: 0x7f06005c
 			public const int tooltip_corner_radius = 2131099740;
@@ -2026,8 +2032,8 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f07002c
 			public const int SYM = 2131165228;
 			
-			// aapt resource value: 0x7f070073
-			public const int action0 = 2131165299;
+			// aapt resource value: 0x7f07007b
+			public const int action0 = 2131165307;
 			
 			// aapt resource value: 0x7f07005c
 			public const int action_bar = 2131165276;
@@ -2050,17 +2056,17 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f07003a
 			public const int action_bar_title = 2131165242;
 			
-			// aapt resource value: 0x7f070070
-			public const int action_container = 2131165296;
+			// aapt resource value: 0x7f070078
+			public const int action_container = 2131165304;
 			
 			// aapt resource value: 0x7f07005d
 			public const int action_context_bar = 2131165277;
 			
-			// aapt resource value: 0x7f070077
-			public const int action_divider = 2131165303;
+			// aapt resource value: 0x7f07007f
+			public const int action_divider = 2131165311;
 			
-			// aapt resource value: 0x7f070071
-			public const int action_image = 2131165297;
+			// aapt resource value: 0x7f070079
+			public const int action_image = 2131165305;
 			
 			// aapt resource value: 0x7f070003
 			public const int action_menu_divider = 2131165187;
@@ -2077,11 +2083,11 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f07003c
 			public const int action_mode_close_button = 2131165244;
 			
-			// aapt resource value: 0x7f070072
-			public const int action_text = 2131165298;
+			// aapt resource value: 0x7f07007a
+			public const int action_text = 2131165306;
 			
-			// aapt resource value: 0x7f070080
-			public const int actions = 2131165312;
+			// aapt resource value: 0x7f070088
+			public const int actions = 2131165320;
 			
 			// aapt resource value: 0x7f07003d
 			public const int activity_chooser_view_content = 2131165245;
@@ -2110,23 +2116,23 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f070043
 			public const int buttonPanel = 2131165251;
 			
-			// aapt resource value: 0x7f07006e
-			public const int camera = 2131165294;
+			// aapt resource value: 0x7f070076
+			public const int camera = 2131165302;
 			
-			// aapt resource value: 0x7f070074
-			public const int cancel_action = 2131165300;
+			// aapt resource value: 0x7f07007c
+			public const int cancel_action = 2131165308;
 			
 			// aapt resource value: 0x7f070053
 			public const int checkbox = 2131165267;
 			
-			// aapt resource value: 0x7f07007c
-			public const int chronometer = 2131165308;
+			// aapt resource value: 0x7f070084
+			public const int chronometer = 2131165316;
 			
 			// aapt resource value: 0x7f07002e
 			public const int collapseActionView = 2131165230;
 			
-			// aapt resource value: 0x7f07006b
-			public const int color = 2131165291;
+			// aapt resource value: 0x7f070073
+			public const int color = 2131165299;
 			
 			// aapt resource value: 0x7f070046
 			public const int contentPanel = 2131165254;
@@ -2152,8 +2158,8 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f070025
 			public const int end = 2131165221;
 			
-			// aapt resource value: 0x7f070082
-			public const int end_padder = 2131165314;
+			// aapt resource value: 0x7f07008a
+			public const int end_padder = 2131165322;
 			
 			// aapt resource value: 0x7f07003e
 			public const int expand_activities_button = 2131165246;
@@ -2161,8 +2167,29 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f070052
 			public const int expanded_menu = 2131165266;
 			
+			// aapt resource value: 0x7f070077
+			public const int filter = 2131165303;
+			
+			// aapt resource value: 0x7f07006c
+			public const int filter_1 = 2131165292;
+			
+			// aapt resource value: 0x7f07006d
+			public const int filter_2 = 2131165293;
+			
+			// aapt resource value: 0x7f07006e
+			public const int filter_3 = 2131165294;
+			
 			// aapt resource value: 0x7f07006f
-			public const int filter = 2131165295;
+			public const int filter_4 = 2131165295;
+			
+			// aapt resource value: 0x7f070070
+			public const int filter_5 = 2131165296;
+			
+			// aapt resource value: 0x7f070071
+			public const int filter_6 = 2131165297;
+			
+			// aapt resource value: 0x7f070072
+			public const int filter_7 = 2131165298;
 			
 			// aapt resource value: 0x7f070036
 			public const int forever = 2131165238;
@@ -2176,8 +2203,8 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f070042
 			public const int icon = 2131165250;
 			
-			// aapt resource value: 0x7f070081
-			public const int icon_group = 2131165313;
+			// aapt resource value: 0x7f070089
+			public const int icon_group = 2131165321;
 			
 			// aapt resource value: 0x7f07002f
 			public const int ifRoom = 2131165231;
@@ -2185,11 +2212,14 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f07003f
 			public const int image = 2131165247;
 			
-			// aapt resource value: 0x7f07006c
-			public const int imageView = 2131165292;
+			// aapt resource value: 0x7f070074
+			public const int imageView = 2131165300;
 			
-			// aapt resource value: 0x7f07007d
-			public const int info = 2131165309;
+			// aapt resource value: 0x7f07006b
+			public const int image_edit = 2131165291;
+			
+			// aapt resource value: 0x7f070085
+			public const int info = 2131165317;
 			
 			// aapt resource value: 0x7f070037
 			public const int italic = 2131165239;
@@ -2197,8 +2227,8 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f070000
 			public const int item_touch_helper_previous_elevation = 2131165184;
 			
-			// aapt resource value: 0x7f07006d
-			public const int library = 2131165293;
+			// aapt resource value: 0x7f070075
+			public const int library = 2131165301;
 			
 			// aapt resource value: 0x7f07000a
 			public const int line1 = 2131165194;
@@ -2212,17 +2242,17 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f070041
 			public const int list_item = 2131165249;
 			
-			// aapt resource value: 0x7f07008a
-			public const int login = 2131165322;
+			// aapt resource value: 0x7f070092
+			public const int login = 2131165330;
 			
 			// aapt resource value: 0x7f070011
 			public const int lottie_layer_name = 2131165201;
 			
-			// aapt resource value: 0x7f070076
-			public const int media_actions = 2131165302;
+			// aapt resource value: 0x7f07007e
+			public const int media_actions = 2131165310;
 			
-			// aapt resource value: 0x7f070086
-			public const int message = 2131165318;
+			// aapt resource value: 0x7f07008e
+			public const int message = 2131165326;
 			
 			// aapt resource value: 0x7f070026
 			public const int middle = 2131165222;
@@ -2239,20 +2269,20 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f070013
 			public const int normal = 2131165203;
 			
-			// aapt resource value: 0x7f07007f
-			public const int notification_background = 2131165311;
+			// aapt resource value: 0x7f070087
+			public const int notification_background = 2131165319;
 			
-			// aapt resource value: 0x7f070079
-			public const int notification_main_column = 2131165305;
+			// aapt resource value: 0x7f070081
+			public const int notification_main_column = 2131165313;
 			
-			// aapt resource value: 0x7f070078
-			public const int notification_main_column_container = 2131165304;
+			// aapt resource value: 0x7f070080
+			public const int notification_main_column_container = 2131165312;
 			
 			// aapt resource value: 0x7f070045
 			public const int parentPanel = 2131165253;
 			
-			// aapt resource value: 0x7f070084
-			public const int profile = 2131165316;
+			// aapt resource value: 0x7f07008c
+			public const int profile = 2131165324;
 			
 			// aapt resource value: 0x7f070006
 			public const int progress_circular = 2131165190;
@@ -2263,14 +2293,14 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f070055
 			public const int radio = 2131165269;
 			
-			// aapt resource value: 0x7f070083
-			public const int recyclerView = 2131165315;
+			// aapt resource value: 0x7f07008b
+			public const int recyclerView = 2131165323;
 			
-			// aapt resource value: 0x7f07007e
-			public const int right_icon = 2131165310;
+			// aapt resource value: 0x7f070086
+			public const int right_icon = 2131165318;
 			
-			// aapt resource value: 0x7f07007a
-			public const int right_side = 2131165306;
+			// aapt resource value: 0x7f070082
+			public const int right_side = 2131165314;
 			
 			// aapt resource value: 0x7f07001d
 			public const int screen = 2131165213;
@@ -2344,8 +2374,8 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f070020
 			public const int src_over = 2131165216;
 			
-			// aapt resource value: 0x7f070075
-			public const int status_bar_latest_event_content = 2131165301;
+			// aapt resource value: 0x7f07007d
+			public const int status_bar_latest_event_content = 2131165309;
 			
 			// aapt resource value: 0x7f070038
 			public const int strong = 2131165240;
@@ -2371,11 +2401,11 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f070049
 			public const int textSpacerNoTitle = 2131165257;
 			
-			// aapt resource value: 0x7f070085
-			public const int textView = 2131165317;
+			// aapt resource value: 0x7f07008d
+			public const int textView = 2131165325;
 			
-			// aapt resource value: 0x7f07007b
-			public const int time = 2131165307;
+			// aapt resource value: 0x7f070083
+			public const int time = 2131165315;
 			
 			// aapt resource value: 0x7f07000e
 			public const int title = 2131165198;
@@ -2401,14 +2431,14 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f07001b
 			public const int useLogo = 2131165211;
 			
-			// aapt resource value: 0x7f070089
-			public const int userImage = 2131165321;
+			// aapt resource value: 0x7f070091
+			public const int userImage = 2131165329;
 			
-			// aapt resource value: 0x7f070088
-			public const int userPassword = 2131165320;
+			// aapt resource value: 0x7f070090
+			public const int userPassword = 2131165328;
 			
-			// aapt resource value: 0x7f070087
-			public const int username = 2131165319;
+			// aapt resource value: 0x7f07008f
+			public const int username = 2131165327;
 			
 			// aapt resource value: 0x7f070039
 			public const int weak = 2131165241;
@@ -2542,79 +2572,82 @@ namespace MakeupMatcher.UI.Droid
 			public const int abc_select_dialog_material = 2130968602;
 			
 			// aapt resource value: 0x7f04001b
-			public const int Makeup = 2130968603;
+			public const int Filter = 2130968603;
 			
 			// aapt resource value: 0x7f04001c
-			public const int notification_action = 2130968604;
+			public const int Makeup = 2130968604;
 			
 			// aapt resource value: 0x7f04001d
-			public const int notification_action_tombstone = 2130968605;
+			public const int notification_action = 2130968605;
 			
 			// aapt resource value: 0x7f04001e
-			public const int notification_media_action = 2130968606;
+			public const int notification_action_tombstone = 2130968606;
 			
 			// aapt resource value: 0x7f04001f
-			public const int notification_media_cancel_action = 2130968607;
+			public const int notification_media_action = 2130968607;
 			
 			// aapt resource value: 0x7f040020
-			public const int notification_template_big_media = 2130968608;
+			public const int notification_media_cancel_action = 2130968608;
 			
 			// aapt resource value: 0x7f040021
-			public const int notification_template_big_media_custom = 2130968609;
+			public const int notification_template_big_media = 2130968609;
 			
 			// aapt resource value: 0x7f040022
-			public const int notification_template_big_media_narrow = 2130968610;
+			public const int notification_template_big_media_custom = 2130968610;
 			
 			// aapt resource value: 0x7f040023
-			public const int notification_template_big_media_narrow_custom = 2130968611;
+			public const int notification_template_big_media_narrow = 2130968611;
 			
 			// aapt resource value: 0x7f040024
-			public const int notification_template_custom_big = 2130968612;
+			public const int notification_template_big_media_narrow_custom = 2130968612;
 			
 			// aapt resource value: 0x7f040025
-			public const int notification_template_icon_group = 2130968613;
+			public const int notification_template_custom_big = 2130968613;
 			
 			// aapt resource value: 0x7f040026
-			public const int notification_template_lines_media = 2130968614;
+			public const int notification_template_icon_group = 2130968614;
 			
 			// aapt resource value: 0x7f040027
-			public const int notification_template_media = 2130968615;
+			public const int notification_template_lines_media = 2130968615;
 			
 			// aapt resource value: 0x7f040028
-			public const int notification_template_media_custom = 2130968616;
+			public const int notification_template_media = 2130968616;
 			
 			// aapt resource value: 0x7f040029
-			public const int notification_template_part_chronometer = 2130968617;
+			public const int notification_template_media_custom = 2130968617;
 			
 			// aapt resource value: 0x7f04002a
-			public const int notification_template_part_time = 2130968618;
+			public const int notification_template_part_chronometer = 2130968618;
 			
 			// aapt resource value: 0x7f04002b
-			public const int Product = 2130968619;
+			public const int notification_template_part_time = 2130968619;
 			
 			// aapt resource value: 0x7f04002c
-			public const int ProductCardView = 2130968620;
+			public const int Product = 2130968620;
 			
 			// aapt resource value: 0x7f04002d
-			public const int select_dialog_item_material = 2130968621;
+			public const int ProductCardView = 2130968621;
 			
 			// aapt resource value: 0x7f04002e
-			public const int select_dialog_multichoice_material = 2130968622;
+			public const int select_dialog_item_material = 2130968622;
 			
 			// aapt resource value: 0x7f04002f
-			public const int select_dialog_singlechoice_material = 2130968623;
+			public const int select_dialog_multichoice_material = 2130968623;
 			
 			// aapt resource value: 0x7f040030
-			public const int SplashScreen = 2130968624;
+			public const int select_dialog_singlechoice_material = 2130968624;
 			
 			// aapt resource value: 0x7f040031
-			public const int support_simple_spinner_dropdown_item = 2130968625;
+			public const int SplashScreen = 2130968625;
 			
 			// aapt resource value: 0x7f040032
-			public const int tooltip = 2130968626;
+			public const int support_simple_spinner_dropdown_item = 2130968626;
 			
 			// aapt resource value: 0x7f040033
-			public const int User = 2130968627;
+			public const int tooltip = 2130968627;
+			
+			// aapt resource value: 0x7f040034
+			public const int User = 2130968628;
 			
 			static Layout()
 			{

@@ -17,7 +17,7 @@ namespace MakeupMatcher.UI.iOS.Views
 {
     public partial class ProductView : MvxTableViewController<ProductViewModel>
     {
-        private List<ProductModel> _productList
+        private List<ProductModel> _productList;
 
         public ProductView() : base("ProductView", null)
         {
@@ -26,7 +26,7 @@ namespace MakeupMatcher.UI.iOS.Views
                 new ProductModel { ProductId = 1, ProductBrand = "Pantone, because you're worth it", ProductName="Pantone Fresh & Fruity", ProductPrice= 20.05, Favorite=false},
                 new ProductModel { ProductId = 2, ProductBrand = "Vichy", ProductName="Glossy skintone", ProductPrice= 19.56, Favorite=false},
                 new ProductModel { ProductId = 3, ProductBrand = "Loreal Paris", ProductName="50 shades of brown", ProductPrice= 29.75, Favorite=false},
-                new ProductModel { ProductId = 4, ProductBrand = "Vichy", ProductName="Peach Blossom", ProductPrice= 35, 34, Favorite=false},
+                new ProductModel { ProductId = 4, ProductBrand = "Vichy", ProductName="Peach Blossom", ProductPrice= 35.34, Favorite=false},
                 new ProductModel { ProductId = 5, ProductBrand = "Dove", ProductName="Natural Beauty", ProductPrice= 14.56, Favorite=false},
             };
         }
