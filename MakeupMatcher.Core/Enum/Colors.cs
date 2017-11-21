@@ -7,7 +7,7 @@ namespace MakeupMatcher.Core.Enum
         Magenta,
         Pink,
         DarkBrown,
-        LightBrown,
+        TannedBrown,
         Ochre,
         LittleBlue,
     }

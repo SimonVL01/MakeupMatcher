@@ -10,6 +10,7 @@ using MakeupMatcher.UI.iOS.iOSServices;
 using UIKit;
 using CoreGraphics;
 using Foundation;
+using MakeupMatcher.Core.Enum;
 
 namespace MakeupMatcher.UI.iOS.Views
 {
@@ -19,6 +20,7 @@ namespace MakeupMatcher.UI.iOS.Views
         private int TouchY;
         private UIColor FavColor;
         private UIImagePickerController ImagePicker;
+        private Colors _chosenColor;
         private byte[] alphaPixel = { 0, 0, 0, 0 };
 
 
@@ -83,6 +85,23 @@ namespace MakeupMatcher.UI.iOS.Views
             //};
 
             color.TouchUpInside += async (sender, e) => {
+
+                /*if (color.BackgroundColor.CIColor.Red <= 200 && color.BackgroundColor.CIColor.Blue >= 75 && color.BackgroundColor.CIColor.Green >= 75)
+                    _chosenColor = Colors.Red;
+                else if (color.BackgroundColor.CIColor.Red <= 210 && color.BackgroundColor.CIColor.Blue >= 210 && color.BackgroundColor.CIColor.Green <= 50)
+                    _chosenColor = Colors.Magenta;
+                if (color.BackgroundColor.CIColor.Red <= 225 && color.BackgroundColor.CIColor.Green <= 150 && color.BackgroundColor.CIColor.Green >= 200 && color.BackgroundColor.CIColor.Blue >= 200)
+                    _chosenColor = Colors.Pink;
+                else if (color.BackgroundColor.CIColor.Red >= 100 && color.BackgroundColor.CIColor.Blue >= 100 && color.BackgroundColor.CIColor.Green >= 100)
+                    _chosenColor = Colors.DarkBrown;
+                else if (color.BackgroundColor.CIColor.Red >= 225 && color.BackgroundColor.CIColor.Blue >= 225 && color.BackgroundColor.CIColor.Green >= 225)
+                    _chosenColor = Colors.TannedBrown;
+                else if (color.BackgroundColor.CIColor.Red >= 200 && color.BackgroundColor.CIColor.Blue <= 200 && color.BackgroundColor.CIColor.Blue >= 100 && color.BackgroundColor.CIColor.Green >= 200)
+                    _chosenColor = Colors.Ochre;
+                else if (color.BackgroundColor.CIColor.Red <= 120 && color.BackgroundColor.CIColor.Blue <= 225 && color.BackgroundColor.CIColor.Green <= 150 && color.BackgroundColor.CIColor.Green >= 225)
+                    _chosenColor = Colors.LittleBlue;*/
+
+                //this.CreateBinding(_chosenColor).To((MakeupViewModel vm) => vm.ColorName).Apply();
                 await ViewModel.GoToProductCommand.ExecuteAsync();
             };
 

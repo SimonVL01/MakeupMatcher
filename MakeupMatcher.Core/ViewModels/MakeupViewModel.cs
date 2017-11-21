@@ -4,6 +4,7 @@ using MakeupMatcher.Core.Models;
 using MvvmCross.Platform;
 using System.Threading.Tasks;
 using MvvmCross.Core.Navigation;
+using MakeupMatcher.Core.Enum;
 
 namespace MakeupMatcher.Core.ViewModels
 {
@@ -30,9 +31,9 @@ namespace MakeupMatcher.Core.ViewModels
             get { return _colorId; }
         }
 
-        string _colorName;
+        Colors _colorName;
 
-        public string ColorName
+        public Colors ColorName
         {
             get { return _colorName; }
             set

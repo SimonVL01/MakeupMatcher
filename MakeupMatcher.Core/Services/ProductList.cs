@@ -31,7 +31,7 @@ namespace MakeupMatcher.Core.Services
             _productList[6].ProductId = 7; _productList[6].ProductName = "A shade of gloss"; _productList[6].ProductBrand = "Be Creative Make Up"; _productList[6].ProductPrice = 21.64; _productList[6].Favorite = false; _productList[6].ProductColor = Enum.Colors.Pink;
             _productList[7].ProductId = 8; _productList[7].ProductName = "Colors of Atlantis"; _productList[7].ProductBrand = "Loreal"; _productList[7].ProductPrice = 28.55; _productList[7].Favorite = false; _productList[7].ProductColor = Enum.Colors.LittleBlue;
             _productList[8].ProductId = 9; _productList[8].ProductName = "Skin darkener"; _productList[8].ProductBrand = "Be Creative Make Up"; _productList[8].ProductPrice = 26.53; _productList[8].Favorite = false; _productList[8].ProductColor = Enum.Colors.DarkBrown;
-            _productList[9].ProductId = 10; _productList[9].ProductName = "Reëlle Magique"; _productList[9].ProductBrand = "Vichy"; _productList[9].ProductPrice = 29.99; _productList[9].Favorite = false; _productList[9].ProductColor = Enum.Colors.LightBrown;
+            _productList[9].ProductId = 10; _productList[9].ProductName = "Reëlle Magique"; _productList[9].ProductBrand = "Vichy"; _productList[9].ProductPrice = 29.99; _productList[9].Favorite = false; _productList[9].ProductColor = Enum.Colors.TannedBrown;
         }
 
         public static ProductModel[] GetProductList

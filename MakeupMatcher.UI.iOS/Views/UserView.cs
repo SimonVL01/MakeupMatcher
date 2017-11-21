@@ -53,7 +53,12 @@ namespace MakeupMatcher.UI.iOS.Views
                 user.UserImage = pic.CurrentBackgroundImage.ToString();
                 user.UserPassWord = password.Text;
 
-                //
+                //Databinding
+
+                //this.CreateBinding().To((UserViewModel uvm) => uvm.UserId);
+                this.CreateBinding(username).To((UserViewModel uvm) => uvm.Username).Apply();
+                this.CreateBinding(password).To((UserViewModel uvm) => uvm.UserPassword);
+                this.CreateBinding(pic.AccessibilityLabel).To((UserViewModel uvm) => uvm.UserImage);
 
                 db.Insert(user);
                 db.Close();
@@ -179,7 +184,10 @@ namespace MakeupMatcher.UI.iOS.Views
             if (editedImage != null)
             {
                 Console.WriteLine("got the edited image");
-                pic.SetBackgroundImage(editedImage, UIControlState.Highlighted); //= editedImage;
+                pic.SetBackgroundImage(editedImage, UIControlState.Highlighted);
+                pic.Layer.CornerRadius = 65; // this value vary as per your desire
+                pic.ClipsToBounds = true;
+                //= editedImage;
             }
 
             ImagePicker.DismissViewController(true, null);

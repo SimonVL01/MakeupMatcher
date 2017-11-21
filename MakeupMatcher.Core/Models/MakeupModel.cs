@@ -1,4 +1,5 @@
 ﻿using System;
+using MakeupMatcher.Core.Enum;
 
 namespace MakeupMatcher.Core.Models
 {
@@ -6,7 +7,7 @@ namespace MakeupMatcher.Core.Models
     {
         
         public int ColorId { get; set; }
-        public string ColorName { get; set; }
+        public Colors ColorName { get; set; }
         public ProductModel[] Products { get; set; }
     }
 }
