@@ -39,6 +39,7 @@
     <Compile Include="Repositories\UserRepository.cs" />
     <Compile Include="ViewModels\FilterViewModel.cs" />
     <Compile Include="Services\ProductList.cs" />
+    <Compile Include="Enum\Colors.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MvvmCross.Platform">
@@ -80,6 +81,7 @@
     <Folder Include="Services\" />
     <Folder Include="ViewModels\" />
     <Folder Include="Repositories\" />
+    <Folder Include="Enum\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>

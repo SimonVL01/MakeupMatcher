@@ -2,6 +2,7 @@
 using MvvmCross.Core.ViewModels;
 using MakeupMatcher.Core.Models;
 using MvvmCross.Platform;
+using MakeupMatcher.Core.Enum;
 
 namespace MakeupMatcher.Core.ViewModels
 {
@@ -72,6 +73,19 @@ namespace MakeupMatcher.Core.ViewModels
                 _favorite = value;
                 _product.Favorite = value;
                 RaisePropertyChanged(() => _favorite);
+            }
+        }
+
+        Colors _productColor;
+
+        public Colors ProductColor 
+        {
+            get { return _product.ProductColor; }
+            set
+            {
+                _productColor = value;
+                _product.ProductColor = value;
+                RaisePropertyChanged(() => _productColor);
             }
         }
     }
