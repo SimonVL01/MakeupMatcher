@@ -12,14 +12,6 @@ namespace MakeupMatcher.Core.ViewModels
 
         private readonly IMvxNavigationService _navigationService;
 
-        /*{
-            get
-            {
-                _goToMakeupCommand = _goToMakeupCommand ?? new MvxAsyncCommand(() => _navigationService.Navigate<MakeupViewModel>());
-                return _goToMakeupCommand;
-            }
-        }*/
-
         public FilterViewModel(IMvxNavigationService navigationService) {
             _navigationService = navigationService;
         }

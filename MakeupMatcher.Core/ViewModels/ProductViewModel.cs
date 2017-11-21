@@ -8,13 +8,14 @@ namespace MakeupMatcher.Core.ViewModels
 {
     public class ProductViewModel : MvxViewModel
     {
-        readonly ProductModel _product;
+        //readonly ProductModel _product;
 
         //Constructor
 
         public ProductViewModel()
         {
-            _product = Mvx.IocConstruct<ProductModel>();
+            //_product = 
+            Mvx.IocConstruct<ProductModel>();
         }
 
         //State
@@ -23,19 +24,18 @@ namespace MakeupMatcher.Core.ViewModels
 
         public int ProductId
         {
-            get { return _product.ProductId; }
+            get { return _productId; }
         }
 
         string _productName;
 
         public string ProductName
         {
-            get { return _product.ProductName; }
+            get { return _productName; }
             set
             {
                 _productName = value;
-                _product.ProductName = value;
-                RaisePropertyChanged(() => _productName);
+                RaisePropertyChanged(() => ProductName);
             }
         }
 
@@ -43,12 +43,11 @@ namespace MakeupMatcher.Core.ViewModels
 
         public string ProductBrand
         {
-            get { return _product.ProductBrand; }
+            get { return ProductBrand; }
             set
             {
                 _productBrand = value;
-                _product.ProductBrand = value;
-                RaisePropertyChanged(() => _productBrand);
+                RaisePropertyChanged(() => ProductBrand);
             }
         }
 
@@ -56,11 +55,10 @@ namespace MakeupMatcher.Core.ViewModels
 
         public double ProductPrice
         {
-            get { return _product.ProductPrice; }
+            get { return _productPrice; }
             set {
                 _productPrice = value;
-                _product.ProductPrice = value;
-                RaisePropertyChanged(() => _productPrice);
+                RaisePropertyChanged(() => ProductPrice);
             }
         }
 
@@ -68,11 +66,10 @@ namespace MakeupMatcher.Core.ViewModels
 
         public bool Favorite
         {
-            get { return _product.Favorite; }
+            get { return _favorite; }
             set {
                 _favorite = value;
-                _product.Favorite = value;
-                RaisePropertyChanged(() => _favorite);
+                RaisePropertyChanged(() => Favorite);
             }
         }
 
@@ -80,12 +77,11 @@ namespace MakeupMatcher.Core.ViewModels
 
         public Colors ProductColor 
         {
-            get { return _product.ProductColor; }
+            get { return _productColor; }
             set
             {
                 _productColor = value;
-                _product.ProductColor = value;
-                RaisePropertyChanged(() => _productColor);
+                RaisePropertyChanged(() => ProductColor);
             }
         }
     }

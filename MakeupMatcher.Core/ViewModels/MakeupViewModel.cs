@@ -10,14 +10,15 @@ namespace MakeupMatcher.Core.ViewModels
     public class MakeupViewModel : MvxViewModel
     {
         private readonly IMvxNavigationService _navigationService;
-        readonly MakeupModel _makeupProfile;
+        //readonly MakeupModel _makeupProfile;
 
         //Constructor
 
         public MakeupViewModel(IMvxNavigationService navigationService)
         {
             _navigationService = navigationService;
-            _makeupProfile = Mvx.IocConstruct<MakeupModel>();
+            //_makeupProfile = 
+            Mvx.IocConstruct<MakeupModel>();
         }
 
         //State
@@ -26,18 +27,17 @@ namespace MakeupMatcher.Core.ViewModels
 
         public int ColorId
         {
-            get { return _makeupProfile.ColorId; }
+            get { return _colorId; }
         }
 
         string _colorName;
 
         public string ColorName
         {
-            get { return _makeupProfile.ColorName; }
+            get { return _colorName; }
             set
             {
                 _colorName = value;
-                _makeupProfile.ColorName = value;;
                 RaisePropertyChanged(() => ColorName);
             }
         }
@@ -46,11 +46,10 @@ namespace MakeupMatcher.Core.ViewModels
 
         public ProductModel[] Products
         {
-            get { return _makeupProfile.Products; }
+            get { return _products; }
             set
             {
                 _products = value;
-                _makeupProfile.Products = value;
                 RaisePropertyChanged(() => Products);
             }
         }
@@ -80,11 +79,5 @@ namespace MakeupMatcher.Core.ViewModels
                 return _goToProductCommand;
             }
         }
-
-        /*public override async Task Initialize()
-        {
-            //
-        }*/
-
     }
 }

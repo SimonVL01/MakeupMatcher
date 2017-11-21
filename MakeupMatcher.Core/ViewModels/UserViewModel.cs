@@ -10,7 +10,7 @@ namespace MakeupMatcher.Core.ViewModels
 {
     public class UserViewModel : MvxViewModel
     {
-        readonly UserModel _user;
+        //readonly UserModel _user;
         private readonly IMvxNavigationService _navigationService;
 
         //Constructor
@@ -18,7 +18,8 @@ namespace MakeupMatcher.Core.ViewModels
         public UserViewModel(IMvxNavigationService navigationService)
         {
             _navigationService = navigationService;
-            _user = Mvx.IocConstruct<UserModel>();
+            //_user = 
+            Mvx.IocConstruct<UserModel>();
         }
 
         //State
@@ -27,18 +28,17 @@ namespace MakeupMatcher.Core.ViewModels
 
         public int UserId
         {
-            get { return _user.UserId; }
+            get { return _userId; }
         }
 
         string _username;
 
         public string Username
         {
-            get { return _user.UserName; }
+            get { return _username; }
             set
             {
                 _username = value;
-                _user.UserName = value;
                 RaisePropertyChanged(() => Username);
             }
         }
@@ -47,11 +47,10 @@ namespace MakeupMatcher.Core.ViewModels
 
         public string UserImage
         {
-            get { return _user.UserImage; }
+            get { return _userImage; }
             set
             {
                 _userImage = value;
-                _user.UserImage = value;
                 RaisePropertyChanged(() => UserImage);
             }
         }
@@ -60,42 +59,13 @@ namespace MakeupMatcher.Core.ViewModels
 
         public string UserPassword
         {
-            get { return _user.UserPassWord; }
+            get { return _userPassword; }
             set 
             {
                 _userPassword = value;
-                _user.UserPassWord = value;
                 RaisePropertyChanged(() => UserPassword);
             }
         }
-
-        /*MakeupModel _makeupProfile;
-
-        public MakeupModel MakeupProfile
-        {
-            get { return _user.MakeupProfile; }
-            set
-            {
-                _makeupProfile = value;
-                _user.MakeupProfile = value;
-                RaisePropertyChanged(() => MakeupProfile);
-            }
-        }*/
-
-        //NavigationService
-       
-        public override void Prepare()
-        {
-            //
-        }
-
-        /*public IMvxCommand GoCommand()
-        {
-            await _navigationService.Navigate<MakeupViewModel>();
-            //ShowViewModel<MakeupViewModel>();
-        }*/
-
-
 
         private IMvxAsyncCommand _goToMakeupCommand;
         public IMvxAsyncCommand GoToMakeupCommand
