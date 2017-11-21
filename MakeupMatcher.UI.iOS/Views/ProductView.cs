@@ -27,6 +27,8 @@ namespace MakeupMatcher.UI.iOS.Views
             base.ViewDidLoad();
 
             NavigationItem.Title = "ColorMatch results";
+
+
         }
 
         public override void DidReceiveMemoryWarning()

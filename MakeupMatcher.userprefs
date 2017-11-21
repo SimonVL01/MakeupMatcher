@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{B9B140C6-7655-4E40-B6AB-6C9FFE85B8DA}|Default">
   <MonoDevelop.Ide.ItemProperties.MakeupMatcher.UI.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.BB876733-0A0E-459D-87B5-F3340B34C274" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MakeupMatcher.UI.iOS/Views/ProductView.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MakeupMatcher.UI.iOS/Views/ProductView.xib">
     <Files>
       <File FileName="MakeupMatcher.Core/MyClass.cs" Line="1" Column="1" />
       <File FileName="MakeupMatcher.Core/Models/UserModel.cs" Line="1" Column="1" />
@@ -44,9 +44,10 @@
       <File FileName="MakeupMatcher.UI.iOS/Views/MakeupView.xib" />
       <File FileName="MakeupMatcher.UI.iOS/Views/FilterView.xib" />
       <File FileName="MakeupMatcher.UI.iOS/Views/MakeupView.cs" Line="1" Column="1" />
-      <File FileName="MakeupMatcher.UI.iOS/Views/ProductView.cs" Line="12" Column="20" />
+      <File FileName="MakeupMatcher.UI.iOS/Views/ProductView.cs" Line="31" Column="13" />
       <File FileName="MakeupMatcher.UI.iOS/Views/ProductView.xib" />
       <File FileName="MakeupMatcher.UI.iOS/Views/FilterView.cs" Line="1" Column="1" />
+      <File FileName="MakeupMatcher.UI.iOS/Views/ProductView.designer.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.MakeupMatcher.UI.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Nexus_4_API_24" />
