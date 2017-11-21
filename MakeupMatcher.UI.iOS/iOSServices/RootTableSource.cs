@@ -9,7 +9,7 @@ namespace MakeupMatcher.UI.iOS.iOSServices
     {
         protected ProductModel[] _products;
         protected string[] _tableItems;
-        protected string _cellIdentifier = "productCell";
+        protected string _cellIdentifier = "ProductViewCell";
 
         public RootTableSource(ProductModel[] products)
         {
