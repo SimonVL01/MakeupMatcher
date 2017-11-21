@@ -15,7 +15,8 @@
         android:layout_alignParentTop="true"
         android:padding="@dimen/padding_vertical"
         android:layout_marginTop="@dimen/padding_vertical"
-        android:hint="username" />
+        android:hint="username"
+        app:MvxBind="Text Username" />
     <EditText
         android:id="@+id/userPassword"
         android:layout_width="match_parent"
@@ -24,7 +25,8 @@
         android:layout_below="@id/username"
         android:layout_marginTop="@dimen/padding_vertical"
         android:hint="userPassword"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        app:MvxBind="Text UserPassword" />
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/userImage"
         android:layout_width="150dp"
