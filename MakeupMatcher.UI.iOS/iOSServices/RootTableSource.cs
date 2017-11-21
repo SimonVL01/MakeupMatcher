@@ -7,18 +7,18 @@ namespace MakeupMatcher.UI.iOS.iOSServices
 {
     public class RootTableSource : UITableViewSource
     {
-        //protected ProductModel[] _products;
+        protected ProductModel[] _products;
         protected string[] _tableItems;
         protected string _cellIdentifier = "productCell";
 
-        public RootTableSource(string[] tableItems)
+        public RootTableSource(ProductModel[] products)
         {
-            _tableItems = tableItems;
+            _products = products;
         }
 
         public override nint RowsInSection(UITableView tableview, nint section)
         {
-            return _tableItems.Length;
+            return _products.Length;
         }
 
         public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
@@ -26,7 +26,7 @@ namespace MakeupMatcher.UI.iOS.iOSServices
             UITableViewCell cell = tableView.DequeueReusableCell(_cellIdentifier);
             if (cell == null) {
                 cell = new UITableViewCell(UITableViewCellStyle.Default, _cellIdentifier);
-                cell.TextLabel.Text = _tableItems[indexPath.Row];
+                cell.TextLabel.Text = _products[indexPath.Row].ProductName;
             }
             return cell;
 

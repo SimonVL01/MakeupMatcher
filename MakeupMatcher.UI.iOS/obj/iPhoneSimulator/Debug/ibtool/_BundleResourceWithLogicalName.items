@@ -13,6 +13,10 @@
       <LogicalName>ProductView.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool/ProductViewCell.nib">
+      <LogicalName>ProductViewCell.nib</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool/TabBarView.nib">
       <LogicalName>TabBarView.nib</LogicalName>
       <Optimize>false</Optimize>

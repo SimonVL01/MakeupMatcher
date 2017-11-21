@@ -126,6 +126,7 @@
     <InterfaceDefinition Include="Views\TabBarView.xib" />
     <InterfaceDefinition Include="Views\FilterView.xib" />
     <InterfaceDefinition Include="Views\ProductView.xib" />
+    <InterfaceDefinition Include="iOSServices\ProductViewCell.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -159,6 +160,10 @@
     <Compile Include="Views\ProductView.cs" />
     <Compile Include="Views\ProductView.designer.cs">
       <DependentUpon>ProductView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="iOSServices\ProductViewCell.cs" />
+    <Compile Include="iOSServices\ProductViewCell.designer.cs">
+      <DependentUpon>ProductViewCell.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

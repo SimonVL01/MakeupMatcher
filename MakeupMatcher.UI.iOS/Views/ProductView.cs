@@ -12,13 +12,14 @@ using Foundation;
 using CoreGraphics;
 using System.Collections.Generic;
 using MvvmCross.Binding.iOS.Views;
+using MakeupMatcher.Core.Services;
 
 namespace MakeupMatcher.UI.iOS.Views
 {
     public partial class ProductView : MvxViewController<ProductViewModel>
     {
-        // private ProductModel[] _productList;
-        private string[] _tableItems;
+        //private ProductModel[] _productList;
+        //private string[] _tableItems;
         private UITableView tableView;
 
         public ProductView() : base("ProductView", null)
@@ -31,21 +32,27 @@ namespace MakeupMatcher.UI.iOS.Views
 
             NavigationItem.Title = "ColorMatch results";
 
-            _tableItems = new string[]
+            /*_tableItems = new string[]
             {
                 "Pantone",
                 "Vichy",
                 "Loreal",
                 "Vichy",
                 "Dove"
-            };
+            };*/
 
-            /*_productList = new ProductModel[]             {                 new ProductModel(1, "Pantone, because you're worth it", "Pantone Fresh & Fruity", 20.05, false),                 new ProductModel(2, "Vichy", "Glossy skintone", 19.56, false),                 new ProductModel(3, "Loreal Paris", "50 shades of brown", 29.75, false),                 new ProductModel(4, "Vichy", "Cherry Blossom", 35.34, false),                 new ProductModel(5, "Dove", "Natural Beauty", 14.56, false),             };*/
+            /*_productList = new ProductModel[]             {                 new ProductModel(),                 new ProductModel(),                 new ProductModel(),                 new ProductModel(),                 new ProductModel(),             };
+
+            _productList[0].ProductBrand = "Pantone";
+            _productList[1].ProductBrand = "Vichy";
+            _productList[2].ProductBrand = "Loreal";
+            _productList[3].ProductBrand = "Vichy";
+            _productList[4].ProductBrand = "Dove";*/
 
             tableView = new UITableView(View.Bounds);
             Add(tableView);
 
-            tableView.Source = new RootTableSource(_tableItems); 
+            tableView.Source = new RootTableSource(ProductList.GetProductList); 
         }
 
         public override void ViewWillAppear(bool animated)         {             base.ViewWillAppear(animated);

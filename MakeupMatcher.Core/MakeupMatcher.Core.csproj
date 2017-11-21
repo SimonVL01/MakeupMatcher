@@ -38,6 +38,7 @@
     <Compile Include="Models\ProductModel.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
     <Compile Include="ViewModels\FilterViewModel.cs" />
+    <Compile Include="Services\ProductList.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MvvmCross.Platform">
