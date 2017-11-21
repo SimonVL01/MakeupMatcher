@@ -2,6 +2,7 @@
 using Foundation;
 using UIKit;
 using MakeupMatcher.Core.Models;
+using MakeupMatcher.Core.Services;
 
 namespace MakeupMatcher.UI.iOS.iOSServices
 {
@@ -18,24 +19,21 @@ namespace MakeupMatcher.UI.iOS.iOSServices
 
         public override nint RowsInSection(UITableView tableview, nint section)
         {
-            return _products.Length;
+            return ProductList.GetProductList.Length;
         }
 
         public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
         {
             UITableViewCell cell = tableView.DequeueReusableCell(_cellIdentifier);
             if (cell == null) {
-                cell = new UITableViewCell(UITableViewCellStyle.Default, _cellIdentifier);
+                cell = new UITableViewCell(UITableViewCellStyle.Value2, _cellIdentifier);
                 cell.TextLabel.Text = _products[indexPath.Row].ProductName;
+                cell.DetailTextLabel.Text = _products[indexPath.Row].ProductBrand;
             }
             return cell;
 
         }
 
-        /*public ProductModel GetItem(int id)
-        {
-            return _products[id];
-        }*/
 
     }
 }

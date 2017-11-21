@@ -32,26 +32,10 @@ namespace MakeupMatcher.UI.iOS.Views
 
             NavigationItem.Title = "ColorMatch results";
 
-            /*_tableItems = new string[]
-            {
-                "Pantone",
-                "Vichy",
-                "Loreal",
-                "Vichy",
-                "Dove"
-            };*/
-
-            /*_productList = new ProductModel[]             {                 new ProductModel(),                 new ProductModel(),                 new ProductModel(),                 new ProductModel(),                 new ProductModel(),             };
-
-            _productList[0].ProductBrand = "Pantone";
-            _productList[1].ProductBrand = "Vichy";
-            _productList[2].ProductBrand = "Loreal";
-            _productList[3].ProductBrand = "Vichy";
-            _productList[4].ProductBrand = "Dove";*/
-
             tableView = new UITableView(View.Bounds);
             Add(tableView);
 
+            tableView.DequeueReusableCell("ProductViewCell");
             tableView.Source = new RootTableSource(ProductList.GetProductList); 
         }
 

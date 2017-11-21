@@ -14,8 +14,16 @@ namespace MakeupMatcher.UI.iOS.Views
     [Register ("ProductView")]
     partial class ProductView
     {
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        MakeupMatcher.UI.iOS.iOSServices.ProductViewCell table { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
+            if (table != null) {
+                table.Dispose ();
+                table = null;
+            }
         }
     }
 }
