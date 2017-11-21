@@ -155,11 +155,11 @@
     <Compile Include="Views\FilterView.designer.cs">
       <DependentUpon>FilterView.cs</DependentUpon>
     </Compile>
+    <Compile Include="iOSServices\RootTableSource.cs" />
     <Compile Include="Views\ProductView.cs" />
     <Compile Include="Views\ProductView.designer.cs">
       <DependentUpon>ProductView.cs</DependentUpon>
     </Compile>
-    <Compile Include="iOSServices\RootTableSource.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MakeupMatcher.Core\MakeupMatcher.Core.csproj">
