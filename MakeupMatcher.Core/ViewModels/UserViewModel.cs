@@ -67,6 +67,17 @@ namespace MakeupMatcher.Core.ViewModels
             }
         }
 
+        /*MakeupModel _makeupProfile;
+
+        public MakeupModel MakeupProfile
+        {
+            get { return _makeupProfile; }
+            set {
+                _makeupProfile = value;
+                RaisePropertyChanged(() => MakeupProfile);
+            }
+        }*/
+
         private IMvxAsyncCommand _goToMakeupCommand;
         public IMvxAsyncCommand GoToMakeupCommand
         {

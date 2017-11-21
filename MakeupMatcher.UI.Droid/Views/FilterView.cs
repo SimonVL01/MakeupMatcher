@@ -76,8 +76,6 @@ namespace MakeupMatcher.UI.Droid.Views
             b6.Click += (sender, e) => img.SetImageBitmap(ApplyBrightnessEffect(imgResizedForEditing, -45));
             b7.Click += (sender, e) => img.SetImageBitmap(ApplyBrightnessEffect(imgResizedForEditing, 75));
 
-            //img.SetImageBitmap(Blue(bmp));
-
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)

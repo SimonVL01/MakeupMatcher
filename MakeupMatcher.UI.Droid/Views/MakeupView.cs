@@ -40,7 +40,6 @@ namespace MakeupMatcher.UI.Droid.Views
         {
             base.OnCreate(savedInstanceState);
 
-            //ActionBar.NavigationMode = ActionBarNavigationMode.Tabs;
             SetContentView(Resource.Layout.Makeup);
 
             Button _library = FindViewById<Button>(Resource.Id.library);
@@ -72,9 +71,6 @@ namespace MakeupMatcher.UI.Droid.Views
 
             _imageView.SetOnTouchListener(this);
 
-            _color.Click += async (sender, e) => await ViewModel.GoToProductCommand.ExecuteAsync();
-
-            _filter.Click += async (sender, e) => await ViewModel.GoToFilterCommand.ExecuteAsync();
         }
 
         private void CreateDirectoryForPictures()

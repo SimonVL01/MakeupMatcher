@@ -111,19 +111,5 @@ namespace MakeupMatcher.UI.Droid.Views
             }
         }
 
-        /*protected override void OnStart()
-        {
-            base.OnStart();   
-            animationView.Progress = 0f;
-            animationView.PlayAnimation();
-        }
-
-        protected override void OnStop()
-        {
-            base.OnStop();
-            this.animationView.Progress = 0f;
-            this.animationView.PlayAnimation();
-        }*/
-
     }
 }

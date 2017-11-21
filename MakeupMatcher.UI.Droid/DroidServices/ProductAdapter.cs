@@ -2,6 +2,7 @@
 using Android.Support.V7.Widget;
 using Android.Views;
 using MakeupMatcher.Core.Models;
+using MakeupMatcher.Core.Services;
 
 namespace MakeupMatcher.UI.Droid.DroidServices
 {
@@ -9,7 +10,7 @@ namespace MakeupMatcher.UI.Droid.DroidServices
     {
         public ProductModel _productModel;
 
-        public override int ItemCount => 2;
+        public override int ItemCount => ProductList.GetProductList.Length;
         //Awaiting mockup data
 
         public ProductAdapter(ProductModel productModel)
@@ -32,7 +33,8 @@ namespace MakeupMatcher.UI.Droid.DroidServices
 
             vh.Image.SetImageResource(Resource.Drawable.profile_pic);
 
-            vh.Caption.Text = "Test123";
+            vh.Caption.Text = ProductList.GetProductList[position].ProductName;
+            vh.SubView.Text = ProductList.GetProductList[position].ProductBrand;
         }
 
     }

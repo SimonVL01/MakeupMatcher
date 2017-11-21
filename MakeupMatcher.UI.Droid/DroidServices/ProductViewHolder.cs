@@ -10,11 +10,13 @@ namespace MakeupMatcher.UI.Droid.DroidServices
     {
         public ImageView Image { get; private set; }
         public TextView Caption { get; private set; }
+        public TextView SubView { get; private set; }
 
         public ProductViewHolder(View itemView) : base(itemView)
         {
             Image = itemView.FindViewById<ImageView>(Resource.Id.profile);
             Caption = itemView.FindViewById<TextView>(Resource.Id.textView);
+            SubView = itemView.FindViewById<TextView>(Resource.Id.subText);
         }
     }
 }

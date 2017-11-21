@@ -3,20 +3,20 @@
   <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="MakeupMatcher.Core/MyClass.cs" Line="1" Column="1" />
-      <File FileName="MakeupMatcher.Core/Models/UserModel.cs" Line="1" Column="1" />
-      <File FileName="MakeupMatcher.Core/ViewModels/UserViewModel.cs" Line="1" Column="1" />
+      <File FileName="MakeupMatcher.Core/Models/UserModel.cs" Line="13" Column="11" />
+      <File FileName="MakeupMatcher.Core/ViewModels/UserViewModel.cs" Line="68" Column="10" />
       <File FileName="MakeupMatcher.Core/App.cs" Line="1" Column="1" />
       <File FileName="MakeupMatcher.Core/ViewModels/SplashScreenViewModel.cs" Line="11" Column="8" />
       <File FileName="MakeupMatcher.UI.Droid/Properties/AndroidManifest.xml" Line="1" Column="1" />
       <File FileName="MakeupMatcher.UI.Droid/Views/SplashScreenView.cs" Line="1" Column="1" />
-      <File FileName="MakeupMatcher.UI.Droid/Views/UserView.cs" Line="55" Column="17" />
+      <File FileName="MakeupMatcher.UI.Droid/Views/UserView.cs" Line="73" Column="52" />
       <File FileName="MakeupMatcher.UI.Droid/Resources/Resource.designer.cs" Line="1" Column="1" />
       <File FileName="MakeupMatcher.UI.Droid/Resources/AboutResources.txt" Line="1" Column="1" />
       <File FileName="MakeupMatcher.UI.Droid/Setup.cs" Line="1" Column="1" />
-      <File FileName="MakeupMatcher.Core/ViewModels/MakeupViewModel.cs" Line="1" Column="1" />
-      <File FileName="MakeupMatcher.Core/ViewModels/ProductViewModel.cs" Line="1" Column="1" />
-      <File FileName="MakeupMatcher.Core/Models/MakeupModel.cs" Line="1" Column="1" />
-      <File FileName="MakeupMatcher.Core/Models/ProductModel.cs" Line="1" Column="1" />
+      <File FileName="MakeupMatcher.Core/ViewModels/MakeupViewModel.cs" Line="51" Column="33" />
+      <File FileName="MakeupMatcher.Core/ViewModels/ProductViewModel.cs" Line="56" Column="30" />
+      <File FileName="MakeupMatcher.Core/Models/MakeupModel.cs" Line="12" Column="46" />
+      <File FileName="MakeupMatcher.Core/Models/ProductModel.cs" Line="9" Column="12" />
       <File FileName="MakeupMatcher.Core/Repositories/UserRepository.cs" Line="1" Column="1" />
       <File FileName="MakeupMatcher.UI.Droid/Resources/values/Strings.xml" Line="1" Column="1" />
       <File FileName="MakeupMatcher.UI.Droid/Resources/values/dimens.xml" Line="4" Column="33" />
@@ -31,15 +31,17 @@
       <File FileName="MakeupMatcher.UI.iOS/Views/UserView.cs" Line="1" Column="1" />
       <File FileName="MakeupMatcher.UI.iOS/Views/UserView.designer.cs" Line="1" Column="1" />
       <File FileName="MakeupMatcher.UI.iOS/heart.json" Line="1" Column="1" />
-      <File FileName="MakeupMatcher.UI.Droid/Views/FilterView.cs" Line="86" Column="23" />
-      <File FileName="MakeupMatcher.UI.Droid/Views/MakeupView.cs" Line="77" Column="87" />
-      <File FileName="MakeupMatcher.UI.Droid/Resources/menu/FilterMenu.axml" Line="5" Column="32" />
-      <File FileName="MakeupMatcher.UI.Droid/Views/ProductView.cs" Line="45" Column="13" />
+      <File FileName="MakeupMatcher.UI.Droid/Views/FilterView.cs" Line="88" Column="19" />
+      <File FileName="MakeupMatcher.UI.Droid/Views/MakeupView.cs" Line="45" Column="21" />
+      <File FileName="MakeupMatcher.UI.Droid/Resources/menu/FilterMenu.axml" Line="10" Column="8" />
+      <File FileName="MakeupMatcher.UI.Droid/Views/ProductView.cs" Line="54" Column="48" />
       <File FileName="MakeupMatcher.UI.iOS/Info.plist" />
       <File FileName="MakeupMatcher.UI.iOS/Main.storyboard" />
       <File FileName="MakeupMatcher.UI.iOS/Entitlements.plist" />
       <File FileName="MakeupMatcher.UI.iOS/LaunchScreen.storyboard" />
       <File FileName="MakeupMatcher.UI.iOS/Views/UserView.xib" />
+      <File FileName="MakeupMatcher.UI.Droid/DroidServices/ProductAdapter.cs" Line="39" Column="9" />
+      <File FileName="MakeupMatcher.UI.Droid/DroidServices/ProductViewHolder.cs" Line="18" Column="49" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.MakeupMatcher.UI.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Nexus_4_API_21" />

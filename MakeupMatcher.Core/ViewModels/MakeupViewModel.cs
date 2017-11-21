@@ -33,6 +33,45 @@ namespace MakeupMatcher.Core.ViewModels
 
         Colors _colorName;
 
+        double _redValue;
+
+        public double RedValue
+        {
+            get { return _redValue; }
+            set
+            {
+                if (_redValue <= 255.0)
+                _redValue = value;
+                RaisePropertyChanged(() => RedValue);
+            }
+        }
+
+        double _greenValue;
+
+        public double GreenValue
+        {
+            get { return _greenValue; }
+            set
+            {
+                if (_greenValue <= 255.0)
+                _greenValue = value;
+                RaisePropertyChanged(() => GreenValue);
+            }
+        }
+
+        double _blueValue;
+
+        public double BlueValue
+        {
+            get { return _blueValue; }
+            set
+            {
+                if (_blueValue <= 255.0)
+                _blueValue = value;
+                RaisePropertyChanged(() => BlueValue);
+            }
+        }
+
         public Colors ColorName
         {
             get { return _colorName; }
@@ -40,18 +79,6 @@ namespace MakeupMatcher.Core.ViewModels
             {
                 _colorName = value;
                 RaisePropertyChanged(() => ColorName);
-            }
-        }
-
-        ProductModel[] _products;
-
-        public ProductModel[] Products
-        {
-            get { return _products; }
-            set
-            {
-                _products = value;
-                RaisePropertyChanged(() => Products);
             }
         }
 

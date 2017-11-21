@@ -13,7 +13,8 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_margin="@dimen/padding_vertical"
-        android:background="@drawable/circle" />
+        android:background="@drawable/circle"
+        app:MvxBind="Click GoToProductCommand" />
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -55,7 +56,8 @@
                 android:text="Filter"
                 android:layout_alignParentRight="true"
                 android:textColor="@android:color/holo_blue_dark"
-                android:background="@android:color/white" />
+                android:background="@android:color/white"
+                app:MvxBind="Click GoToFilterCommand" />
         </RelativeLayout>
     </LinearLayout>
 </RelativeLayout>

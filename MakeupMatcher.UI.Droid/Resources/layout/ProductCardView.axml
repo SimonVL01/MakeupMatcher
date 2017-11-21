@@ -41,8 +41,8 @@
                 android:text="This is a subText" />
             <com.airbnb.lottie.LottieAnimationView
                 android:id="@+id/animation_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
                 android:layout_alignParentRight="true"
                 card_view:lottie_fileName="heart.json"
                 card_view:lottie_loop="true"

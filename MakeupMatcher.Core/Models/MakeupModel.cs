@@ -7,7 +7,9 @@ namespace MakeupMatcher.Core.Models
     {
         
         public int ColorId { get; set; }
+        public double RedValue { get; set; }
+        public double GreenValue { get; set; }
+        public double BlueValue { get; set; }
         public Colors ColorName { get; set; }
-        public ProductModel[] Products { get; set; }
     }
 }
