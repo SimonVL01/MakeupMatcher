@@ -9,10 +9,7 @@ using System;
 using MakeupMatcher.UI.iOS.iOSServices;
 
 using UIKit;
-using CoreGraphics;
 using Foundation;
-
-using UIKit;
 using System.IO;
 
 namespace MakeupMatcher.UI.iOS.Views
