@@ -7,6 +7,7 @@ namespace MakeupMatcher.Core.Models
     {
         
         public int ColorId { get; set; }
+        public string User { get; set; }
         public double RedValue { get; set; }
         public double GreenValue { get; set; }
         public double BlueValue { get; set; }

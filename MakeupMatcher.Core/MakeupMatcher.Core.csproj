@@ -40,6 +40,7 @@
     <Compile Include="ViewModels\FilterViewModel.cs" />
     <Compile Include="Services\ProductList.cs" />
     <Compile Include="Enum\Colors.cs" />
+    <Compile Include="ViewModels\DetailParameters.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MvvmCross.Platform">

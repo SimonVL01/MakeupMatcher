@@ -91,6 +91,10 @@ namespace MakeupMatcher.UI.Droid.Views
 
             };
 
+            /*userImage.Click += delegate {
+                ViewModel.GoCommand.Execute(name);
+            };*/
+
         }
 
         private async void OkAction(object sender, DialogClickEventArgs e) {

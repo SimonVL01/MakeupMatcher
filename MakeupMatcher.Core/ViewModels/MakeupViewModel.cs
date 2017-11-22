@@ -8,7 +8,7 @@ using MakeupMatcher.Core.Enum;
 
 namespace MakeupMatcher.Core.ViewModels
 {
-    public class MakeupViewModel : MvxViewModel
+    public class MakeupViewModel : MvxViewModel<DetailParameters>
     {
         private readonly IMvxNavigationService _navigationService;
         //readonly MakeupModel _makeupProfile;
@@ -29,6 +29,18 @@ namespace MakeupMatcher.Core.ViewModels
         public int ColorId
         {
             get { return _colorId; }
+        }
+
+        string _user;
+
+        public string User
+        {
+            get { return _user; }
+            set
+            {
+                _user = value;
+                RaisePropertyChanged(() => User);
+            }
         }
 
         Colors _colorName;
@@ -84,8 +96,14 @@ namespace MakeupMatcher.Core.ViewModels
 
         //Navigation Service
 
-        public override void Prepare()
+        /*public void Init(DetailParameters parameters)
         {
+            _user = parameters.User;
+        }*/
+
+        public override void Prepare(DetailParameters parameter)
+        {
+            _user = parameter.User;
         }
 
         private IMvxAsyncCommand _goToFilterCommand;

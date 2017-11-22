@@ -42,6 +42,8 @@ namespace MakeupMatcher.UI.Droid.Views
 
             SetContentView(Resource.Layout.Makeup);
 
+            string s = ViewModel.User;
+
             Button _library = FindViewById<Button>(Resource.Id.library);
             Button _camera = FindViewById<Button>(Resource.Id.camera);
             Button _filter = FindViewById<Button>(Resource.Id.filter);
@@ -50,6 +52,8 @@ namespace MakeupMatcher.UI.Droid.Views
 
             _bgShape = (GradientDrawable)_color.Background;
             _bgShape.SetColor(Color.White);
+
+            _library.Text = ViewModel.User;
 
             _library.Click += delegate {
                 Intent intent = new Intent(Intent.ActionOpenDocument);

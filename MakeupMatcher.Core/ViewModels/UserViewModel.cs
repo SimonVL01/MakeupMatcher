@@ -5,6 +5,7 @@ using MvvmCross.Platform.IoC;
 using MvvmCross.Platform;
 using MvvmCross.Core.Navigation;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace MakeupMatcher.Core.ViewModels
 {
@@ -67,27 +68,16 @@ namespace MakeupMatcher.Core.ViewModels
             }
         }
 
-        /*MakeupModel _makeupProfile;
-
-        public MakeupModel MakeupProfile
-        {
-            get { return _makeupProfile; }
-            set {
-                _makeupProfile = value;
-                RaisePropertyChanged(() => MakeupProfile);
-            }
-        }*/
+        //Navigation
 
         private IMvxAsyncCommand _goToMakeupCommand;
         public IMvxAsyncCommand GoToMakeupCommand
         {
             get
             {
-                _goToMakeupCommand = _goToMakeupCommand ?? new MvxAsyncCommand(() => _navigationService.Navigate<MakeupViewModel>());
+                _goToMakeupCommand = _goToMakeupCommand ?? new MvxAsyncCommand(() => _navigationService.Navigate<MakeupViewModel, DetailParameters>(new DetailParameters() { User = Username }));
                 return _goToMakeupCommand;
             }
         }
-
-
     }
 }
