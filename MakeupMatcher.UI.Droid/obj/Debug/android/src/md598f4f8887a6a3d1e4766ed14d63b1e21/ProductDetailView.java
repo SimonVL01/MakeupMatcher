@@ -2,7 +2,7 @@ package md598f4f8887a6a3d1e4766ed14d63b1e21;
 
 
 public class ProductDetailView
-	extends md59de2239e30a2c8a38dd75adc5c2e9d40.MvxActivity_1
+	extends android.app.Activity
 	implements
 		mono.android.IGCUserPeer
 {

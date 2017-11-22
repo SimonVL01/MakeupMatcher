@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System;   
 //using System.IO;
 using System.Collections.Generic;
 using System.Linq;
@@ -52,7 +52,16 @@ namespace MakeupMatcher.UI.Droid.Views
             mRecyclerView.SetLayoutManager(mLayoutManager);
 
             mAdapter = new ProductAdapter(_productModel);
+            //mAdapter.ItemClick += OnItemClick;
             mRecyclerView.SetAdapter(mAdapter);
+
+        }
+
+        /*void OnItemClick(object sender, int position)
+        {
+            var activity = new Intent(this, typeof(ProductDetailView));
+                activity.PutExtra("Name", "Test123");
+                activity.PutExtra("Brand", "Test123");
+            }*/
         }
     }
-}

@@ -9,6 +9,7 @@ namespace MakeupMatcher.UI.Droid.DroidServices
     public class ProductAdapter : RecyclerView.Adapter
     {
         public ProductModel _productModel;
+        //public event EventHandler<int> ItemClick;
 
         public override int ItemCount => ProductList.GetProductList.Length;
         //Awaiting mockup data

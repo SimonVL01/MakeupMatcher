@@ -31,12 +31,19 @@ using Android.Graphics.Drawables;
 namespace MakeupMatcher.UI.Droid.Views
 {
     [Activity(Label = "ProductDetailView")]
-    public class ProductDetailView : MvxActivity<ProductDetailViewModel>
+    public class ProductDetailView : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.ProductDetail);
+
+            TextView title = FindViewById<TextView>(Resource.Id.product_name);
+            TextView subText = FindViewById<TextView>(Resource.Id.product_brand);
+
+            title.Text = Intent.GetStringExtra("Name") ?? "Oops!";
+            subText.Text = Intent.GetStringExtra("Brand") ?? "We couldn't find your product," +
+                                   " try again later.";
         }
     }
 }

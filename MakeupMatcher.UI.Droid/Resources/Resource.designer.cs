@@ -2101,8 +2101,8 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f07002d
 			public const int always = 2131165229;
 			
-			// aapt resource value: 0x7f07008f
-			public const int animation_view = 2131165327;
+			// aapt resource value: 0x7f070090
+			public const int animation_view = 2131165328;
 			
 			// aapt resource value: 0x7f070034
 			public const int async = 2131165236;
@@ -2124,6 +2124,9 @@ namespace MakeupMatcher.UI.Droid
 			
 			// aapt resource value: 0x7f07007c
 			public const int cancel_action = 2131165308;
+			
+			// aapt resource value: 0x7f07008c
+			public const int cell = 2131165324;
 			
 			// aapt resource value: 0x7f070053
 			public const int checkbox = 2131165267;
@@ -2245,8 +2248,8 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f070041
 			public const int list_item = 2131165249;
 			
-			// aapt resource value: 0x7f070096
-			public const int login = 2131165334;
+			// aapt resource value: 0x7f070097
+			public const int login = 2131165335;
 			
 			// aapt resource value: 0x7f070011
 			public const int lottie_layer_name = 2131165201;
@@ -2254,8 +2257,8 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f07007e
 			public const int media_actions = 2131165310;
 			
-			// aapt resource value: 0x7f070092
-			public const int message = 2131165330;
+			// aapt resource value: 0x7f070093
+			public const int message = 2131165331;
 			
 			// aapt resource value: 0x7f070026
 			public const int middle = 2131165222;
@@ -2284,14 +2287,14 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f070045
 			public const int parentPanel = 2131165253;
 			
+			// aapt resource value: 0x7f070092
+			public const int product_brand = 2131165330;
+			
 			// aapt resource value: 0x7f070091
-			public const int product_brand = 2131165329;
+			public const int product_name = 2131165329;
 			
-			// aapt resource value: 0x7f070090
-			public const int product_name = 2131165328;
-			
-			// aapt resource value: 0x7f07008c
-			public const int profile = 2131165324;
+			// aapt resource value: 0x7f07008d
+			public const int profile = 2131165325;
 			
 			// aapt resource value: 0x7f070006
 			public const int progress_circular = 2131165190;
@@ -2311,8 +2314,8 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f070082
 			public const int right_side = 2131165314;
 			
-			// aapt resource value: 0x7f070097
-			public const int save = 2131165335;
+			// aapt resource value: 0x7f070098
+			public const int save = 2131165336;
 			
 			// aapt resource value: 0x7f07001d
 			public const int screen = 2131165213;
@@ -2392,8 +2395,8 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f070038
 			public const int strong = 2131165240;
 			
-			// aapt resource value: 0x7f07008e
-			public const int subText = 2131165326;
+			// aapt resource value: 0x7f07008f
+			public const int subText = 2131165327;
 			
 			// aapt resource value: 0x7f070056
 			public const int submenuarrow = 2131165270;
@@ -2416,8 +2419,8 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f070049
 			public const int textSpacerNoTitle = 2131165257;
 			
-			// aapt resource value: 0x7f07008d
-			public const int textView = 2131165325;
+			// aapt resource value: 0x7f07008e
+			public const int textView = 2131165326;
 			
 			// aapt resource value: 0x7f070083
 			public const int time = 2131165315;
@@ -2446,14 +2449,14 @@ namespace MakeupMatcher.UI.Droid
 			// aapt resource value: 0x7f07001b
 			public const int useLogo = 2131165211;
 			
+			// aapt resource value: 0x7f070096
+			public const int userImage = 2131165334;
+			
 			// aapt resource value: 0x7f070095
-			public const int userImage = 2131165333;
+			public const int userPassword = 2131165333;
 			
 			// aapt resource value: 0x7f070094
-			public const int userPassword = 2131165332;
-			
-			// aapt resource value: 0x7f070093
-			public const int username = 2131165331;
+			public const int username = 2131165332;
 			
 			// aapt resource value: 0x7f070039
 			public const int weak = 2131165241;
