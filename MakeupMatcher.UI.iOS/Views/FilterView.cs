@@ -15,6 +15,8 @@ namespace MakeupMatcher.UI.iOS.Views
 {
     public partial class FilterView : MvxViewController
     {
+        private UIImage imageView;
+        private int _itemCount = 0;
         
         public FilterView() : base("FilterView", null)
         {
@@ -46,7 +48,7 @@ namespace MakeupMatcher.UI.iOS.Views
             int _buttonHeight = 70;
             int _gapBetweenButtons = 5;
 
-            int _itemCount = 0;
+            //int 
 
             for (int i = 0; i < CIFilterNames.Length; i++) {
                 _itemCount = i;
@@ -56,10 +58,10 @@ namespace MakeupMatcher.UI.iOS.Views
                 filterButton.Tag = _itemCount;
                 filterButton.TouchUpInside += (sender, e) => FilterButtonTapped(filterButton);
 
-                var imageView = new UIImageView(UIImage.FromBundle("Image"));
+                imageView = ResizeUIImage(UIImage.FromBundle("Image"), 350, 350);
 
                 CIContext ciContext = new CIContext(null);
-                CIImage coreImage = new CIImage(imageView.Image);
+                CIImage coreImage = new CIImage((ResizeUIImage(imageView, 70, 70)));
 
                 var filter = new CISepiaTone();
                 filter.Image = coreImage;
@@ -82,11 +84,30 @@ namespace MakeupMatcher.UI.iOS.Views
 
         }
 
+        public UIImage ResizeUIImage(UIImage sourceImage, float widthToScale, float heightToScale)
+        {
+            var sourceSize = sourceImage.Size;
+            var maxResizeFactor = Math.Max(widthToScale / sourceSize.Width, heightToScale / sourceSize.Height);
+            if (maxResizeFactor > 1) return sourceImage;
+            var width = maxResizeFactor * sourceSize.Width;
+            var height = maxResizeFactor * sourceSize.Height;
+            UIGraphics.BeginImageContext(new CGSize(width, height));
+
+            sourceImage.Draw(new CGRect(0, 0, width, height));
+            var resultImage = UIGraphics.GetImageFromCurrentImageContext();
+            UIGraphics.EndImageContext();
+            return resultImage;
+
+        }
+
         public void FilterButtonTapped(UIButton button)
         {
             button = button as UIButton;
+            var filter = new CISepiaTone();
+            CIImage coreImage = new CIImage((ResizeUIImage(imageView, 500, 500)));
+            filter.Image = coreImage;
 
-            image.Image = button.CurrentBackgroundImage;
+            image.Image = new UIImage(filter.Image.CreateByFiltering(CIFilterNames[button.Tag]));
         }
 
         public void SavePicButton(UIButton button)
