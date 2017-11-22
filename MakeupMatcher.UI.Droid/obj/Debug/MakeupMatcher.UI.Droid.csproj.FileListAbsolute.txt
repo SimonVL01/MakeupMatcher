@@ -219,3 +219,4 @@
 /Users/simon/Desktop/MakeupMatcher_v2/MakeupMatcher.UI.Droid/obj/Debug/res/menu/filtermenu.xml
 /Users/simon/Desktop/MakeupMatcher_v2/MakeupMatcher.UI.Droid/obj/Debug/R.cs.flag
 /Users/simon/Desktop/MakeupMatcher_v2/MakeupMatcher.UI.Droid/obj/Debug/uploadflags.txt
+/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.Droid/obj/Debug/res/layout/productdetail.xml

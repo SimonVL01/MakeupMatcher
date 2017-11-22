@@ -2528,10 +2528,10 @@ containing a value of this type.
         public static final int line3=0x7f07000b;
         public static final int listMode=0x7f070012;
         public static final int list_item=0x7f070041;
-        public static final int login=0x7f070094;
+        public static final int login=0x7f070096;
         public static final int lottie_layer_name=0x7f070011;
         public static final int media_actions=0x7f07007e;
-        public static final int message=0x7f070090;
+        public static final int message=0x7f070092;
         public static final int middle=0x7f070026;
         public static final int multiply=0x7f07001c;
         public static final int never=0x7f070030;
@@ -2541,6 +2541,8 @@ containing a value of this type.
         public static final int notification_main_column=0x7f070081;
         public static final int notification_main_column_container=0x7f070080;
         public static final int parentPanel=0x7f070045;
+        public static final int product_brand=0x7f070091;
+        public static final int product_name=0x7f070090;
         public static final int profile=0x7f07008c;
         public static final int progress_circular=0x7f070006;
         public static final int progress_horizontal=0x7f070007;
@@ -2548,7 +2550,7 @@ containing a value of this type.
         public static final int recyclerView=0x7f07008b;
         public static final int right_icon=0x7f070086;
         public static final int right_side=0x7f070082;
-        public static final int save=0x7f070095;
+        public static final int save=0x7f070097;
         public static final int screen=0x7f07001d;
         public static final int scrollIndicatorDown=0x7f07004b;
         public static final int scrollIndicatorUp=0x7f070047;
@@ -2593,9 +2595,9 @@ containing a value of this type.
         public static final int uniform=0x7f070022;
         public static final int up=0x7f070009;
         public static final int useLogo=0x7f07001b;
-        public static final int userImage=0x7f070093;
-        public static final int userPassword=0x7f070092;
-        public static final int username=0x7f070091;
+        public static final int userImage=0x7f070095;
+        public static final int userPassword=0x7f070094;
+        public static final int username=0x7f070093;
         public static final int weak=0x7f070039;
         public static final int withText=0x7f070031;
         public static final int wrap_content=0x7f070023;
@@ -2654,13 +2656,14 @@ containing a value of this type.
         public static final int notification_template_part_time=0x7f04002b;
         public static final int product=0x7f04002c;
         public static final int productcardview=0x7f04002d;
-        public static final int select_dialog_item_material=0x7f04002e;
-        public static final int select_dialog_multichoice_material=0x7f04002f;
-        public static final int select_dialog_singlechoice_material=0x7f040030;
-        public static final int splashscreen=0x7f040031;
-        public static final int support_simple_spinner_dropdown_item=0x7f040032;
-        public static final int tooltip=0x7f040033;
-        public static final int user=0x7f040034;
+        public static final int productdetail=0x7f04002e;
+        public static final int select_dialog_item_material=0x7f04002f;
+        public static final int select_dialog_multichoice_material=0x7f040030;
+        public static final int select_dialog_singlechoice_material=0x7f040031;
+        public static final int splashscreen=0x7f040032;
+        public static final int support_simple_spinner_dropdown_item=0x7f040033;
+        public static final int tooltip=0x7f040034;
+        public static final int user=0x7f040035;
     }
     public static final class menu {
         public static final int filtermenu=0x7f0d0000;

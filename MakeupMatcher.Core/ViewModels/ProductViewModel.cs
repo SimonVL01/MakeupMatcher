@@ -3,6 +3,7 @@ using MvvmCross.Core.ViewModels;
 using MakeupMatcher.Core.Models;
 using MvvmCross.Platform;
 using MakeupMatcher.Core.Enum;
+using MvvmCross.Core.Navigation;
 
 namespace MakeupMatcher.Core.ViewModels
 {
@@ -12,10 +13,11 @@ namespace MakeupMatcher.Core.ViewModels
 
         //Constructor
 
-        public ProductViewModel()
+        private readonly IMvxNavigationService _navigationService;
+
+        public ProductViewModel(IMvxNavigationService navigationService)
         {
-            //_product = 
-            Mvx.IocConstruct<ProductModel>();
+            _navigationService = navigationService;
         }
 
         //State
@@ -82,6 +84,16 @@ namespace MakeupMatcher.Core.ViewModels
             {
                 _productColor = value;
                 RaisePropertyChanged(() => ProductColor);
+            }
+        }
+
+        private IMvxAsyncCommand _goToProductDetailCommand;
+        public IMvxAsyncCommand GoToProductDetailCommand
+        {
+            get
+            {
+                _goToProductDetailCommand = _goToProductDetailCommand ?? new MvxAsyncCommand(() => _navigationService.Navigate<ProductDetailViewModel, ProductParameters>(new ProductParameters() { Name = ProductName, Brand = ProductBrand }));
+                return _goToProductDetailCommand;
             }
         }
     }

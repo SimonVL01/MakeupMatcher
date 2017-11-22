@@ -46,6 +46,7 @@ namespace MakeupMatcher.UI.Droid.Views
             SetContentView(Resource.Layout.Product);
 
             mRecyclerView = FindViewById<RecyclerView>(Resource.Id.recyclerView);
+            //mRecyclerView.AddOnItemTouchListener();
 
             mLayoutManager = new LinearLayoutManager(this);
             mRecyclerView.SetLayoutManager(mLayoutManager);

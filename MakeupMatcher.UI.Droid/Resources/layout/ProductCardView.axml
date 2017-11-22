@@ -29,7 +29,8 @@
                 android:textSize="24dp"
                 android:textColor="#ffffff"
                 android:text="Caption"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                card_view:MvxBind="Text ProductName" />
             <TextView
                 android:id="@+id/subText"
                 android:layout_width="match_parent"
@@ -38,7 +39,8 @@
                 android:layout_below="@id/textView"
                 android:layout_marginLeft="@dimen/padding_horizontal"
                 android:textSize="18dp"
-                android:text="This is a subText" />
+                android:text="This is a subText"
+                card_view:MvxBind="Text ProductName" />
             <com.airbnb.lottie.LottieAnimationView
                 android:id="@+id/animation_view"
                 android:layout_width="72dp"
