@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{B9B140C6-7655-4E40-B6AB-6C9FFE85B8DA}|Default">
   <MonoDevelop.Ide.ItemProperties.MakeupMatcher.UI.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.2417C9A2-E83C-40D4-A4FB-DBA497D0A548" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MakeupMatcher.UI.iOS/iOSServices/ProductViewCell.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="MakeupMatcher.Core/MyClass.cs" Line="1" Column="1" />
       <File FileName="MakeupMatcher.Core/Models/UserModel.cs" Line="13" Column="11" />
@@ -42,10 +42,10 @@
       <File FileName="MakeupMatcher.UI.iOS/Views/UserView.xib" />
       <File FileName="MakeupMatcher.UI.Droid/DroidServices/ProductAdapter.cs" Line="38" Column="81" />
       <File FileName="MakeupMatcher.UI.Droid/DroidServices/ProductViewHolder.cs" Line="31" Column="40" />
-      <File FileName="MakeupMatcher.UI.iOS/Views/FilterView.cs" Line="1" Column="1" />
+      <File FileName="MakeupMatcher.UI.iOS/Views/FilterView.cs" Line="21" Column="55" />
       <File FileName="MakeupMatcher.Core/ViewModels/FilterViewModel.cs" Line="17" Column="10" />
       <File FileName="MakeupMatcher.Core/Services/ProductList.cs" Line="1" Column="1" />
-      <File FileName="MakeupMatcher.UI.iOS/Views/MakeupView.cs" Line="39" Column="50" />
+      <File FileName="MakeupMatcher.UI.iOS/Views/MakeupView.cs" Line="52" Column="38" />
       <File FileName="MakeupMatcher.UI.iOS/Views/MakeupView.xib" />
       <File FileName="MakeupMatcher.UI.iOS/Views/TabBarView.xib" />
       <File FileName="MakeupMatcher.Core/ViewModels/DetailParameters.cs" Line="1" Column="1" />
@@ -54,11 +54,11 @@
       <File FileName="MakeupMatcher.Core/Models/ProductDetailModel.cs" Line="14" Column="6" />
       <File FileName="MakeupMatcher.Core/ViewModels/ProductParameters.cs" Line="16" Column="17" />
       <File FileName="MakeupMatcher.UI.Droid/DroidServices/CameraHelper.cs" Line="1" Column="1" />
-      <File FileName="MakeupMatcher.UI.iOS/Views/ProductDetailView.cs" Line="26" Column="10" />
+      <File FileName="MakeupMatcher.UI.iOS/Views/ProductDetailView.cs" Line="33" Column="46" />
       <File FileName="MakeupMatcher.UI.iOS/Views/ProductDetailView.xib" />
       <File FileName="MakeupMatcher.UI.iOS/Views/ProductView.xib" />
       <File FileName="MakeupMatcher.UI.iOS/Views/ProductView.cs" Line="60" Column="2" />
-      <File FileName="MakeupMatcher.UI.iOS/iOSServices/RootTableSource.cs" Line="49" Column="20" />
+      <File FileName="MakeupMatcher.UI.iOS/iOSServices/RootTableSource.cs" Line="58" Column="51" />
       <File FileName="MakeupMatcher.UI.iOS/Views/ProductDetailView.designer.cs" Line="1" Column="1" />
       <File FileName="MakeupMatcher.UI.iOS/Views/TabBarView.cs" Line="1" Column="1" />
       <File FileName="MakeupMatcher.UI.iOS/iOSServices/ProductViewCell.xib" />
