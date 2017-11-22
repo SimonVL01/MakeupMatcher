@@ -48,6 +48,11 @@ namespace MakeupMatcher.UI.iOS.Views
             base.DidReceiveMemoryWarning();
 
         }
+
+        /*public override void PrepareForSegue(UIStoryboardSegue segue, NSObject sender)
+        {
+            segue.DestinationViewController = new ProductDetailView;
+        }*/
     }
 }
 
