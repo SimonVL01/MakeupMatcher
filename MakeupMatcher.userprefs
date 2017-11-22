@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{B9B140C6-7655-4E40-B6AB-6C9FFE85B8DA}|Default">
-  <MonoDevelop.Ide.ItemProperties.MakeupMatcher.UI.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.BB876733-0A0E-459D-87B5-F3340B34C274" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MakeupMatcher.UI.iOS/Views/ProductView.cs">
+  <MonoDevelop.Ide.ItemProperties.MakeupMatcher.UI.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.2417C9A2-E83C-40D4-A4FB-DBA497D0A548" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MakeupMatcher.UI.iOS/iOSServices/ProductViewCell.cs">
     <Files>
       <File FileName="MakeupMatcher.Core/MyClass.cs" Line="1" Column="1" />
       <File FileName="MakeupMatcher.Core/Models/UserModel.cs" Line="13" Column="11" />
@@ -54,13 +54,15 @@
       <File FileName="MakeupMatcher.Core/Models/ProductDetailModel.cs" Line="14" Column="6" />
       <File FileName="MakeupMatcher.Core/ViewModels/ProductParameters.cs" Line="16" Column="17" />
       <File FileName="MakeupMatcher.UI.Droid/DroidServices/CameraHelper.cs" Line="1" Column="1" />
-      <File FileName="MakeupMatcher.UI.iOS/Views/ProductDetailView.cs" Line="18" Column="47" />
+      <File FileName="MakeupMatcher.UI.iOS/Views/ProductDetailView.cs" Line="26" Column="10" />
       <File FileName="MakeupMatcher.UI.iOS/Views/ProductDetailView.xib" />
       <File FileName="MakeupMatcher.UI.iOS/Views/ProductView.xib" />
       <File FileName="MakeupMatcher.UI.iOS/Views/ProductView.cs" Line="60" Column="2" />
-      <File FileName="MakeupMatcher.UI.iOS/iOSServices/RootTableSource.cs" Line="44" Column="13" />
+      <File FileName="MakeupMatcher.UI.iOS/iOSServices/RootTableSource.cs" Line="49" Column="20" />
       <File FileName="MakeupMatcher.UI.iOS/Views/ProductDetailView.designer.cs" Line="1" Column="1" />
       <File FileName="MakeupMatcher.UI.iOS/Views/TabBarView.cs" Line="1" Column="1" />
+      <File FileName="MakeupMatcher.UI.iOS/iOSServices/ProductViewCell.xib" />
+      <File FileName="MakeupMatcher.UI.iOS/iOSServices/ProductViewCell.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.MakeupMatcher.UI.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Nexus_4_API_24" />

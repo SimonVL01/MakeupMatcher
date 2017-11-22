@@ -10,13 +10,13 @@ namespace MakeupMatcher.UI.iOS.iOSServices
     public class RootTableSource : UITableViewSource
     {
         protected ProductModel[] _products;
-        protected ProductView _productView;
-        protected string[] _tableItems;
+        protected ProductView _owner;
         protected string _cellIdentifier = "ProductViewCell";
 
-        public RootTableSource(ProductModel[] products)
+        public RootTableSource(ProductModel[] products, ProductView owner)
         {
             _products = products;
+            this._owner = owner;
         }
 
         public override nint RowsInSection(UITableView tableview, nint section)
@@ -37,11 +37,23 @@ namespace MakeupMatcher.UI.iOS.iOSServices
         }
 
         public override void RowSelected(UITableView tableView, NSIndexPath indexPath) {
-            UIAlertController okAlertController = UIAlertController.Create("Row Selected",
-                                                  _products[indexPath.Row].ProductName,
-                                                  UIAlertControllerStyle.Alert);
+
+            UIAlertController okAlertController = UIAlertController.Create("Row " + indexPath + " selected", _products[indexPath.Row].ProductName, UIAlertControllerStyle.Alert);
             okAlertController.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, null));
-            _productView.PresentViewController(okAlertController, true, null);
+
+            string productName = ProductList.GetProductList[indexPath.Row].ProductName;
+            string productBrand = ProductList.GetProductList[indexPath.Row].ProductBrand;
+
+            ProductDetailView _detail = new ProductDetailView(productName, productBrand);
+
+            //var ProductData = NSUserDefaults.StandardUserDefaults;
+            //ProductData.SetString(productName,"ProductName");
+
+            //var ProductData = NSUserDefaults.StandardUserDefaults;
+            //UserData.SetString(productName, "ProductName");
+
+            //_owner.InvokeDetail();
+            _owner.PresentViewController(_detail, true, null);
 
             tableView.DeselectRow(indexPath, true);
         }

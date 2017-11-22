@@ -36,7 +36,7 @@ namespace MakeupMatcher.UI.iOS.Views
             Add(tableView);
 
             tableView.DequeueReusableCell("ProductViewCell");
-            tableView.Source = new RootTableSource(ProductList.GetProductList); 
+            tableView.Source = new RootTableSource(ProductList.GetProductList, this); 
         }
 
         public override void ViewWillAppear(bool animated)         {             base.ViewWillAppear(animated);
@@ -49,9 +49,9 @@ namespace MakeupMatcher.UI.iOS.Views
 
         }
 
-        /*public override void PrepareForSegue(UIStoryboardSegue segue, NSObject sender)
+        /*public async void InvokeDetail()
         {
-            segue.DestinationViewController = new ProductDetailView;
+            await ViewModel.GoToProductDetailCommand.ExecuteAsync();
         }*/
     }
 }

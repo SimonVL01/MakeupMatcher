@@ -18,8 +18,8 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="191" translatesAutoresizingMaskIntoConstraints="NO">
-                    <rect key="frame" x="39" y="60" width="240" height="36"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="191" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                    <rect key="frame" x="0.0" y="68" width="240" height="36"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -40,11 +40,27 @@
                         </mask>
                     </variation>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="736" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
-                    <rect key="frame" x="40" y="117" width="240" height="30"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="736" translatesAutoresizingMaskIntoConstraints="NO">
+                    <rect key="frame" x="40" y="120" width="240" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
+                    <constraints>
+                        <constraint id="2483" firstAttribute="width" constant="240"/>
+                        <constraint id="2484" firstAttribute="height" constant="30"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="2483"/>
+                            <exclude reference="2484"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="2483"/>
+                            <include reference="2484"/>
+                        </mask>
+                    </variation>
                 </label>
             </subviews>
             <variation key="default">
@@ -55,8 +71,8 @@
                 <mask key="constraints">
                     <exclude reference="462"/>
                     <exclude reference="463"/>
-                    <exclude reference="1188"/>
-                    <exclude reference="1234"/>
+                    <exclude reference="2481"/>
+                    <exclude reference="2577"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
@@ -67,8 +83,8 @@
                 <mask key="constraints">
                     <include reference="462"/>
                     <include reference="463"/>
-                    <include reference="1188"/>
-                    <include reference="1234"/>
+                    <include reference="2481"/>
+                    <include reference="2577"/>
                 </mask>
             </variation>
             <constraints>
@@ -78,9 +94,9 @@
                 <constraint id="463" firstItem="191" firstAttribute="top" secondItem="2" secondAttribute="top" constant="68">
                     <variation key="heightClass=regular-widthClass=compact" constant="60"/>
                 </constraint>
-                <constraint id="1188" firstItem="736" firstAttribute="top" secondItem="191" secondAttribute="bottom" constant="21"/>
-                <constraint id="1234" firstItem="736" firstAttribute="centerX" secondItem="2" secondAttribute="centerX" constant="40">
-                    <variation key="heightClass=regular-widthClass=compact" constant="1"/>
+                <constraint id="2481" firstItem="2" firstAttribute="trailing" secondItem="736" secondAttribute="trailing" constant="40"/>
+                <constraint id="2577" firstItem="736" firstAttribute="top" secondItem="191" secondAttribute="bottom" constant="13">
+                    <variation key="heightClass=regular-widthClass=compact" constant="24"/>
                 </constraint>
             </constraints>
         </view>
