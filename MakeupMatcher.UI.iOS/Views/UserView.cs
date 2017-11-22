@@ -30,6 +30,12 @@ namespace MakeupMatcher.UI.iOS.Views
 
             NavigationItem.Title = "Login";
 
+            var set = this.CreateBindingSet<UserView, UserViewModel>();
+            set.Bind(username).For(t => t.Text).To(vm => vm.Username);
+            set.Bind(password).For(t => t.Text).To(vm => vm.UserPassword);
+            //set.Bind(login).For(b => b.KeyCommands).To(vm => vm.User)
+            set.Apply();
+
             var docsPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments);
             var libPath = Path.Combine(docsPath, "..", "Library");
 
@@ -40,6 +46,7 @@ namespace MakeupMatcher.UI.iOS.Views
 
             login.TouchUpInside += async (sender, e) =>
             {
+                
                 db = new SQLiteConnection(dbPath);
 
                 var table = db.Table<UserModel>();
@@ -54,11 +61,6 @@ namespace MakeupMatcher.UI.iOS.Views
                 user.UserPassWord = password.Text;
 
                 //Databinding
-
-                //this.CreateBinding().To((UserViewModel uvm) => uvm.UserId);
-                this.CreateBinding(username).To((UserViewModel uvm) => uvm.Username).Apply();
-                this.CreateBinding(password).To((UserViewModel uvm) => uvm.UserPassword);
-                this.CreateBinding(pic.AccessibilityLabel).To((UserViewModel uvm) => uvm.UserImage);
 
                 db.Insert(user);
                 db.Close();

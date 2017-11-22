@@ -53,7 +53,7 @@ namespace MakeupMatcher.UI.Droid.Views
             _bgShape = (GradientDrawable)_color.Background;
             _bgShape.SetColor(Color.White);
 
-            _library.Text = ViewModel.User;
+            //_library.Text = ViewModel.User;
 
             _library.Click += delegate {
                 Intent intent = new Intent(Intent.ActionOpenDocument);

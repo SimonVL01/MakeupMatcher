@@ -36,7 +36,7 @@ namespace MakeupMatcher.UI.iOS.Views
 
             NavigationItem.HidesBackButton = true;
 
-            NavigationItem.Title = "Pick a color";
+            NavigationItem.Title = ViewModel.User;
 
             color.Layer.CornerRadius = 30;
             color.Layer.MasksToBounds = true;
