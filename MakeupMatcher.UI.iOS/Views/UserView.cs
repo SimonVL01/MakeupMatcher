@@ -11,6 +11,8 @@ using MakeupMatcher.UI.iOS.iOSServices;
 using UIKit;
 using Foundation;
 using System.IO;
+using MvvmCross.Plugins.PictureChooser;
+using MvvmCross.Platform;
 
 namespace MakeupMatcher.UI.iOS.Views
 {
@@ -88,28 +90,18 @@ namespace MakeupMatcher.UI.iOS.Views
 
                 if (UIImagePickerController.IsSourceTypeAvailable(UIImagePickerControllerSourceType.PhotoLibrary))
                 {
-                    ImagePicker = new UIImagePickerController();
-                    ImagePicker.AllowsEditing = true;
-                    ImagePicker.Delegate = Self;
-                    ImagePicker.SourceType = UIImagePickerControllerSourceType.PhotoLibrary;
-                    ImagePicker.MediaTypes = UIImagePickerController
-                        .AvailableMediaTypes(UIImagePickerControllerSourceType.PhotoLibrary);
-
-                    ImagePicker.FinishedPickingMedia += Handle_FinishedPickingMedia;
-                    ImagePicker.Canceled += Handle_Canceled;
-
-                    this.PresentViewController(ImagePicker, true, null);
+                    var task = Mvx.Resolve<IMvxPictureChooserTask>();
+                    task.ChoosePictureFromLibrary(500, 90,
+                                                  stream => {
+                                                      var memoryStream = new MemoryStream();
+                                                      stream.CopyTo(memoryStream);
+                                                      ViewModel.ImageData = memoryStream.ToArray();
+                                                      var data = NSData.FromArray(memoryStream.ToArray());
+                                                      pic.SetBackgroundImage(UIImage.LoadFromData(data), UIControlState.Normal);
+                                                      }, () => { });
 
                 }
             };
-
-            /*LOTAnimationView animation = LOTAnimationView.AnimationNamed("heart");
-            animation.Frame = new CGRect(0, 100, this.View.Frame.Size.Width, 250);
-            animation.ContentMode = UIViewContentMode.ScaleAspectFill;
-            animation.LoopAnimation = true;
-
-            this.View.AddSubview(animation);
-            animation.Play();*/
 
             var g = new UITapGestureRecognizer(() => View.EndEditing(true));
             g.CancelsTouchesInView = false;

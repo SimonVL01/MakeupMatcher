@@ -68,6 +68,18 @@ namespace MakeupMatcher.Core.ViewModels
             }
         }
 
+        byte[] _imageData;
+
+        public byte[] ImageData
+        {
+            get { return _imageData; }
+            set
+            {
+                _imageData = value;
+                RaisePropertyChanged(() => ImageData);
+            }
+        }
+
         //Navigation
 
         private IMvxAsyncCommand _goToMakeupCommand;

@@ -77,18 +77,16 @@ namespace MakeupMatcher.UI.iOS.Views
 
                 if (UIImagePickerController.IsSourceTypeAvailable(UIImagePickerControllerSourceType.PhotoLibrary)) 
                 {
-                    ImagePicker = new UIImagePickerController();
-                    ImagePicker.AllowsEditing = true;
-                    ImagePicker.Delegate = Self;
-                    ImagePicker.SourceType = UIImagePickerControllerSourceType.PhotoLibrary;
-                    ImagePicker.MediaTypes = UIImagePickerController
-                        .AvailableMediaTypes(UIImagePickerControllerSourceType.PhotoLibrary);
 
-                    ImagePicker.FinishedPickingMedia += Handle_FinishedPickingMedia;
-                    ImagePicker.Canceled += Handle_Canceled;
-                    
-                    this.PresentViewController(ImagePicker, true, null);
-                    //BrowseLibrary();
+                    var task = Mvx.Resolve<IMvxPictureChooserTask>();
+                    task.ChoosePictureFromLibrary(500, 90,
+                                                  stream => {
+                                                      var memoryStream = new MemoryStream();
+                                                      stream.CopyTo(memoryStream);
+                                                      ViewModel.ImageBytes = memoryStream.ToArray();
+                                                      var data = NSData.FromArray(memoryStream.ToArray());
+                                                      imageView.Image = UIImage.LoadFromData(data);
+                                                  }, () => { });
 
                 } 
             };
