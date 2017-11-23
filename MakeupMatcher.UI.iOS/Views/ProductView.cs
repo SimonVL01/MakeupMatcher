@@ -32,7 +32,7 @@ namespace MakeupMatcher.UI.iOS.Views
 
             NavigationItem.Title = "ColorMatch results";
 
-            tableView = new UITableView(View.Bounds);
+            tableView = new UITableView(UIScreen.MainScreen.Bounds);
             Add(tableView);
 
             tableView.DequeueReusableCell("ProductViewCell");
@@ -48,11 +48,6 @@ namespace MakeupMatcher.UI.iOS.Views
             base.DidReceiveMemoryWarning();
 
         }
-
-        /*public async void InvokeDetail()
-        {
-            await ViewModel.GoToProductDetailCommand.ExecuteAsync();
-        }*/
     }
 }
 

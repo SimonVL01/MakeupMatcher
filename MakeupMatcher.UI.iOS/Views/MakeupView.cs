@@ -11,17 +11,18 @@ using UIKit;
 using CoreGraphics;
 using Foundation;
 using MakeupMatcher.Core.Enum;
+using MvvmCross.Plugins.PictureChooser;
+using MvvmCross.Platform;
+using System.IO;
 
 namespace MakeupMatcher.UI.iOS.Views
 {
     public partial class MakeupView : MvxViewController<MakeupViewModel>
     {
-        private int TouchX;
-        private int TouchY;
-        private UIColor FavColor;
         private UIImagePickerController ImagePicker;
         private Colors _chosenColor;
         private byte[] alphaPixel = { 0, 0, 0, 0 };
+        private string _colorValue;
 
 
         public MakeupView() : base("MakeupView", null)
@@ -41,16 +42,34 @@ namespace MakeupMatcher.UI.iOS.Views
             color.Layer.CornerRadius = 30;
             color.Layer.MasksToBounds = true;
 
-            camera.TouchUpInside += (sender, e) => {
+            //color.SetTitle(_colorValue, UIControlState.Normal);
+
+            var set = this.CreateBindingSet<MakeupView, MakeupViewModel>();
+            set.Bind(imageView).For(t => t.Image).To(vm => vm.ImageBytes).WithConversion("InMemoryImage");
+            //set.Bind(password).For(t => t.Text).To(vm => vm.UserPassword);
+            //set.Bind(login).For(b => b.KeyCommands).To(vm => vm.User)
+            //set.Bind(library).To("BrowseLibrary");
+            set.Apply();
+
+            camera.TouchUpInside += (sender, e) =>
+            {
 
                 if (UIImagePickerController.IsSourceTypeAvailable(UIImagePickerControllerSourceType.Camera))
                 {
-                    ImagePicker = new UIImagePickerController();
+                    /*ImagePicker = new UIImagePickerController();
                     ImagePicker.Delegate = Self;
                     ImagePicker.SourceType = UIImagePickerControllerSourceType.Camera;
                     ImagePicker.AllowsEditing = true;
                     this.PresentViewController(ImagePicker, true, null);
-                } else {
+                } */
+                    var task = Mvx.Resolve<IMvxPictureChooserTask>();
+                    task.TakePicture(500, 90,
+                                                  stream =>
+                                                  {
+                                                      var memoryStream = new MemoryStream();
+                                                      stream.CopyTo(memoryStream);
+                                                      ViewModel.ImageBytes = memoryStream.ToArray();
+                                                  }, () => { });
                 }
             };
 
@@ -69,6 +88,7 @@ namespace MakeupMatcher.UI.iOS.Views
                     ImagePicker.Canceled += Handle_Canceled;
                     
                     this.PresentViewController(ImagePicker, true, null);
+                    //BrowseLibrary();
 
                 } 
             };
@@ -77,29 +97,7 @@ namespace MakeupMatcher.UI.iOS.Views
                 await ViewModel.GoToFilterCommand.ExecuteAsync();
             };
 
-            //LibraryAccess = new LibraryAccessService();
-            //library.TouchUpInside += (sender, e) => {
-            //imageView.Image = LibraryAccessService.GetAccess(library, this, ImagePicker, imageView.Image);
-
-                //imageView.Image = AccessService.GetAccess();
-            //};
-
             color.TouchUpInside += async (sender, e) => {
-
-                /*if (color.BackgroundColor.CIColor.Red <= 200 && color.BackgroundColor.CIColor.Blue >= 75 && color.BackgroundColor.CIColor.Green >= 75)
-                    _chosenColor = Colors.Red;
-                else if (color.BackgroundColor.CIColor.Red <= 210 && color.BackgroundColor.CIColor.Blue >= 210 && color.BackgroundColor.CIColor.Green <= 50)
-                    _chosenColor = Colors.Magenta;
-                if (color.BackgroundColor.CIColor.Red <= 225 && color.BackgroundColor.CIColor.Green <= 150 && color.BackgroundColor.CIColor.Green >= 200 && color.BackgroundColor.CIColor.Blue >= 200)
-                    _chosenColor = Colors.Pink;
-                else if (color.BackgroundColor.CIColor.Red >= 100 && color.BackgroundColor.CIColor.Blue >= 100 && color.BackgroundColor.CIColor.Green >= 100)
-                    _chosenColor = Colors.DarkBrown;
-                else if (color.BackgroundColor.CIColor.Red >= 225 && color.BackgroundColor.CIColor.Blue >= 225 && color.BackgroundColor.CIColor.Green >= 225)
-                    _chosenColor = Colors.TannedBrown;
-                else if (color.BackgroundColor.CIColor.Red >= 200 && color.BackgroundColor.CIColor.Blue <= 200 && color.BackgroundColor.CIColor.Blue >= 100 && color.BackgroundColor.CIColor.Green >= 200)
-                    _chosenColor = Colors.Ochre;
-                else if (color.BackgroundColor.CIColor.Red <= 120 && color.BackgroundColor.CIColor.Blue <= 225 && color.BackgroundColor.CIColor.Green <= 150 && color.BackgroundColor.CIColor.Green >= 225)
-                    _chosenColor = Colors.LittleBlue;*/
 
                 //this.CreateBinding(_chosenColor).To((MakeupViewModel vm) => vm.ColorName).Apply();
                 await ViewModel.GoToProductCommand.ExecuteAsync();
@@ -164,7 +162,27 @@ namespace MakeupMatcher.UI.iOS.Views
             var bitmapContext = new CGBitmapContext(alphaPixel, 1, 1, 8, 4, colorSpace, CGBitmapFlags.PremultipliedLast);
             bitmapContext.TranslateCTM(-Point.X, -Point.Y);
             View.Layer.RenderInContext(bitmapContext);
-            return UIColor.FromRGBA(alphaPixel[0], alphaPixel[1], alphaPixel[2], alphaPixel[3]);
+
+            var newColor = UIColor.FromRGBA(alphaPixel[0], alphaPixel[1], alphaPixel[2], alphaPixel[3]);
+
+            /*if (newColor.CIColor.Red <= 200 && newColor.CIColor.Blue >= 75 && newColor.CIColor.Green >= 75)
+                _chosenColor = Colors.Red;
+            else if (newColor.CIColor.Red <= 210 && newColor.CIColor.Blue >= 210 && newColor.CIColor.Green <= 50)
+                _chosenColor = Colors.Magenta;
+            if (newColor.CIColor.Red <= 225 && newColor.CIColor.Green <= 150 && newColor.CIColor.Green >= 200 && newColor.CIColor.Blue >= 200)
+                _chosenColor = Colors.Pink;
+            else if (newColor.CIColor.Red >= 100 && newColor.CIColor.Blue >= 100 && newColor.CIColor.Green >= 100)
+                _chosenColor = Colors.DarkBrown;
+            else if (newColor.CIColor.Red >= 225 && newColor.CIColor.Blue >= 225 && newColor.CIColor.Green >= 225)
+                _chosenColor = Colors.TannedBrown;
+            else if (newColor.CIColor.Red >= 200 && newColor.CIColor.Blue <= 200 && newColor.CIColor.Blue >= 100 && newColor.CIColor.Green >= 200)
+                _chosenColor = Colors.Ochre;
+            else if (newColor.CIColor.Red <= 120 && newColor.CIColor.Blue <= 225 && newColor.CIColor.Green <= 150 && newColor.CIColor.Green >= 225)
+                _chosenColor = Colors.LittleBlue;*/
+
+            //_colorValue = _chosenColor.ToString();
+
+            return newColor;
         }
 
         public override void TouchesBegan(NSSet touches, UIEvent evt)
@@ -182,6 +200,16 @@ namespace MakeupMatcher.UI.iOS.Views
         {
             base.DidReceiveMemoryWarning();
             // Release any cached data, images, etc that aren't in use.
+        }
+
+        public void BrowseLibrary() {
+            var task = Mvx.Resolve<IMvxPictureChooserTask>();
+            task.ChoosePictureFromLibrary(500, 90,
+                                          stream => {
+                                          var memoryStream = new MemoryStream();
+                                          stream.CopyTo(memoryStream);
+                                          ViewModel.ImageBytes = memoryStream.ToArray();
+                                          }, () => { });
         }
     }
 }

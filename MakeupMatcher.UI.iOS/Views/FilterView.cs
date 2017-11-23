@@ -13,7 +13,7 @@ using CoreGraphics;
 
 namespace MakeupMatcher.UI.iOS.Views
 {
-    public partial class FilterView : MvxViewController
+    public partial class FilterView : MvxViewController<FilterViewModel>
     {
         private UIImage imageView;
         private int _itemCount = 0;
@@ -34,6 +34,8 @@ namespace MakeupMatcher.UI.iOS.Views
 
             var cancelButton = new UIBarButtonItem();
             cancelButton.Title = "Cancel";
+
+            var set = 
 
 
             NavigationItem.RightBarButtonItem = saveButton;

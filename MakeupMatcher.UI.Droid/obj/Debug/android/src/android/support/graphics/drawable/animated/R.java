@@ -2486,6 +2486,7 @@ containing a value of this type.
         public static final int blocking=0x7f070035;
         public static final int bottom=0x7f070032;
         public static final int buttonPanel=0x7f070043;
+        public static final int buy=0x7f070093;
         public static final int camera=0x7f070076;
         public static final int cancel_action=0x7f07007c;
         public static final int cell=0x7f07008c;
@@ -2529,10 +2530,10 @@ containing a value of this type.
         public static final int line3=0x7f07000b;
         public static final int listMode=0x7f070012;
         public static final int list_item=0x7f070041;
-        public static final int login=0x7f070097;
+        public static final int login=0x7f070099;
         public static final int lottie_layer_name=0x7f070011;
         public static final int media_actions=0x7f07007e;
-        public static final int message=0x7f070093;
+        public static final int message=0x7f070094;
         public static final int middle=0x7f070026;
         public static final int multiply=0x7f07001c;
         public static final int never=0x7f070030;
@@ -2551,7 +2552,7 @@ containing a value of this type.
         public static final int recyclerView=0x7f07008b;
         public static final int right_icon=0x7f070086;
         public static final int right_side=0x7f070082;
-        public static final int save=0x7f070098;
+        public static final int save=0x7f07009a;
         public static final int screen=0x7f07001d;
         public static final int scrollIndicatorDown=0x7f07004b;
         public static final int scrollIndicatorUp=0x7f070047;
@@ -2593,12 +2594,13 @@ containing a value of this type.
         public static final int title_template=0x7f07004f;
         public static final int top=0x7f070033;
         public static final int topPanel=0x7f07004e;
+        public static final int txt=0x7f070095;
         public static final int uniform=0x7f070022;
         public static final int up=0x7f070009;
         public static final int useLogo=0x7f07001b;
-        public static final int userImage=0x7f070096;
-        public static final int userPassword=0x7f070095;
-        public static final int username=0x7f070094;
+        public static final int userImage=0x7f070098;
+        public static final int userPassword=0x7f070097;
+        public static final int username=0x7f070096;
         public static final int weak=0x7f070039;
         public static final int withText=0x7f070031;
         public static final int wrap_content=0x7f070023;

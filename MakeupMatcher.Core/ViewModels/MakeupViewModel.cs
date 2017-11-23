@@ -94,12 +94,17 @@ namespace MakeupMatcher.Core.ViewModels
             }
         }
 
-        //Navigation Service
+        byte[] _imageBytes;
 
-        /*public void Init(DetailParameters parameters)
+        public byte[] ImageBytes
         {
-            _user = parameters.User;
-        }*/
+            get { return _imageBytes; }
+            set {
+                _imageBytes = value;
+            }
+        }
+
+        //Navigation Service
 
         public override void Prepare(DetailParameters parameter)
         {
@@ -111,7 +116,7 @@ namespace MakeupMatcher.Core.ViewModels
         {
             get
             {
-                _goToFilterCommand = _goToFilterCommand ?? new MvxAsyncCommand(() => _navigationService.Navigate<FilterViewModel>());
+                _goToFilterCommand = _goToFilterCommand ?? new MvxAsyncCommand(() => _navigationService.Navigate<FilterViewModel, BitmapParameters>(new BitmapParameters() { Image = ImageBytes }));
                 return _goToFilterCommand;
             }
         }

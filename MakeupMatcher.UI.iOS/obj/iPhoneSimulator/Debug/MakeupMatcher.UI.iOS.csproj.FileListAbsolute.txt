@@ -54,3 +54,7 @@
 /Users/simon/Desktop/MakeupMatcher_v2/MakeupMatcher.UI.iOS/obj/iPhoneSimulator/Debug/MakeupMatcher.UI.iOS.csproj.CoreCompileInputs.cache
 /Users/simon/Desktop/MakeupMatcher_v2/MakeupMatcher.UI.iOS/obj/iPhoneSimulator/Debug/MakeupMatcher.UI.iOS.exe
 /Users/simon/Desktop/MakeupMatcher_v2/MakeupMatcher.UI.iOS/obj/iPhoneSimulator/Debug/MakeupMatcher.UI.iOS.pdb
+/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.iOS/bin/iPhoneSimulator/Debug/MvvmCross.Plugins.PictureChooser.dll
+/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.iOS/bin/iPhoneSimulator/Debug/MvvmCross.Plugins.PictureChooser.iOS.dll
+/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.iOS/bin/iPhoneSimulator/Debug/MvvmCross.Plugins.PictureChooser.pdb
+/Users/vdabcursist/Desktop/eindwerk_MakeupMatcher/MakeupMatcher.UI.iOS/bin/iPhoneSimulator/Debug/MvvmCross.Plugins.PictureChooser.iOS.pdb

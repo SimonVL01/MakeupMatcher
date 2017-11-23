@@ -1,0 +1,15 @@
+SRCSRV: ini ------------------------------------------------
+VERSION=2
+SRCSRV: variables ------------------------------------------
+RAWURL=https://raw.github.com/mvvmcross/mvvmcross/9606892463478a74a791194c1d697f5fdd790e5a/%var2%
+SRCSRVVERCTRL=https
+SRCSRVTRG=%RAWURL%
+SRCSRV: source files ---------------------------------------
+C:\projects\mvvmcross\MvvmCross-Plugins\PictureChooser\MvvmCross.Plugins.PictureChooser\IMvxCombinedPictureChooserTask.cs*MvvmCross-Plugins/PictureChooser/MvvmCross.Plugins.PictureChooser/IMvxCombinedPictureChooserTask.cs
+C:\projects\mvvmcross\MvvmCross-Plugins\PictureChooser\MvvmCross.Plugins.PictureChooser\IMvxPictureChooserTask.cs*MvvmCross-Plugins/PictureChooser/MvvmCross.Plugins.PictureChooser/IMvxPictureChooserTask.cs
+C:\projects\mvvmcross\MvvmCross-Plugins\PictureChooser\MvvmCross.Plugins.PictureChooser\MvxPictureChooserExtensionMethods.cs*MvvmCross-Plugins/PictureChooser/MvvmCross.Plugins.PictureChooser/MvxPictureChooserExtensionMethods.cs
+C:\projects\mvvmcross\MvvmCross-Plugins\PictureChooser\MvvmCross.Plugins.PictureChooser\MvxPictureDimensionHelper.cs*MvvmCross-Plugins/PictureChooser/MvvmCross.Plugins.PictureChooser/MvxPictureDimensionHelper.cs
+C:\projects\mvvmcross\MvvmCross-Plugins\PictureChooser\MvvmCross.Plugins.PictureChooser\PluginLoader.cs*MvvmCross-Plugins/PictureChooser/MvvmCross.Plugins.PictureChooser/PluginLoader.cs
+C:\projects\mvvmcross\AssemblyInfo.cs*AssemblyInfo.cs
+C:\projects\mvvmcross\MvvmCross-Plugins\All\MvvmCross.Plugins.All\Preserve.cs*MvvmCross-Plugins/All/MvvmCross.Plugins.All/Preserve.cs
+SRCSRV: end ------------------------------------------------

@@ -25,6 +25,9 @@ namespace MakeupMatcher.UI.iOS.Views
             View.AddSubview(navBar);
             var navItem = new UINavigationItem(_productName);
             var doneItem = new UIBarButtonItem(UIBarButtonSystemItem.Cancel, null);
+
+            doneItem.Clicked += async (sender, e) => await DismissViewControllerAsync(true);
+
             navItem.LeftBarButtonItem = doneItem;
             navBar.SetItems(new UINavigationItem[] { navItem }, false);
 

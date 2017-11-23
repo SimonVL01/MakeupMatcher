@@ -12,5 +12,6 @@ namespace MakeupMatcher.Core.Models
         public double GreenValue { get; set; }
         public double BlueValue { get; set; }
         public Colors ColorName { get; set; }
+        public byte[] ImageBytes { get; set; }
     }
 }
